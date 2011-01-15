@@ -1,0 +1,1217 @@
+Content-Type: multipart/related; start=<op.mhtml.1294460126132.6863653819718a76@100.100.100.77>; boundary=----------ymddam4j4cjqP6u8lq7B4m
+Content-Location: http://www.norvig.com/21-days.html
+Subject: =?utf-8?Q?Teach=20Yourself=20Programming=20in=20Ten=20Years?=
+MIME-Version: 1.0
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=21-days.html
+Content-Type: text/html; name=21-days.html
+Content-ID: <op.mhtml.1294460126132.6863653819718a76@100.100.100.77>
+Content-Location: http://www.norvig.com/21-days.html
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+<title>Teach Yourself Programming in Ten Years</title>
+<!-- Changed by: Peter Norvig, 13-Jul-1998 -->
+<body bgcolor=ffffff>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<center>
+<h1>Teach Yourself Programming in Ten Years</h1>
+<h3>Peter Norvig</h3>
+</center>
+<p>
+
+<table cellpadding=4>
+<tr>
+<td>
+
+<h2>Why is everyone in such a rush?</h2>
+
+Walk into any bookstore, and you'll see how to <i>Teach Yourself Java
+in 7 Days</i> alongside endless variations offering to teach Visual
+Basic, Windows, the Internet, and so on in a few days or hours.  I did
+the following <a href="http://www.amazon.com/exec/obidos/tg/browse/-/468558/104-5938873-6579160">power search</a> at <a
+href="http://www.amazon.com">Amazon.com</a>: 
+
+<pre>     <a
+href="http://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=1/ref=s_b_np">pubdate: after 1992 and title: days and</a>
+      <a
+href="http://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20days%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=1/ref=s_b_np">(title: learn or title: teach yourself)</a></pre>
+
+and got back 248 hits.  The first 78 were computer books (number 79
+was <a
+href="http://www.amazon.com/exec/obidos/ASIN/0781802245/"><i>Learn
+Bengali in 30 days</i></a>).  I replaced "days" with <a
+href="http://www.amazon.com/exec/obidos/search-handle-url/ix=books&rank=%2Bfeaturedrank&fqp=power%01pubdate%3A%20after%201992%20and%20title%3A%20hours%20and%0D%20%28title%3A%20learn%20or%20title%3A%20teach%20yourself%29&sz=25&pg=3/ref=s_b_np">"hours"</a>
+and got remarkably similar results: 253 more books, with 77 computer
+books followed by <a
+href="http://www.amazon.com/exec/obidos/ASIN/0028638999/"><i>Teach
+Yourself Grammar and Style in 24 Hours</i></a> at number 78. Out of
+the top 200 total, 96% were computer books.  
+
+<p>The conclusion is that either people are in a big rush to learn
+about computers, or that computers are somehow fabulously easier to
+learn than anything else.  There are no books on how to learn
+Beethoven, or Quantum Physics, or even Dog Grooming in a few days.
+Felleisen <i>et al.</i>
+give a nod to this trend in their book <i><a href="http://www.ccs.neu.edu/home/matthias/HtDP2e/index.html">How to Design Programs</a></i>, when they say
+"Bad programming is easy. <i>Idiots</i> can learn it in <i>21 days</i>,
+even if they are <i>dummies</i>.
+
+<p> Let's analyze what a title like <i><a href="http://www.amazon.com/Learn-C-Three-Days-Rachele/dp/1556227078">Learn C++ in Three Days</a></i>
+could mean:
+<ul>
+
+<li><b>Learn:</b> In 3 days you won't have time to write several
+significant programs, and learn from your successes and failures with
+them.  You won't have time to work with an experienced programmer and
+understand what it is like to live in a C++ environment.  In short, you
+won't have time to learn much.  So the book can only be talking about a
+superficial familiarity, not a deep understanding. As Alexander Pope said,
+a little learning is a dangerous thing.<p>
+
+<li><b>C++:</b> In 3 days you might be able to learn some of the syntax of
+C++ (if you already know another language), but you couldn't
+learn much about how to use the language.  In short, if you were, say, a
+Basic programmer, you could learn to write programs in the style of
+Basic using C++ syntax, but you couldn't learn what C++ is
+actually good (and bad) for.  So what's the point?  <a
+href="http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html">Alan
+Perlis</a> once said: "A language that doesn't affect the way you
+think about programming, is not worth knowing".  One possible point is
+that you have to learn a tiny bit of C++ (or more likely, something
+like JavaScript or Flash's Flex) because you need to interface with an
+existing tool to accomplish a specific task. But then you're not
+learning how to program; you're learning to accomplish that task.<p>
+
+<li><b>in Three Days:</b> Unfortunately, this is not enough, as the next
+section shows.
+</ul>
+
+<h2>Teach Yourself Programming in Ten Years</h2>
+
+Researchers (<a
+href="http://www.amazon.com/exec/obidos/ASIN/034531509X/">Bloom
+(1985)</a>, <a href="#bh">Bryan &amp; Harter (1899)</a>, <a
+href="http://www.amazon.com/exec/obidos/ASIN/0805803092">Hayes
+(1989)</a>, <a href="#sc">Simmon &amp; Chase (1973)</a>) have shown it
+takes about ten years to develop expertise in any of a wide variety of
+areas, including chess playing, music composition, telegraph
+operation, painting, piano playing, swimming, tennis, and research in
+neuropsychology and topology.  The key is <i>deliberative</i>
+practice: not just doing it again and again, but challenging yourself
+with a task that is just beyond your current ability, trying it,
+analyzing your performance while and after doing it, and correcting
+any mistakes.  Then repeat.  And repeat again.  There appear to be no
+real shortcuts: even Mozart, who was a musical prodigy at age 4, took
+13 more years before he began to produce world-class music.  In
+another genre, the Beatles seemed to burst onto the scene with a
+string of #1 hits and an appearance on the Ed Sullivan show in 1964.
+But they had been playing small clubs in Liverpool and Hamburg since
+1957, and while they had mass appeal early on, their first great
+critical success, <i>Sgt. Peppers</i>, was released in 1967. 
+<a href="http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017922">Malcolm
+Gladwell</a> reports that a study of students at the Berlin Academy of
+Music compared the top, middle, and bottom third of the class and
+asked them how much they had practiced:
+<blockquote>
+Everyone, from all three groups, started playing at roughly the same
+time - around the age of five. In those first few years, everyone
+practised roughly the same amount - about two or three hours a
+week. But around the age of eight real differences started to
+emerge. The students who would end up as the best in their class began
+to practise more than everyone else: six hours a week by age nine,
+eight by age 12, 16 a week by age 14, and up and up, until by the age
+of 20 they were practising well over 30 hours a week. By the age of
+20, the elite performers had all totalled 10,000 hours of practice
+over the course of their lives. The merely good students had totalled,
+by contrast, 8,000 hours, and the future music teachers just over
+4,000 hours.
+</blockquote>
+<p>
+So it may be that 10,000 hours, not 10 years, is the magic number.
+Samuel Johnson (1709-1784) thought it
+took longer: "Excellence in any department can be
+attained only by the labor of a lifetime; it is not to be purchased at
+a lesser price."  And Chaucer (1340-1400) complained "the lyf so short, the craft
+so long to lerne." Hippocrates (c. 400BC) is known for the excerpt "ars longa,
+vita brevis", which is part of the longer quotation "Ars longa, vita
+brevis, occasio praeceps, experimentum periculosum, iudicium
+difficile", which in English renders as "Life is short, [the] craft
+long, opportunity fleeting, experiment treacherous, judgment
+difficult."  Although in Latin, <i>ars</i> can mean either art or
+craft, in the original Greek the word "techne" can only mean "skill", not "art".
+
+
+<p>
+Here's my recipe for programming success:
+<ul>
+
+<li> Get interested in programming, and do some because it is fun.  Make sure
+that it keeps being enough fun so that you will be willing to put in ten years.<p>
+
+<li> Talk to other programmers; read other programs.  This is more important
+than any book or training course.<p>
+
+<li> Program.  The best kind of learning is <a
+href="http://www.engines4ed.org/hyperbook/nodes/NODE-120-pg.html">learning
+by doing</a>.  To put it more technically, "the maximal level of
+performance for individuals in a given domain is not attained
+automatically as a function of extended experience, but the level of
+performance can be increased even by highly experienced individuals as
+a result of deliberate efforts to improve." <a
+href="http://www2.umassd.edu/swpi/DesignInCS/expertise.html">(p. 366)</a>
+and "the most effective learning requires a well-defined task with an
+appropriate difficulty level for the particular individual,
+informative feedback, and opportunities for repetition and corrections
+of errors." (p. 20-21)  The book <i>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0521357349">Cognition in Practice: Mind, Mathematics, and Culture in Everyday
+Life</a></i> is an interesting 
+reference for this viewpoint.<p>
+
+<li> If you want, put in four years at a college (or more at a
+graduate school).  This will give you access to some jobs that require
+credentials, and it will give you a deeper understanding of the field,
+but if you don't enjoy school, you can (with some dedication) get
+similar experience on the job. In any case, book learning alone won't
+be enough. "Computer science education cannot make anybody an expert
+programmer any more than studying brushes and pigment can make
+somebody an expert painter" says Eric Raymond, author of <I>The New
+Hacker's Dictionary</I>. One of the best programmers I ever hired had
+only a High School degree; he's produced a lot of <A
+HREF="http://www.xemacs.org">great</A> <A
+HREF="http://www.mozilla.org">software</A>, has his own <a
+href="http://groups.google.com/groups?q=alt.fan.jwz&meta=site%3Dgroups">news group</a>, and made enough in stock options to buy his own <a href="http://en.wikipedia.org/wiki/DNA_Lounge">nightclub</a>.
+
+<li> Work on projects with other programmers. Be the best programmer
+on some projects; be the worst on some others.  When you're the best,
+you get to test your abilities to lead a project, and to inspire
+others with your vision.  When you're the worst, you learn what the
+masters do, and you learn what they don't like to do (because they
+make you do it for them).<p>
+
+<li> Work on projects <i>after</i> other programmers. Be involved in
+understanding a program written by someone else. See what it takes to
+understand and fix it when the original programmers are not
+around. Think about how to design your programs to make it easier for
+those who will maintain it after you.<p>
+
+<li> Learn at least a half dozen programming languages.  Include one
+language that supports class abstractions (like Java or C++), one that
+supports functional abstraction (like Lisp or ML), one
+that supports syntactic abstraction (like Lisp), one
+that supports declarative specifications (like Prolog or C++
+templates), one that supports coroutines (like Icon or Scheme), and
+one that supports parallelism (like Sisal).  <p>
+
+<li> Remember that there is a "computer" in "computer science". Know
+how long it takes your computer to execute an instruction, fetch a
+word from memory (with and without a cache miss), read consecutive words from disk, and seek to a new location on disk. (<a href="#answers">Answers here.</a>) <p>
+
+<li> Get involved in a language
+standardization effort.  It could be the ANSI C++ committee, or it
+could be deciding if your local coding style will have 2 or 4 space
+indentation levels.  Either way, you learn about what other people
+like in a language, how deeply they feel so, and perhaps even a little
+about why they feel so.<p>
+
+<li> Have the good sense to get off the language standardization effort as
+quickly as possible.
+</ul>
+
+With all that in mind, its questionable how far you can get just by
+book learning.  Before my first child was born, I read all the <i>How
+To</i> books, and still felt like a clueless novice.  30 Months later,
+when my second child was due, did I go back to the books for a
+refresher? No.  Instead, I relied on my personal experience, which
+turned out to be far more useful  and reassuring
+to me than the thousands of pages written
+by experts.
+
+<p>Fred Brooks, in his essay <I><a href="http://en.wikipedia.org/wiki/No_Silver_Bullet">No Silver Bullet</a></I> 
+identified a three-part plan for finding great
+software designers:
+
+<ol>
+   <li>Systematically identify top designers as early as possible.<p> 
+   <li>Assign a career mentor to be responsible for the development of the prospect and carefully keep a career file.<p>
+   <li>Provide opportunities for growing designers to interact and stimulate each other.<p>
+</ol>
+
+This assumes that some people already have the qualities necessary for
+being a great designer; the job is to properly coax them along.  <a
+href="http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html">Alan
+Perlis</a> put it more succinctly: "Everyone can be taught to sculpt:
+Michelangelo would have had to be taught how not to. So it is with the
+great programmers".
+
+<p>
+So go ahead and buy that Java book; you'll probably get some use out of it.
+But you won't change your life, or your real overall expertise as a
+programmer in 24 hours, days, or even months.
+<p>
+
+<hr>
+<h2>References</h2>
+
+<p>
+Bloom, Benjamin (ed.) <i><a href="http://www.amazon.com/exec/obidos/ASIN/034531509X">Developing Talent in Young People</a></i>, Ballantine, 1985.
+
+<p>
+Brooks, Fred, <i><a href="http://citeseer.nj.nec.com/context/7718/0">No Silver Bullets</a></i>, IEEE Computer, vol. 20, no. 4, 1987, p. 10-19.
+
+<p>
+<a name="bh">Bryan, W.L. &amp; Harter, N. "Studies on the telegraphic language:
+The acquisition of a hierarchy of habits. <i>Psychology Review</i>,
+1899, 8, 345-375</a>
+<p>
+Hayes, John R., <i><a href="http://www.amazon.com/exec/obidos/ASIN/0805803092">Complete Problem Solver</a></i> Lawrence Erlbaum, 1989.
+
+<p>
+<a name="cs">Chase, William G. &amp; Simon, Herbert A.  
+<a href="http://books.google.com/books?id=dYPSHAAACAAJ&dq=%22perception+in+chess%22+simon&ei=z4PyR5iIAZnmtQPbyLyuDQ">"Perception in Chess"</a>
+<i>Cognitive Psychology</i>, 1973, 4, 55-81.</a>
+<p>
+Lave, Jean, <i><a href="http://www.amazon.com/exec/obidos/ASIN/0521357349">Cognition in Practice: Mind, Mathematics, and Culture in Everyday
+Life</a></i>, Cambridge University Press, 1988.
+
+<hr>
+<a name="answers"><h2>Answers</h2></a>
+
+Approximate timing for various operations on a typical PC:<p>
+<table border=1 cellpadding=2 cellspacing=2>
+<tr><td>execute typical instruction<td align=right> 1/1,000,000,000 sec = 1 nanosec
+<tr><td>fetch from L1 cache memory<td align=right> 0.5 nanosec
+<tr><td>branch misprediction<td align=right> 5 nanosec
+<tr><td>fetch from L2 cache memory<td align=right> 7 nanosec
+<tr><td>Mutex lock/unlock<td align=right> 25 nanosec
+<tr><td>fetch from main memory<td align=right> 100 nanosec 
+<tr><td>send 2K bytes over 1Gbps network<td align=right> 20,000 nanosec
+<tr><td>read 1MB sequentially from memory<td align=right> 250,000 nanosec
+<tr><td>fetch from new disk location (seek)<td align=right> 8,000,000 nanosec
+<tr><td>read 1MB sequentially from disk<td align=right> 20,000,000 nanosec
+<tr><td>send packet US to Europe and back<td align=right> 150 milliseconds = 150,000,000 nanosec
+</table>
+ 
+
+<hr>
+<h2>Appendix: Language Choice</h2>
+
+Several people have asked what programming language they should learn first.
+There is no one answer, but consider these points:
+
+<p>
+<ul>
+
+<li><i>Use your friends</i>. When asked "what operating system should
+I use, Windows, Unix, or Mac?", my answer is usually: "use whatever
+your friends use."  The advantage you get from learning from your
+friends will offset any intrinsic difference between OS, or
+between programming languages.  Also consider your future friends:
+the community of programmers that you will be a part of if you
+continue.  Does your chosen language have a large growing community
+or a small dying one?  Are there books, web sites, and online forums
+to get answers from?  Do you like the people in those forums?
+
+<li><i>Keep it simple</i>.  Programming languages such as C++
+and Java are designed for professional development by large teams of
+experienced programmers who are concerned about the run-time efficiency of
+their code.
+As a result, these languages have complicated parts designed for these circumstances.
+You're concerned with learning to program.  You don't need that complication.
+You want a language that was designed to be easy to learn and remember by a
+single new programmer.
+
+<li><i>Play.</i> Which way would you rather learn to play the piano: the
+normal, interactive way, in which you hear each note as soon as you hit a key,
+or "batch" mode, in which you only hear the notes after you finish a whole song?
+Clearly, interactive mode makes learning easier for the piano, and also for 
+programming. Insist on a language with an interactive mode and use it.
+
+</ul>
+
+Given these criteria, my recommendations for a first programming
+language would be <b><a href="http://python.org">Python</a></b> or
+<b><a href="http://www.schemers.org">Scheme</a></b>.  But your
+circumstances may vary, and there are other good choices. If your
+age is a single-digit, you might prefer
+<a href="http://alice.org">Alice</a> or <a href="http://www.squeak.org/">Squeak</a> (older learners might also enjoy these). The important
+thing is that you choose and get started.
+
+<hr>
+
+<h2>Appendix: Books and Other Resources</h2>
+
+
+Several people have asked what books and web pages they should learn
+from.  I repeat that "book learning alone won't be enough" but I can
+recommend the following:
+
+<p>
+<ul>
+<li> <b>Scheme:</b> <a
+href="http://www.amazon.com/gp/product/0262011530">Structure and
+Interpretation of Computer Programs (Abelson &amp; Sussman)</a> is
+probably the best introduction to computer science, and it does
+teach programming as a way of understanding the computer science. 
+You can see <a href="http://www.swiss.ai.mit.edu/classes/6.001/abelson-sussman-lectures/">online videos of lectures</a> on this book, as well as the <a href="http://mitpress.mit.edu/sicp/full-text/book/book.html">complete text online</a>. The book is
+challenging and will weed out some people who perhaps could be
+successful with another approach.  
+
+<li> <b>Scheme:</b>
+<a href="http://www.amazon.com/gp/product/0262062186">How to
+Design Programs (Felleisen <i>et al.</i>)</a> is one of the best books
+on how to actually design programs in an elegant and functional way.
+
+<li> <b>Python:</b> 
+<a href="http://www.amazon.com/gp/product/1887902996">Python Programming:
+An Intro to CS (Zelle)</a> is a good introduction using Python.  
+
+<li> <b>Python:</b> Several
+online <a href="http://wiki.python.org/moin/BeginnersGuide">tutorials</a>
+ are available at <a href="http://python.org">Python.org</a>.
+
+<li> <b>Oz:</b> <a href="http://www.amazon.com/gp/product/0262220695">Concepts,
+Techniques, and Models of Computer Programming (Van Roy &amp; Haridi)</a>
+is seen by some as the modern-day successor to Abelson &amp; Sussman.
+It is a tour through the big ideas of programming, covering a wider
+range than Abelson &amp; Sussman while being perhaps easier to read and
+follow.  It uses a language, Oz, that is not widely known but serves as
+a basis for learning other languages.
+
+<
+</ul>
+
+<p>
+
+
+<hr>
+<h2>Notes</h2>
+T. Capey points out that the <a
+  href="http://www.amazon.com/exec/obidos/ASIN/0805803092">Complete
+  Problem Solver</a> page on Amazon now has the "Teach Yourself
+  Bengali in 21 days" and "Teach Yourself Grammar and Style" books under the
+  "Customers who shopped for this item also shopped for these items"
+  section.  I guess that a large portion of the people who look at that
+  book are coming from this page.
+Thanks to Ross Cohen for help with Hippocrates.
+</ol>
+
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td valign=top bgcolor="#eeeeee">
+<h2>Translations</h2>
+Thanks to the
+following authors,
+translations of 
+this page are
+available in:
+
+<hr>
+<a href="http://www.myahya.org/writing/21-days">Arabic<br>(Mohamed A. Yahya)
+<br><img width=150 height=56 src="150px-Arabic_Text.png">
+
+<hr>
+<a href="http://www.math.bas.bg/bantchev/misc/teach-10-years.html">Bulgarian<br>(Boyko Bantchev)<br><img src="200px-Flag_of_Bulgaria.svg.png" height=60 width=100>
+
+<hr>
+<a href="http://www.javaresearch.org/article/showarticle.jsp?column=451&thread=12568">Chinese <br>(Xiaogang Guo)
+<br><img width=82 height=54  src="ch-flag.gif"></a>
+
+
+<hr>
+<a href="http://tvrtko.bedekovic.net/home/articles/programming/21-days.html">Croatian
+<br>(Tvrtko Bedekovic)
+<br><img src="hr-flag.gif" height=55 width=108></a>
+
+
+<hr><a href="http://www.vizmatic.com/apprenez-a-programmer-en-dix-ans/lang/fr">French <br>(Etienne Beauchesne)
+<br><img width=81 height=54  src="fr-flag.gif">
+</a>
+
+<hr>
+<a href="http://purl.net/stefan_ram/html/21-tage">German <br>(Stefan Ram)
+<br><img width=89 height=54  src="gm-flag.gif"></a>
+
+<hr>
+<a href="http://www.reviewsnest.com/charities/programmingin10years.htm">Hebrew 
+<br>(Eric McCain)
+<br><img width=150 height=56 src="heb-150.png"></a>
+
+<hr>
+<a href="http://vikashtiwari.blogspot.com/2008/04/teach-yourself-programming-in-10-years.html">Hindi<br>
+(Vikash Tiwari)
+<br><img src="in-flag.gif"></a>
+
+<hr>
+<a href="http://mestyanm.extra.hu/doc/21_nap.html">Hungarian<br>
+(Marton Mestyan)
+<br><img src="hu-flag.gif" width=81 height=54></a>
+
+<hr>
+<a href="http://djitz.com/djitzlosophy/belajar-programming-sendiri-dalam-sepuluh-tahun/">Indonesian<br>
+(Tridjito Santoso)
+<br><img src="id-flag.png" width=81 height=54></a>
+
+<hr>
+<a href="http://www.culturahacker.it/documenti/teach.html">Italian<br>
+(Fabio Z. Tessitore)
+<br><img width=81 height=54 src="it-flag.gif"></a>
+
+<hr>
+<a href="http://www.yamdas.org/column/technique/21-daysj.html">Japanese <br>(yomoyomo)
+<br><img width=81 height=54  src="ja-flag.gif"></a>
+
+<hr>
+<a href="http://www.tavon.org/site/work/21-days">Korean 
+(John Hwang)
+<br><img width=81 height=54 src="ks-flag.gif"></a>
+
+<hr>
+<a href="http://barnamenevis.org/forum/showthread.php?t=150950">Persian<br>(Mehdi Asgari)
+<br><img width=87 height=54 src="ir-flag.gif"></a>
+<hr>
+<a href="http://jnowak.students.wmid.amu.edu.pl/norvig.html">Polish<br>(Kuba Nowak)
+<br><img width=87 height=54 src="pl-flag.gif"></a>
+
+<hr>
+<a href="http://pihisall.wordpress.com/2007/03/15/aprenda-a-programar-em-dez-anos/">Portugese<br>(Augusto Radtke)
+<br><img width=74 height=54 src="br-flag.gif"></a>
+
+<hr>
+<a href="http://norvig.com/romanian21-days.html">Romanian<br>(&#350;tefan Laz&#259;r)
+<br><img width=80 height=54 src="ro-flag.gif"></a>
+
+<hr>
+<a href="http://www.williamspublishing.com/21-days.html">Russian<br>(Konstantin Ptitsyn)
+<br><img width=81 height=54 src="rs-flag.gif"></a>
+<hr>
+<a href="http://www.inverudio.com/21-days.htm">Serbian<br>(Lazar Kovacevic)
+<br><img width=108 height=54 src="rb-flag.gif"></a>
+
+<hr>
+<a href="http://loro.sf.net/notes/21-dias.html">Spanish <br>(Carlos Rueda)
+<br><img width=81 height=54  src="sp-flag.gif"></a>
+
+<hr>
+<a href="http://www.efton.sk/sk/learn_programming_in_10_years.html">Slovak<br>
+(Jan Waclawek)
+<br><img width=81 height=54 src="lo-lgflag.gif"></a>
+
+<hr>
+<a href="http://ileriseviye.org/arasayfa.php?inode=programmingtenyears.html">Turkish <br>(&Ccedil;a&#287;&#305;l Ulu&#351;ahin)
+<br><img width=81 height=54  src="tu-flag.gif">
+</a>
+
+<hr>
+<script src="http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/translatemypage.xml&up_source_language=en&w=160&h=60&title=&border=&output=js"></script>
+</table>
+<p>
+<hr>
+<A HREF="index.html"><I>Peter Norvig</I> (Copyright 2001)</A>
+
+
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=favicon.ico
+Content-Type: image/x-icon; name=favicon.ico
+Content-Location: http://www.norvig.com/favicon.ico
+Content-Transfer-Encoding: Base64
+
+AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAgAAAAACAAACAgAAAAACAAIAAgAAAgIAAwMDAAICA
+gAD/AAAAAP8AAP//AAAAAP8A/wD/AAD//wD///8Amf/5mZn//5mZ//mZmf//mZn/
++Zmf//+Zmf/5mZ///5mZ//mZ/5//mZn/+Zn/n/+Zmf/5mf+f/5mZ//mf+Z//mZn/
++Z/5n/+Zmf/5n/mf/5mZ//n/mZ//mZn/+f+Zn/+Zmf//+Zmf/5mZ///5mZ//mZn/
+/5mZn/+Zmf//mZmf/5kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=150px-Arabic_Text.png
+Content-Type: image/png; name=150px-Arabic_Text.png
+Content-Location: http://www.norvig.com/150px-Arabic_Text.png
+Content-Transfer-Encoding: Base64
+
+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
+YII=
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=200px-Flag_of_Bulgaria.svg.png
+Content-Type: image/png; name=200px-Flag_of_Bulgaria.svg.png
+Content-Location: http://www.norvig.com/200px-Flag_of_Bulgaria.svg.png
+Content-Transfer-Encoding: Base64
+
+iVBORw0KGgoAAAANSUhEUgAAAMgAAAB4CAYAAAC3kr3rAAAABmJLR0QA/wD/AP+g
+vaeTAAAAB3RJTUUH2gcBCxIG6C8UmwAAAV9JREFUeJzt3TERgEAQBEEeCYhAHnKQ
+hp3HAEwKQbeCS6Y2vDHnnAvwaP36APgzgUAQCASBQBAIBIFAEAgEgUAQCASBQBAI
+BIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFA
+EAgEgUAQCASBQBAIBIFAEAgEgUAQCISxnIc/6fDCgkAQCASBQBAIBIFAEAgEgUAQ
+CASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASB
+QBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBjXvvmTDi8sCASBQBAIBIFA
+EAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgE
+gUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIhBu1HAj6TkTq
+PAAAAABJRU5ErkJggg==
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=ch-flag.gif
+Content-Type: image/gif; name=ch-flag.gif
+Content-Location: http://www.norvig.com/ch-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUgA2AMQAAPf0CezGDsUeI8EPJcgtId6JFtZqGcw9H89MHfPkCuGYFNNb
+G+/VDOWnEui3ENp6GJ5AU74AJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABSADYAAAX/IBSNZGmeaKqubDtCoivP
+dF3CNkvkPIv3pcNDcQAaTb9VQRYABBbHaDIlALgOjAQiKo2pDIAdaxAxcLuspvnM
+Xk1PVYCiTUe9TWAAo84nTQsAgYKDgwFifUdvCAmEjQpkKwcDBAKIPl4kAk2NAAlQ
+LQcJDJCWKXcjgISGLgMKgQWkpUiYJXGDay0DBwpbsqa0JHmFNASxvjfAI5sBCJuV
+x0ancUsRA2rQ0ckGWiYKAdhApwWHJQXPY+Anp0cN6bNtCwEJDuTg60DX7i/JRg0H
+1Pru6eMicGAifgbRGDmXEBmQBQjaNXzXg0CgAAwbFmSBgAGAjBoRutgBcOI+k202
+O6KkoXKljJYuW8CM6UYkzZc2b8rMqbNmzx4zfzoUaiMo0QhGiSYVuvRn055PdUa9
+OZVm1ZhXXWZdCSEEADs=
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=hr-flag.gif
+Content-Type: image/gif; name=hr-flag.gif
+Content-Location: http://www.norvig.com/hr-flag.gif
+Content-Transfer-Encoding: Base64
+
+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
+sMcu++y012777bjnrvvuALgQEAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=fr-flag.gif
+Content-Type: image/gif; name=fr-flag.gif
+Content-Location: http://www.norvig.com/fr-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2ALMAAGyDus5AXc7V6O6/yb+/v8Ofp9twhp6luJGiy76Pmaqwvv//
+/ztao74AJwAAAAAAACH5BAAAAAAALAAAAABRADYAAAT/EIFJq71Wkc27/10RjGRp
+nqYBMGzrvvArLHRt37g9NHzv/8BfYBUrGhmznHK5CzqfjeFxKltacU2otielepPX
+cHar7Xqn4LB1TH6az8a0WsluB9/wmHyOtZeJeUV7fDp+UHiBLoOENHWGXICJVYw5
+jo9RkZIti4yWj4ianISehqCSonykfqaJqHOqdqyBrmqwbbJ5tGKXd5maSJSVvEC4
+cLpXtmTFZ8drw0K+ocF9z5C/k9M1yVvLX9mF1TzdVM1M4eLRp9/a55jXiuuN7eNo
+8Qvbf++b9viH6a385v2bFfAcvSPl6AjUxyKhMIMDcxUMdzDOxGoVBV18llHPxmEd
+WWE4pEYxorGPvEJi+9bPjUlmKC+phBevpZOZ+2ouZDjyhs1eDIHphBi0J7iSRWN+
+eultKFKeSksxJRd11dR6TjFeRVg11laLWTl+1RgW5NgYB0CoXUsgwbwIADs=
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=gm-flag.gif
+Content-Type: image/gif; name=gm-flag.gif
+Content-Location: http://www.norvig.com/gm-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhWQA2ALMAAI4AHeKfVkBAQM5AXfPfjOm3gKpAVr4AJ+/UZgAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABZADYAAAT/UKRJq7046827FpInjmTJ
+gWaqrl/IvjCJxnSdzXZu43r/8r6gCSgseojG5M2lbGKQTic0qpxSjdarMKv1cbu6
+L3hnAJjP6LR6zW673/C2YXCo2+/4vH7P7/v/fAN0gISFhod+goiLjI2Bg46RkoaK
+k5aXe5WYm5ianJ+RnqCjiKKkp4CmqKuZkKyveqqwsLKzrLW2qLi5pLu8oL6/nAMF
+AcbHyMnKy8zNzs/QzQUECNXW19jZ2tvc3d7f3ATU4OTl5ufe4ujr7O3h4+7x8ubq
+8/b32/X4+/j6/P/x/AEciE4gwYPgDCJcmA8ew4faFEKEKHEiw4oWEWLMSHAjR4Ae
+BT/yIxABADs=
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=heb-150.png
+Content-Type: image/png; name=heb-150.png
+Content-Location: http://www.norvig.com/heb-150.png
+Content-Transfer-Encoding: Base64
+
+iVBORw0KGgoAAAANSUhEUgAAAJYAAAA4CAIAAACQdZYrAAAAAXNSR0IArs4c6QAA
+AARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAA
+OpgAABdwnLpRPAAAAAlwSFlzAAASdAAAEnQB3mYfeAAABG1JREFUeF7tWr2RcjEM
+vK9A+qAISqACGiAnJyYlJSQkowM+cZrb08g/GD/bOg96EQO2LO9aK8mPf4/H48uf
+qREgCv2ZGoGvqb13558i6ijMjoBTODuDHoXTM+gUOoXzIzD9DjwXOoXTIzD9BjwK
+ncLpEZh+Ax6FIyg8Ho90C7vf73ss5hT2QPXX5vV6xRX65XLpsZhT2APVp837/b5e
+r5m/TvHHrk9PIWvUZrPpRUWVXfaKHwrEKhulk+amkJhjmHa7XemOO4w7HA7kA8Uc
+RR6Zh1f0fYfVtMk/RCGd1vP5TCjQs91ucYoBjfKdgeOnU5opJ0DmPHaJ9lI+fcnI
+P0EhpQre9mq1wmdiiIjJBBkyDc1KQUA4gmb+QBK3BK/MXHhOq9xut06rhGbtKaSY
+UygTJaxIz1z9Q61ynTDCrKheqbCg04BvesSHPCtj9BOA2FMo9ZBYkfuXNCgK5ZEH
+3xiTqiaYdVLplyFCNim/yrOVIUZtIaMKL9etGGBPIW0YSKn4OJ1O+EntDbPCWhTs
+hqV8ylrqfNAqnGUzIiyXQyyOzM3GFEr9CfMH0FE8IUeGVQMMhmqZiWlQKMdIf1J6
+Dg85siHvXRtBdeCMKYRYRfecao2lisr9IK1Gsx3kLtVE4mTQutJsint5/n4z0zfb
+I/tUSwplIRMqjyxYFCXQQ1VeMklIWtyfKHDDwMUAFmfFH/0KPZdJLuVeoVZX5LzU
+FEsKUXSEqJG7skaQ3mdmcdQybYw7ghuzUvHBy0UrHbTqUirQuSrnP4tC6GS02Iuq
+KM5+lHWGj8awPgNxGe6pjo0CPSq/UkVxVSa/lLPkQg3jLG/KLAplSRLCKjGSYshn
+P1UsyF5CaiwihkLzXWQxVwYokrE6SdjUR+RCFDLR3WYag3c5QCaruEeV50yepJR+
+QPxHdvdmUYicEUZGQznKCy+fBtl9qq4c3aeqm+C8qsIwPrxtePfklY+3oTDTs5Pr
+CMEK3YveAEQTJ4+URRPpAXEAtuTNrW7FfjiUVKHHGBmCz2uHcrYbjozWeGwfWbDk
+GizvEuQuVcLIjMv5laawsOfvHOC/dIBDcPDtmg2FsqMKBSeKTsXpQQxlXhogHwN3
+niVDM6oEqJvgWMlyFbsomWIQhQAojDNAs/BlTSGg4d2sPF6Z0vd59r8fIpimIAUu
+dLuEsHCMAYXQt/AfCQQ9bpbr9iOl+CWg0TYcoZl/s6jIHpz/JDijKWyY6qo5xkTo
+wcgCcrnburZqbjFvEBLX+09BhfvimOv3Kr/QjSXDhkYhGr6R72KWoDPF3KEU4rJq
+CmhmcbIlhSySqX+moJ1f3rDPAu4YP1tSmLlNRqdccVE5Boh5V2lJId9uqPtDeVOc
+ueiaF0FzzxtTSPtRf/wCo85fJ7LbUyib68zriE77+UCzXSj8QBwNt+wUGoLfZmmn
+sA2OhlacQkPw2yztFLbB0dCKU2gIfpulncI2OBpacQoNwW+ztFPYBkdDK06hIfht
+lnYK2+BoaMUpNAS/zdL/AZms7Pn1CSx/AAAAAElFTkSuQmCC
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=in-flag.gif
+Content-Type: image/gif; name=in-flag.gif
+Content-Location: http://www.norvig.com/in-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUwA4AMQAAD+he8Dg1PviywBDZH+hsQ9ObT9yikChfE99lG+Vp5+4xF+J
+nh9ady9mgd/n6+/z9b/Q2I+su8/b4a/EztDo3/zp2Pe+im+5nPWoY/////GLLwCC
+UAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABTADgAAAX/ICaOZGmeaKquLGlpcCzP
+dG3feK7L2O7/wGCtJywajzEicsnMKZvQqOYprR6p1iwQq+06veAdN0yGjcvhM9qr
+Xmvbbis8Lp3TofY7EyPo+/+AgYKDhIWGh38VGYuMjY6PkJGLDxMElhCSmZqbnJ2P
+DwsDBaOiDAqeqKmqjxKjCQkZBAoEBgUID6u5upKtDRAJBBIECA4JEQMIu8rLDQ2z
+CwQJCwgGEgsQBRHL26oKAwsKCQYMAwMMDQwT4gzc7Z0IDA8RDQXl9g0GDgoFmO7+
+kbbEGbBnr4ABBN4I/FvoCJmlgQTLQSNQQCHDiwMiUCIXcUACCRkqXrxowMCCCAg6
+zDKwlKDAqZELW0IwQIBBvXIGF7wa4ADmQgfIHtBEAM9Ag0u2fDIk8M2BAQUKFjyF
+Wqun0oWhEKh7YMnBggYDJly9yBRZhAXTCjAAOfZiMbDlnrad2xaA3bt48+rdy7ev
+37+A8V7YQLiw4cOIEytezLixY8MHHkueTLly4siWM2veXBgz58+gG3sOTbr0htGm
+U29Grbo1ZdauY4uWTfsx7Nq4Cd/OXXs3b9m+f7sOLlw18eKmjyMnrXw56AMBokuf
+Tr269evYs2vfPp1CCAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=hu-flag.gif
+Content-Type: image/gif; name=hu-flag.gif
+Content-Location: http://www.norvig.com/hu-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2AKIAAM4/XVq2dCOeRr4AJ////wAAAAAAAAAAACH5BAAAAAAALAAA
+AABRADYAAAOgOLrc/jDKSau9OOvNu/9gKI5kaZ5oqq5s675wLM90bd94ru874P/A
+oHBILBqPyB9hyWw6n9CodEqtWq/YrHbL7Xq/4LB4TC6bz+i0es1uu9/wuHxOr9vv
++Lx+z+/7yQGBgoOEhYaHiImKi4ICjo+QkZKTlJWWl5iZmpucnZ6foKGio6Slpqeo
+qaqrrK2ur7CxsrO0tba3uLm6u7y9vr+/CQA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=id-flag.png
+Content-Type: image/png; name=id-flag.png
+Content-Location: http://www.norvig.com/id-flag.png
+Content-Transfer-Encoding: Base64
+
+iVBORw0KGgoAAAANSUhEUgAAAJ4AAABpCAYAAADLEpraAAAABmJLR0QA/wD/AP+g
+vaeTAAAAB3RJTUUH2gQSByMfRg/ALAAAATlJREFUeJzt1bENg1AUBEFAboCIDuiM
+2J3S0nMX3uDPVHDBSre/5z0b/NlRD2BNwiMhPBLCIyE8EsIjITwSwiMhPBLCIyE8
+EsIjITwSwiMhPBLCIyE8EsIjITwSwiMhPBLCIyE8EsIjITwSwiMhPBLCIyE8EsIj
+ITwSwiMhPBLCIyE8EsIjITwSwiMhPBLCIyE8EsIjITwSwiMhPBLCIyE8EsIjITwS
+wiMhPBKf6/vUG1jQPjNTj2A9rpaE8EgIj4TwSAiPhPBICI+E8EgIj4TwSAiPhPBI
+CI+E8EgIj4TwSAiPhPBICI+E8EgIj4TwSAiPhPBICI+E8EgIj4TwSAiPhPBICI+E
+8EgIj4TwSAiPhPBICI+E8EgIj4TwSAiPhPBICI+E8EgIj4TwSAiPhPBICI+E8EgI
+j8QPKesHvjFxVagAAAAASUVORK5CYII=
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=it-flag.gif
+Content-Type: image/gif; name=it-flag.gif
+Content-Location: http://www.norvig.com/it-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2AKIAAO6/yb+/v76Pmf///yOeRr4AJwAAAAAAACH5BAAAAAAALAAA
+AABRADYAAAP3SLrc7iHKSSsVJevNe39guAxkaZ7oCXhsq4mwk840ubo4F+9K7au5
+YIa3+xkHNyGOGDv+ksoWE+b0QaOeqahau2J1WhCX5v2+wo/xrGwuoNNqFNv8lsWB
+7U+dccfnN3t8fSVzX4EjgzZ/YIeJiotnjY6FWIc9k5CRgY5ImUOWnJRRlgShnm6g
+mJ6kpqupiaJKrKqZs7CntoOxQrl9u0G9d785wXHDS6+6uMm+y5K3rs/K0Zu0kMVq
+xy7YY9pSzMLO1dC14Mbie63l0s3U6daL3FzeLPJV9Fnm2eh16tf63fi98RcP4DyB
+aAj+secEnx524dz1g/cnAQA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=ja-flag.gif
+Content-Type: image/gif; name=ja-flag.gif
+Content-Location: http://www.norvig.com/ja-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2AMQAAPrv8e6/ycIPNPLP1sovT95/k9ZfeNJPauKPoPbf5M4/XcYf
+Quqvu9pvhZ+fn6+vr+afrr+/v74AJ////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABRADYAAAX/4BONZGmeaKqubBuJUyzP
+dG3feK7v08j/wKBw5hsaj8gicsnUKZvQaC8irTaf1mwQq+06qd5JIoAomAOJcIwb
+HRgWkrg8LjAEvGxmQDHv9xcMWnlHAAd+h30HAFaDQwNwiJF0A1WNQQMCkpoSApRR
+lj+Ym5udn2BLAASjowKLV6dIDaurB1CgOgOzs3dMtzmGuqMKr0sJwbOeSbBDCMer
+Db3LQnzOmwTRS9Wr2EfG2pu8R742Ad/gS+M15eaS4UbpNOvsiO5D8DPy8371Qvcy
+APoQJXsnLUimgH24HQGGMM4wdAWBQGgoB4FCIwAONnSljEkBigaIodI4T0Cai0ea
+ZwUsYCuiEAP6HopkkoodAY4okdTUdlOKvxsAYDpTVMnlEQYkSVlkZJRQAUiSBBTA
+6bPpEgYNVPUhYCAQHqtRAgSg+lWN2Rs/z0JUy3YN2Lam4KpNK3fL27pr8YaJ4MCF
+37+AA5dwEAIAOw==
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=ks-flag.gif
+Content-Type: image/gif; name=ks-flag.gif
+Content-Location: http://www.norvig.com/ks-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2AOYAAO/v78/Pzw8PDy8vL5+fn19fX9/f36+vrz8/P09PT29vb39/
+fx8fH4+Pj/L0+Z0WRlNJi0dkqOafrt5/k/rv8cIPNM4/Xdrg7Z2s0WyDusovT1Nu
+rtZfePLP1s7V6GM9fEtOk/bf5KUQPrXB3MYfQoSXxWw4dFtDhOqvu+6/yeKPoHQy
+bObq86m21pUcTUNUm3wtZa0LNl94tLUFLtJPaniNv72WssWQqsGlv4QnXYwhVcHL
+4p08aJCiy7+/v74AJztaowAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABRADYAAAf/gD6Cg4SFhoeIiYqLjIIN
+QpCRkpOUlZaXmJmakD6bnp+goZOdngADBKKplgUIn6SbCEFBj6q1QgOyBZ6vmQWy
+QQQGtqIBAb6yqJq8lwu/BQECAwDDngcCDAAJv8uV3JQEzgACsq3UmeKyAwa4s8qZ
+Ab/q7AIBDQHmlgoE4LkGAsmZvEWCJgubNlkHwP3DJwlArCABmslaEMlHAkwChQBg
+IIveMWDw0jGMtLGjgY+o+OmyJNDUr3rOCAaRdimEhAkWclrgoKKDJpnS5gVQ8IsW
+JYEHgfELUqBkEHqWJGj4QbWqVRITQmA6UNSpAAAfD3Sr5G8i0HUvK6EgYbWt2wkU
+/y6BS3aWXblRlqA9GzcT7C+AkShwcEu4LQmfeSEFIMA1lzgE045eAuDyqbGilChM
+LcyZagUUmPj5aPBrgTCWmLLJWuws8+bOsFNcEnoMsORM+hoHuSvJAuzfPyogpgQU
+bEZOm9D1pTQBOHANl3y0drdJYWRJISo4B65C7nLqm4pVGrz9d4WtroZR0F7+hwgT
+EIAAAWHiQVUJ5o5vktB+xgr5AAJ4Qgw/0JDfMDSUN0N8ATb4ggg/HGgLD+V90OCF
+QEDwg2zD6KeJfc49gCGGMODXoS0sgAichSM2CMIE1HiIiQcwbNcihjfEaMsFGgLn
+wo0X2qCjLUCo2NkJQDaIw/+QtUTQY2c/JhmgB0yqUgMQJnQmwgtSBuhAlam0IB8E
+BLqVQ5cByiBhLQ4E+IEOD8S5AghoBjjCmrWUUGeSEXwJ5mQF2AYJC3sCiQEm+uyS
+HDveYFDoiBv4WYlEFIF3iQFoWVaJDI9eeIF3jlnajQAFlPWdJA5E0CmAd7L0C2QD
+QIYRJiEFsUCtA1RywQartppPOqrNNGslACjgFzJLrTSJAxkUGgGVvQhw0l/ijUUJ
+WhcJRZQsRk3SgqpdliApJdncI4QBpJklgABi3TaJbsZypI4QYVniAAa83ljCp5jE
+wi4k1jDllbWUoBRAApFVBtUlF2BQQwa8ZpBBDzuMu8qRXwMhLBTBlDwEESQONcUX
+NiNFIpGtpigQybZBtOsuuUJlqoBMyo7EEVO3yKKyRrgIWhGtfEmDEjgIlwxyrPT+
+dUBkLnNcSa2tsAORjLVQxrI9M502bGjh3Oyz0RLtJctFAW3CMgEBMEC1OQTAapKo
+lyTVtNFxd2Ru2YsKTPdP43z9ciYGVLq3JgbMvfXgiGMUCAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=ir-flag.gif
+Content-Type: image/gif; name=ir-flag.gif
+Content-Location: http://www.norvig.com/ir-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhYAA2AMQAAFq2dJHOosIPNMYfQjCkUXXCiz6qXUywaMovT+6/ydZfeN5/
+k+afrme8f/bf5NpvhdJPaqzaufrv8cjm0OPy5/LP1uqvu4PIluKPoM4/Xb4AJyOe
+Rv///wAAAAAAAAAAACH5BAAAAAAALAAAAABgADYAAAX/4CaOZGmeaKqubOu+cCzP
+dG3feK7vfO//wKBwSCwaj8ikcslsOp/QqHRKI1hPVoIpi7qWtFpsmMTdesln9HjU
+uAAAhrfhcAA03vLGpi2X0wEEeHB6ABcbcH5xgXgGDXEFfXB1gnWNj5F/gncEjhsF
+BwWfh4wNkAeeBZ6gDaeCc5+noYd1rKNwr3SokwW1eA0EoafAsAC8B4t2w3SBnwYB
+zwHOz2/QxdAb0NHVANUF19AF0gHUzwbe5eDi1uXn2s/h3dDi0REc9hz19hMT9xMU
+9wHu4evHT98/ewHtUcjHYd+9CAcHKmTo72FEhgv7XRTIUKDHjyBDihSYwF6FkShT
+/6pcybIlBwEDEAxwSbOmTZYSLDiosOBBBQcMJNwcSrQmgwELFnDQkIGDggUDThad
+ShVkAg0LBAhlyqFCBgUCHFQdW1Umg6ZL0WqwoEEB2bdDJWCFoBYtggUQZsLd6/Jq
+ggx17WFdoIGv4ZV+MwgQ3NTB4MKHI48UkFRDSa4Y1ipAILkzSAUQKnBlKmGA1gEM
+PKu+V1oCBKxMXy/4u7p21wQSMmjY3ZYDBqG2a1c4ujuDzuDBEyjP8EC5VOTBHQBH
+ntoe0HsOStpjIHY79uocst/jPv77PeXju3NQal07B/Te77EP7x4+B/D3BQDOgEA/
+YJn7CYBAgPv1V+AAAQ4ImN1//DE4AIILKqjbgfs9SOB+TP0HYQYWLrifYh+C+OGG
+EobIIGADZFgiYEydyKGKIV4oY4kSuugihg888KECA0BAF11fAfaABjnu2CNd/ikg
+JFND7sdjXiIqyRxgUlLZY5X8CUnljghAgKWOAujY4oIaIPhgTBwKkOGY/ZXJ4YMD
+CqAmiyC2aSacis0JIoJ2cmigYhr4JyCfcpr5p5yC8qbooow26uijkEYq6aSUVmrp
+pZhmqummnHbq6aeghirqqKSWauqpqKaq6qqsturqq7DGKuustNZq66245rppCAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=pl-flag.gif
+Content-Type: image/gif; name=pl-flag.gif
+Content-Location: http://www.norvig.com/pl-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhVwA2AKIAAN5/k7+/v8eAjr5fc9twhs5AXf///74AJyH5BAAAAAAALAAA
+AABXADYAAAPUGLbc/jDKSSsMyurNu8ReKI5XRp6oBqZs+6xuzMJyPdJ2zuF6T/G+
+4MskLDqARiEy6Vsydc6nLSqVUauuK3ZG3EK73ik4bB2Ts+YzV53Tsj3u924AqNvv
++Lx+z+/7/3oCB4OEhYaHiImKi4yNiQWOkZKTlIyQlZiZmoiXm56fkp2go6SGoqWo
+oKeprJmrrbChsbOUr7S3h7a4uwe6vLe+v7PBwrDExazHyKjKy6TNzqrRu9DTm9XW
+rtm02Nu13rHd4JHi440F6Onq6+zt7u/w8fLvBAkAOw==
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=br-flag.gif
+Content-Type: image/gif; name=br-flag.gif
+Content-Location: http://www.norvig.com/br-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhSgA2APcAAAAAAP///0ajUPffShWnvobT5wCewQGixQWjxwajxgejxQek
+xQikyAmkxQmkwwqkxA6mxhmqySiwywOgugeivAmjwAmjvgmjvQujvAylwgykvgyj
+vA6lwg+mwg+lwQ+lvhCmwRClvhKmwBOmvxepxSGrwieuxSqvxSuwxje0yzy3zzy2
+ykO4zOP09wahugiiuwujuw2kvA+lvBClvRGmvhGmvROmvRSnvxSnvhSnvRanvhao
+vRipvxqpvxqovBupwB2qwB6rwh6rwSOtwyWtwiatwyeuwymuwy2wxTKyxjWzxza0
+xzm1yDu1xj22yT63ykG4ykK4yke6zEe6yku8zUu7zU28zlO/z1bA0FnAz13C0mjG
+1XbL2B2puk+8yiGquGzHz4fR2JHV2yastSmstDOwtDCusTavrnXIyJPU07jj4j2x
+qo3Rzafc2UCyqZPTzZzW0MPn4ka0o0u0olK3nle4nFS2llu5msjn3GW7lGi8lMfl
+1XG+j3nAizmfUDugUDufUD2gUD+hUEChUH3BiUGiUEOiUEWjUEejUEikUEukUE2l
+UFCnUFKnT9Ho0Nns2FapT4fEglmqT1qqT1mpT6/XqlyrT16rT2GsT9bp0WauT4/F
+f2mvT5LHfm2wT87lxG6xT9zs1HKzT3WzTuTw23y1Tuz15Z3JeKDKd9zrzoW4Toi6
+Toq7TqXLdI27TY68To27TpS+Tq3NcOTu0prATZm/TZ7BTaLCTafETanFTbnQaq7G
+TbHHTcbXf/H137PITbzPYL/RZ9Ddjb3MTLzLTMjUYsbTZMHNTL/MTMbPTMTOTMPN
+TMvRTMjPTNDSTM3RTNXXXNXUS9TTS9HSS///7///+NrWS9nVS9vYWeDXS97XS+La
+Ve7dTOzcS+vbS+jaS+zdUOjbUvfgSfXfSvHdSvPeS/DeTf/iQ/zgQv/iRPzhRPfe
+RfvhR/zgSPrgSP/lSv/jSv7iSvzhSvvgSvngSfjfSfngSvjfSvbfSv3lW//hRf/h
+Rv3gR//mYf/pc////yH5BAEAAP8ALAAAAABKADYAAAj/AAUIHEiwoMGDCBMqXMiw
+ocOHECNKnEixosWLGDNq3MjxkCGOIB0O+igopMmDh/5AIsYME6CPJ08OCqTqGzx4
+5WINKhmzIyBKyOLJGzBgHrxnmPzA7HlRUKFX3uDdI0oVHjlaAgIxrWjIzyVl8IZS
+HWv0mSalWyMKMvSKHDyi99rt06dv3z53ROHhq5U1bUNDgDA9gzdvgLt06cJBM2as
+GDRz5/TdMyqN00u/CQMZouV2QL1z5VDVIbNjhIgbPs7oCTZ3ALxxtw5pxUywKydn
+hPHxS4fqzIIGIEbcuGGaQwIQdIqdo2c0Gii0tAMpooXvLb594PIsyECgu/fvIxbo
+/+h01/UAW4pmbzX0x1O0d4UH8AvnBgGO7/i/i0DQhx29Afa8E40nfyx1UiCJ4GLP
+W0S5U84cCeQnoXc3IBDJOVXZgwsi6oFUCCCiaAOPPWOdQwgCE6ZIgAgg6JIOVQta
+AwoghfjEyC72xDPWAPoAY0EFHwSpgQYvvACDDDZ4V8N93j3ghjh4VXVPLosAotFM
+pWQz4o4DqFMJF2y8AQccb7AhBhdWJMHDBRjMgEQPTHbXACoYjhXjKH/UWFFKjfAS
+FpcDrNMPNaSEksmhoXxSTQCmBBAHGl4EsQURNXz3wBzsTLWjULgs0iFEO5Vik6Zc
+oiNMAVlYEUUTTkRRxRZiqP/Rgim+fIJHGCuEsIF3InSBDT+A3gNPNnjq6dAhfkAy
+jFCAUpVOHga4sEEM1MawQZE0AMECF2o44ssjbUyhQQwE4NBBMC82K9QvVR5ryCqj
+NgvXPnSQoMQIEuJQQwwuiJBFGHvM4kgaKVBgQwOn1NnsgtqUotlChxySyztiyetZ
+O3JIoMUM3uGQZHc43MeDFRecALAve4AxwgEXWkyUPPDwkoiBBxliyTB/WlwPP3M4
+IEO5BHzgBBbk4gCEEEn+PAMFKIhBSiptRNCyxcJ2w4ohhzC0EytRUb3PHQ9090O5
+QhhhAw4xLCFFnN3JcEEWeMyiRi/oWCxPPMhQYuWxflj/kgxh8p7DxwL4SqFDuZX2
+gEQMOGwBRJw61DCBCW0E4M86zQrrDSuBDCKRIIO40hmg6cjiQAlb6KAvyEBEgYQO
+QBzu3QxMrLCECmnkgzmXMCMDCSBZT5SSJc0AvmM73JSRghHdGSE7DjKc0EOSTNYw
+AxBSIAGBHemQChc83agyiOdNGRLL6CUSwkClBJwgOwG0axGDDkKUS0QRUGAxhAbB
+6LMjzMOQBPA00hVNMMN4RGHHNsbAARz0YAk1YB8BePADGwjhCkSAwhOUoAQeHOAO
+3aOK5lgBupAEohC1KAeDiHKOVjQAXzNYwRV+Vq771OAEVLBBFYQggwyM4VdUMcoy
+/yYxQJN0BRPTMN490nGiEeCgbB/zzghKkAQZUAEIHGiRwuDBDc6RrydaoYV5DMOO
+PiwABDmQoMe6YwOOHSEDO5BFuoxyDCIGbz2AuE1u3KGPU3wBASLozgiIoAQJcuAA
+ayhG9zS3ip3QRiCBOMQtquOZc0BDD19IQAMyIAISeCADCniAGSJhjhfBrI5+uOMj
+u+KJa4zoOunYxibusAYyfMEMctBDKyDTDtd0Axade+RBAoGIW8xDR/I5RzrwEY5t
+gKMdiMELzJQhQFUKszbtcSWJiEKPdrTDHfWoCjca+cVrIuQPisCFUZp1SjuakyFd
+GYU1tiRCeHgDFo58p0PQuTiLYxLFKMqYRCr1CRH2jEJLXIRFCQkqkT8w4hfJsEQR
+GSqRQhTCEOWkqEQiptGOevSjIA2pSJkSEAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=ro-flag.gif
+Content-Type: image/gif; name=ro-flag.gif
+Content-Location: http://www.norvig.com/ro-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUAA2AMQAALrCO//+ACZJtPn7CM5IHvDVDbsAKWyDus5AXfn3R/v8RvTg
+Stp2VsxAX8vRbFx3x//+QPf0Cb4AJztaowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABQADYAAAX/4CGOZGmWjwMlbOu+MKss
+TIPceK7v+OT/wKAwKAAEIsikcslEDgoEg2RKrVqv1KF26ysem+DmM4otm7loojHM
+Vo6l5ng1TZ942/i3fC+pp+94bHp8cX5ogIFgg4RlhlyIiUyLjFeOW5CRblBwlJWW
+Q5iZTpudWJ+ga6JLk6VTp0Khoqytr2pfqkmzpbVAsZm6nbw/vpHAlMJdqbijZK1z
+yMSJxozIdsrL04TV0YHZfNvXuN574LfYpM5Z0OGq43Lly7no6X3r5uLz6fDxEe6F
+9vz65XO2L56/MwD5HWyU0OBAWg3PNaNXUCInfRHxTcQojFueh7sytgMZTKQsksdM
+Wv5CSU1lMZbaXEqD+U1mN5rkbH7cSFBnm4WmfArC+U5oGKCeOrI7yROi0nsjm4Z8
+GhCplYoaL/akqpDoP64OpZYEa5GeK6OKvCIkm9VsPbZRtTrl5fGn2jIhAAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=rs-flag.gif
+Content-Type: image/gif; name=rs-flag.gif
+Content-Location: http://www.norvig.com/rs-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2AKIAAM5AXZ0WRmyDur+/v1xzqr4AJ////ztaoyH5BAAAAAAALAAA
+AABRADYAAAPFaLrc/jDKSdWoOOvdLv9gaHhiaUbkqarp6obtK2vxbE/1rTv57o+/
+YEdIBBaDveMrqVwxm6cntDQQWK/YrHbL7Xq/YCvhQC6bz+i0es1uu9/wuHxOr9vv
++Lx+z+/7/4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl30BmpucnZ6foKGio6SbBaeo
+qaqrrK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1te6
+ANrb3N3e3+Dh4uPk2wkAOw==
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=rb-flag.gif
+Content-Type: image/gif; name=rb-flag.gif
+Content-Location: http://www.norvig.com/rb-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhbAA2APcAAP///+4cIwBKjfYQFewSFu4VGvYbIPUbIPIbIO0cIPYfJOwf
+IukjJOskKONGSehwcep+f+WPkPvFxue1tu4GDukOFd4QFfASGfETHe8TGvAUG/AV
+HOsVGu4WHfAYIO8YIPIZIvEaIfAaI+sZIO8bIe8bI+8cI+kbIvEdIuscI/AeJe8f
+Je0hKOcgKO8kLO8kKukmLuopLvIrMuIoLugsNOcwNuwzO/E4Pd42OuI4PdQ1OvE+
+RPJESvJLUfJNU9xITeRMUvJWXNJNUuJTWOpeY+VlafV3e9Rna9pvc9xzdvaIjNl9
+gOOHitqEiNuNkNyRlOeandqZm+KgotamqP3c3f7k5e0GE/IPHewQHOsRHPATIt0X
+JPIeKO4eKdspMuY9RfeLkfeUmcR7f8mBhfakqbmMj8ifodS/wOPT1MsjMswkM+0r
+Ou/Iy9G1t8ghMsolNcknOMMmOMguPcczRP/298EjNr4oO8MuQMRIV7k2SrpKW7NS
+ZNnX29fX2dXV1vX2+ABFigBEiAZLjgdKjAdJivj6/NHT1QBKkABLjgBJjQFKjQFJ
+iwVPkQVJigdNjwtPjyNkniVkniVjnAFQkyVrpR1ppdXb3s7R0tLX2MHR09bg4dzu
+7tbl5dnl5ev399/p6fj//9/m5uLo6Pz//+bp6czPz+Xn5+Lj49Hr6uDu7enx8MDE
+wJKWYfz8+87Ln5uVXsa6kPnOQdu3SuS7SbibTKaQT7ydV8yfRcGaTMmhUcOcUdGr
+X8a4m9mlQriRSOK2aPmpIaODUMikddWWWciES8xzNuR9PLtvQfqYWbyciL+ij8Wp
+l9CNaNtnKcBaKMS4s8xjO9xwRvNXIsa9urxcQsSvqvI2GNtCKspGMtpNN+VDLt9q
+W8Wblts1KNA9LsWopew0KvHRz+ogG/EtJNcsJN8sJuIwKe/a2eIgHuAmI+FQUN1Z
+WdheXsheXeeoqMaRkP7p6dfHx//y8vDk5MvCwv/5+f/8/P/+/uzr6+jn5+bl5dva
+2vv7++Dg4NjY2P///yH5BAEAAP8ALAAAAABsADYAAAj/AFOYCECwoMGDCBMqXMiw
+ocOHEAMIjEixosWLGCUOzMixo8eIEz+KHDkyJMmEJU6qXGhyJUERJ0S4nEmw5UoR
+5aCVk0lzpU2SHzRgKFesHIYNH3qe/PmRxAYaQL5k85XNAZAYHVIq/ci0o4YPQJ7x
+4qYM1rKz1b4E3eqxa8YO7L5NYyauwjZX6ziIY/bMzJANbDm6vbgBSLV2q5h1wHB3
+2xUOzKa1S9shMMbBFi8ceYeOF69uV7Tlunblmqtl6bit02D5IuaKHnDAggbt1TFq
+xGoRo3aMFW1YMzy0tviaYokE2GjlskXLl65duHzRspULl7cEG4eDzC6yhJZuvm4Z
+/+s1i5WsXsZu+eqmhbv2hwgMHJhPv779+/dJEAyxJRh6Y8YcA2AzvQSzRQgEkYDf
+ggw26OCDB7iRxoQUVmjhhReqAcMLLrzQQDbaNNBAF1x00cUL4GjDAocvwKAGhjDG
+KOOMNBJi44045qijjo08MocCH4ywghZr2DCCCiwEcMIXNmjBwggfKDDHI43saOWV
+WGaZpSKIdOnll2CGCaYAk9wxABBsDNGMMHxM0MIGM0zQhzDNDMEGEAPIwYiYfPbp
+55+ALiLAoIQWauihhiZSJgrnjOLANc64AgASFCQBgCvOXOPAKOeEoCeioIYq6qik
+CkrqqYrGcUMo+NBwBTnZzP9zxhbxzHMNOVfUkA8pO8DByKnABhusqcKCqmgdD3Si
+ChAZgJCFGaUcUYoZWICgwQ+idPKAG78W6+23gxILLqGK2uFOKJ5AQYEHJ7Qhyhmk
+tHGCB1Y0ocon7sTR7bj8ltovuYfkEQ4+/eBTBAfrcKJJKZpwsk4W7OzTjyrhzCHI
+vxiDKi6/iSCixzmm+GGKJ1Eg0cQT/UTRBBJicBKyKefgQUjGNBe68biJJLJHPKbo
+o88nUdRQww107CD0GJ3ko48o8chc89M3g5uIInvQc4k//aTyxBfuBCEPERM40MQn
+/fhzCT16zPw0zVF/m4gAe0zjRz/7dPJEDuzsQEcPReD/0AQnEhsyjdNrZ9y2tx3v
+8Uwp+ODjyQQ++GBEPUb04MMEnuSDTynPEF74v4cXm8ghepxhSD6moCEFFVRUcU8V
+rEuBBimnYHIGHoN8jnHowo6exwSifNLEDzrYEAMP9fQQgw06CNFEKKRMIIcjuoOe
+cbnubDKFF9NM4QAUPsgThBQOREGPDlNs4s4b+1YPLu/BHhsBKkd4cck+SDARfhAR
+LNGPITo4AioiwD738SsQgEigAhfIwAY28BB1gEAmvJCOZKBhDBa4QT12YIF3oEEZ
+6fBCJiDgBkE48IQoTKEKVyiJSLjwhTCMoQxlWIk8qKMdDCCGN1pwAhw4YR5R0MEI
+/1qADWIwoB3qmAMlIDHDJjrxiVCE4h8KQcUqWvGKWMQiKMhgAWL8YhjmwAAHorAJ
+UqiiDB3AgjmG8YtjWCAMoMiiHOdIxzrasRUAyKMe98jHPvoRHg7IRTTAgYxxtKAN
+mPDDKs7QgnEgAxzG0IUOquDHSlrykpjMJAD4oclO5lEJ3dAGMGIBDHZYghT+6IMl
+tjFKYGijG2DwpCxniUlO0vKSRSOANIBhjSRowg+n8IcmHmANYEiDAEG4xy2XuUxb
+MtOPEnBBAqTRgDN0gnak2EQbFnDMHcDjmeD0pDPDucdoWsEEQigDPVSBBjMI4QNW
+6ME3yUlPS46zngCgQhAyQGCBCsygCTOoAAVWoAQ64POgfLwnPu0hASPwQAYskIEP
+wEAFhFpUjwpFqD3kAQ95KPOiIM0oSEcaUpKa1KQiPalKw5nSlbr0li19qUw7GdOZ
+2tSeN82pLGuq057ytKc5DQgAOw==
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=sp-flag.gif
+Content-Type: image/gif; name=sp-flag.gif
+Content-Location: http://www.norvig.com/sp-flag.gif
+Content-Transfer-Encoding: Base64
+
+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
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=lo-lgflag.gif
+Content-Type: image/gif; name=lo-lgflag.gif
+Content-Location: http://www.norvig.com/lo-lgflag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhyQEuAdU9AD8/P50WRmyDugAAAM4/XR0tUSxDel8AE44AHd5/k+6/yc7V
+6J2s0dZfePL0+UdkqF94tPLP1uafrsIPNPrv8cYfQrXB3Pbf5Nrg7covT1Nurubq
+82w4dOqvu3iNv+KPoKm21oSXxdJPaowhVdpvhaUQPkNUm8HL4pCiy60LNrUFLlNJ
+i0tOk1tDhIQnXXQybJUcTZVBcHUQNCEyWxYhPblggbk7X85lf2M9fE4LIztao///
+/74AJ////wAAAAAAACH5BAEAAD0ALAAAAADJAS4BAAb/wN4AQCwaj8ikcslsOp/Q
+qHRKrVqv2Kx2y+16v9NBbzzYmc/otHrNbrvf8Lh8Tq/b7/i8fs/v+/+AgXViZIKG
+h4iJiouMjY6PkH6EQpGVlpeYmZqbnI2TZZ2hoqOkpaanc5+oq6ytrq+wdqqxtLW2
+t7iPs7m8vb6/wGe7wcTFxsebw8jLzM3Oe8rP0tPU0tHV2Nnaudfb3t/gpN3h5OXm
+nmOU5+vs7YHj7vHy82nw9Pf45vb5/P3Y+/4CCkQGcKDBg7wKIlzI0JXChhAjinoo
+saLFShQvatyIKCPHjyChpQMVsqRJQR5PqlyJJiXLlyZdwpzJUSbNmxVt4tzJUCfP
+/58DfQIdyk8o0aPzjCJdyk4p06fknEKduk0q1avUrGLd2kwr16/GvIId+0ss2bO4
+zKJdG0st27es3MKdW0ou3bud7OLdi0kv37+Q/AIevEgw4cOGDCNeLGkk48ewFEOe
+PMgx5ct1LWPenFcz5899PYMeHVg06dOFTaNenVg169eNC8GeDUgy7ce2by/Orfsw
+796DfwP/K3z43uLG7yJPPnc587fOn6+NLv0s9epjr2P/qn371u7er4IPP3U8+afm
+zy9NP4oAj/fw48ufT7++/fv48+vfz58HbfaiuNffgAQWaOCB9v3nWjwCIujggxBC
+qKBs+TQYIYINJKDhhhx2mP9AAxdKOBuAoVgYYoEJ0NHBiQ5OqE6FLB4oAh0JxHig
+iyThY6KN+01Ax4486odjP0AGid8Fc0xg5IBD8lPkkvV1IEcEUPbXJIxV6pdiHBJk
+ud+VOnqZHwFykCBmfmDe8+SZ78mxJptp0vPmmRHEwSZ+cc4zp5gSwEHlnQmOuKA7
+e3pJAhwfABoobCR2UmiWZL5Ro6L05SnPo1VG6saklMpnKYOdyqdpG5yG2qagFIZp
+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
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=tu-flag.gif
+Content-Type: image/gif; name=tu-flag.gif
+Content-Location: http://www.norvig.com/tu-flag.gif
+Content-Transfer-Encoding: Base64
+
+R0lGODlhUQA2AMQAAMIPNNZfePbf5N5/k/rv8eafru6/ycYfQtJPauqvu9pvhc4/
+XeKPoMovT/LP1moAFY4AHf///74AJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABRADYAAAX/ICSNZGmeaKqubDuKbizP
+dAnXeK7feu+zvJ9wKAkSjzkjcilTMp8rJ3RqklKv1us0q31yu8vvChBICCLoCCGh
+AIBPYhRgQEjb7QX3+5VbnO9oAgaDZwQBe0U4AYARAgMHJgcKAgV7cSSLgAN6KQoM
+b5cSC4AECy4NnFgzAH92DYgulwOACrCxM3V2BjmQVHEIgAg5A8JbMgV3Ajp0vQC9
+R3EGd5XDEQYKDgSvSHGafdJph2EywTUFuWnU4zGA4jQI52kCqUTddwPLdglM0Xf7
+1W0CFDDFTQaDOwSW/YPyq10OBPTWxUAXKKItODNm3fl0MQqNVuFkPFM1owGjWi0C
+Y7gjOSPTHQMjIyXg2CXUCJf+AjwDAC8CzZo5GoBklIZAMVA65lBklAeWzRMCQQpI
+EMAi0I4MsWbVyo9rV68FwUITO5bskKdmUaBNW4Xtj7VuRzyAQLeu3bt48+rdy7ev
+X7ohAAA7
+
+------------ymddam4j4cjqP6u8lq7B4m
+Content-Disposition: inline; filename=ifr.js
+Content-Type: text/html; charset=utf-8; name=ifr.js
+Content-Location: http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/translatemypage.xml&up_source_language=en&w=160&h=60&title=&border=&output=js
+Content-Transfer-Encoding: Quoted-Printable
+
+(function(){
+var css=3D'<style>table.gadget{background-position:0%;background:transpa=
+rent none;border-collapse:collapse;border:0;clear:none;float:none;font-f=
+amily:arial,sans-serif;font-style:normal;font-variant:normal;height:auto=
+;letter-spacing:normal;line-height:normal;margin:0;padding:0;text-indent=
+:0;text-transform:none;top:auto;vertical-align:middle;white-space:normal=
+;width:auto;word-spacing:normal;}table.gadget span.title a:hover,table.g=
+adget span.title a:visited,table.gadget span.title a:active,table.gadget=
+ span.title{font-size:12px;color:#0000cc}table.gadget span.powered a:hov=
+er,table.gadget span.powered a:visited,table.gadget span.powered a:activ=
+e,table.gadget span.powered{font-size:10px;color:#0000cc}</style>';
+var html=3D'\x3ctable class\x3d\x22gadget\x22 cellspacing\x3d0 cellpaddi=
+ng\x3d0 width\x3d160\x3e\x3ctr\x3e\x3c/tr\x3e\x3ctr\x3e\x3ctd colspan\x3=
+d\x222\x22\x3e\x3c/td\x3e\x3c/tr\x3e\x3ctr\x3e\x3ctd colspan\x3d2\x3e\x3=
+ciframe src\x3d\x22http://www.gmodules.com/gadgets/ifr?url\x3dhttp%3A%2F=
+%2Fwww.google.com%2Fig%2Fmodules%2Ftranslatemypage.xml\x26container\x3dd=
+efault\x26view\x3dhome\x26lang\x3dall\x26country\x3dALL\x26debug\x3d0\x2=
+6nocache\x3d0\x26v\x3dae883627bebd8495\x26source\x3d__LOCATION__\x26pare=
+nt\x3d__LOCATION__\x26libs\x3dcore%3Acore.io#up_source_language\x3den\x2=
+6st\x3d%25st%25\x22 width\x3d160 height\x3d60 style\x3d\x22display:block=
+;\x22 frameborder\x3d0 scrolling\x3d\x22no\x22\x3e\x3c/iframe\x3e\x3c/td=
+\x3e\x3c/tr\x3e\x3ctr\x3e\x3ctd style\x3d\x22text-align:left;vertical-al=
+ign:middle;height:28px;\x22\x3e\x3ca href\x3d\x22http://fusion.google.co=
+m/ig/add?synd\x3dopen\x26source\x3dggyp\x26moduleurl\x3dhttp://www.googl=
+e.com/ig/modules/translatemypage.xml\x22 target\x3d\x22_top\x22\x3e\x3ci=
+mg style\x3d\x22border:0;\x22 src\x3d\x22http://www.gmodules.com/ig/imag=
+es/plus_google.gif\x22\x3e\x3c/a\x3e\x3c/td\x3e\x3ctd style\x3d\x22text-=
+align:right;vertical-align:middle;height:28px;\x22\x3e\x3cspan class\x3d=
+\x22powered\x22\x3e\x3ca href\x3d\x22http://www.google.com/webmasters/ga=
+dgets.html\x22 target\x3d\x22_top\x22\x3eGadgets\x3c/a\x3e powered by Go=
+ogle\x3c/span\x3e\x3c/td\x3e\x3c/tr\x3e\x3c/table\x3e';
+html=3Dhtml.replace(/__LOCATION__/g, encodeURIComponent(location.href));=
+
+document.write(css+html);
+})();
+------------ymddam4j4cjqP6u8lq7B4m--

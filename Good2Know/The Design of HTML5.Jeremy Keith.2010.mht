@@ -1,0 +1,2780 @@
+Content-Type: multipart/related; start=<op.mhtml.1294462031373.7b2bcd20172ad52f@100.100.100.77>; boundary=----------rlp9s9DncCrFAafBU1ZEjp
+Content-Location: http://adactio.com/articles/1704/
+Subject: =?utf-8?Q?Adactio:=20Articles=E2=80=94The=20Design=20of=20HTML5?=
+MIME-Version: 1.0
+
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline; filename=default.htm
+Content-Type: text/html; charset=utf-8; name=default.htm
+Content-ID: <op.mhtml.1294462031373.7b2bcd20172ad52f@100.100.100.77>
+Content-Location: http://adactio.com/articles/1704/
+Content-Transfer-Encoding: Quoted-Printable
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+<meta charset=3D"utf-8" />
+<title>Adactio: Articles&mdash;The Design of HTML5</title>
+<meta name=3D"description" content=3D"The opening keynote from Fronteers=
+ 2010 in Amsterdam." />
+<meta name=3D"author" content=3D"Jeremy Keith" />
+<meta name=3D"copyright" content=3D"Jeremy Keith" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width; initial-scale=3D=
+1" />
+<meta name=3D"robots" content=3D"index,follow" />
+<link rel=3D"search" type=3D"application/opensearchdescription+xml" href=
+=3D"http://adactio.com/journal/opensearch.xml" title=3D"Adactio: Journal=
+" />
+<link rel=3D"search" type=3D"application/opensearchdescription+xml" href=
+=3D"http://adactio.com/links/opensearch.xml" title=3D"Adactio: Links" />=
+
+<link rel=3D"openid.server" href=3D"http://www.myopenid.com/server" />
+<link rel=3D"openid.delegate" href=3D"http://adactio.myopenid.com/" />
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Journal RS=
+S" href=3D"/journal/rss" />
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Links RSS"=
+ href=3D"/links/rss" />
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Articles R=
+SS" href=3D"/articles/rss" />
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"Journal, l=
+inks and articles RSS" href=3D"/rss/" />
+<link rel=3D"author" href=3D"/about/myself" title=3D"About the author" /=
+>
+<link rel=3D"home" href=3D"/" title=3D"Home page" />
+<link rel=3D"Shortcut Icon" type=3D"image/ico" href=3D"/favicon.ico" />
+<link rel=3D"apple-touch-icon" type=3D"image/png" href=3D"/apple-touch-i=
+con.png" />
+<link rel=3D"stylesheet" href=3D"/skins/default/global.css" />
+<link rel=3D"stylesheet" href=3D"/includes/css/print.css" media=3D"print=
+" title=3D"print" />
+
+<!-- Ah, I see you want a peek at the source code. -->
+<!-- That's the great thing about the web: -->
+<!-- reverse engineering. -->
+<!-- If you have any questions, feel free to write to me: -->
+<!-- jeremy at adactio dot com -->
+
+</head>
+<body>
+
+<header role=3D"banner">
+
+<!-- Begin with the logo -->
+
+<div id=3D"logo">
+<a rel=3D"home" href=3D"http://adactio.com" accesskey=3D"1" title=3D"Hom=
+e"><span>adactio</span></a>
+</div>
+
+
+<!-- Show any nice pictures here -->
+
+<div role=3D"presentation">
+<div class=3D"articles"></div>
+</div>
+
+<!-- Now we have the navigation -->
+
+<div role=3D"navigation">
+
+<ul>
+<li><a href=3D"/journal/" title=3D"My thoughts and ramblings">Journal</a=
+></li>
+<li><a href=3D"/links/" title=3D"Handpicked hyperlinks">Links</a></li>
+<li><a class=3D"here" href=3D"/articles/" title=3D"Longer thoughts and r=
+amblings">Articles</a></li>
+<li><a href=3D"/about/" title=3D"Background information">About</a></li>
+<li><a href=3D"/contact/" accesskey=3D"9" title=3D"Get in touch">Contact=
+</a></li>
+</ul>
+
+</div>
+
+</header>
+
+<!-- Here's the main content -->
+
+<div role=3D"main">
+<h1>
+The Design of HTML5
+</h1>
+
+<p>This is the opening keynote from <a href=3D"http://fronteers.nl/congr=
+es/2010">Fronteers 2010</a> in Amsterdam. It was kindly transcribed by t=
+hese volunteers:</p>
+
+<ul>
+<li><a href=3D"http://twitter.com/binarytales">Jon Linklater-Johnson</a>=
+</li>
+<li><a href=3D"http://twitter.com/jasonfry">Jason Fry</a></li>
+<li><a href=3D"http://twitter.com/gweax">Matthias Reuter</a></li>
+<li><a href=3D"http://twitter.com/trickeedickee">Richie Coss</a></li>
+<li><a href=3D"http://twitter.com/JustJenFelice">Jennifer Hageman</a></l=
+i>
+<li><a href=3D"http://twitter.com/mattloseke">Matthew Loseke</a></li>
+<li><a href=3D"http://twitter.com/dhuntrods">Danielle Huntrods</a></li>
+<li><a href=3D"http://twitter.com/Ian_Lunn">Ian Lunn</a></li>
+</ul>
+
+<p>You can:</p>
+
+<ul>
+<li>Watch <a href=3D"http://vimeo.com/15755349">the video</a> of this ta=
+lk.</li>
+<li>Download <a href=3D"http://adactio.com/extras/slides/designofhtml5.p=
+df">the slides</a>.</li>
+</ul>
+
+<p>I would like to talk to you today about The Design of HTML5. So there=
+&#8217;s two parts to this: one is, of course, HTML5. I could stand up h=
+ere and just talk about HTML5 but that&#8217;s not what I&#8217;m going =
+to do because if you want to know what is in HTML5 you can Google it, yo=
+u can read books, you can go and read the spec.</p>
+
+<p>Actually, some other people are going to be talking about the content=
+s of the spec. Steve Faulkner will be talking about accessibility and HT=
+ML5. Paul Irish is going to go through a whole bunch of the APIs that ar=
+e in HTML5. So I&#8217;m not just going to stand up here and run through=
+ what&#8217;s in HTML5.</p>
+
+<p>Actually, before I even get started I should probably clarify what I =
+mean by HTML5, which seems kind of crazy &#8216;cause why should I have =
+to clarify what I mean by HTML5 when what I mean by HTML5 is HTML5? Ther=
+e&#8217;s a specification, it&#8217;s called HTML5 and when I say HTML5 =
+that&#8217;s what I am referring to. The problem is other people are usi=
+ng the term HTML5 to refer to just about anything, which can be problema=
+tic. For example, referring to CSS3 as HTML5 for some reason seems to be=
+ a common technique. That&#8217;s not what I&#8217;m referring to. When =
+I say HTML5 I don&#8217;t mean CSS3, I mean HTML5.</p>
+
+<p>We&#8217;ve been here before with terms. It used to be that Ajax mean=
+t something specific and then, after a while, it just became &#8220;doin=
+g anything cool with Javascript.&#8221; That was Ajax, right? And now th=
+e same thing seems to be happening to the term HTML5. It&#8217;s suppose=
+d to mean a specific specification and now it just means &#8220;doing an=
+ything cool (fullstop) on the web.&#8221; But that&#8217;s not the HTML5=
+ I mean. I don&#8217;t mean this umbrella term that covers anything that=
+&#8217;s new these days. I&#8217;m specifically talking about the specif=
+ication: HTML5.</p>
+
+<p>As I said, it&#8217;s not so much the contents I want to talk about. =
+It&#8217;s not going through a checklist of what&#8217;s in HTML5. It&#8=
+217;s the other side of it, it&#8217;s the design of HTML5. What I want =
+to talk about is not so much what is in the spec but why these things ar=
+e in the spec, what the process was in thinking of these things when des=
+igning a specification.</p>
+
+<p>In particular, one of the reasons why I think HTML5 as a specificatio=
+n is quite successful&#8212;and the process has been successful&#8212;is=
+ that it is driven by design principles. Design principles are something=
+ I am getting more and more fascinated with.</p>
+
+<h2>Design principles</h2>
+
+<p>A design principle is essentially a belief, a tenant, a concept that =
+you rally behind. It doesn&#8217;t matter wether your making a specifica=
+tion or if you are making a physical object or a piece of software or a =
+programming language. You will probably find a design principle or multi=
+ple design principles behind all good examples of anything that has been=
+ built collaboratively. And it&#8217;s not just from the world of the we=
+b. Throughout history there example of design principles behind large sc=
+ale constructions like countries, societies.</p>
+
+<p>To give you an example, from the United States of America, this is a =
+design principle built into the Declaration of Independence.</p>
+
+<blockquote>
+  <p>We hold these Truths to be self-evident, that all Men are created e=
+qual, that they are endowed by their Creator with certain unalienable Ri=
+ghts, that among these are Life, Liberty and the pursuit of Happiness.</=
+p>
+</blockquote>
+
+<p>They have the watchwords in there: life, liberty, the pursuit of happ=
+iness. These are the keys things enthroned into the constitution, this i=
+s what we are all about, these are the principles on which we want to bu=
+ild our society.</p>
+
+<p>Another example would be from Karl Marx whose writing were used as a =
+basis for building societies throughout the 20th century and a lot of it=
+ could be boiled down to this one design principle:</p>
+
+<blockquote>
+  <p>From each according to his ability, to each according to his need.<=
+/p>
+</blockquote>
+
+<p>So here we have this design principle guiding an economic system.</p>=
+
+
+<p>Another example, much older than that but using a similar principle t=
+o this would be:</p>
+
+<blockquote>
+  <p>Do unto others as you would have them do unto you.</p>
+</blockquote>
+
+<p>A very simple, small design principle from Jesus Christ, a Nazarene J=
+ew from two thousand years ago. And this design principle theoretically =
+is what drives a number of religions that have been built on top of the =
+teachings of this principle. The principles and the practices sometimes =
+go out of sync.</p>
+
+<p>Here&#8217;s an example from fiction. When George Orwell wrote Animal=
+ Farm he had a fictional society and that fictional society was built up=
+on a design principle. In this case the design principle was:</p>
+
+<blockquote>
+  <p>Four legs good, two legs bad.</p>
+</blockquote>
+
+<p>What&#8217;s interesting is that in Animal Farm, as the society chang=
+es, as the society evolves for the worse, the design principle changes a=
+long with it so the design principle comes <q>four legs good, two legs b=
+etter</q> as the animal farm itself changes but it&#8217;s interesting t=
+o see this in works of fiction. </p>
+
+<p>There is another work of fiction that has three design principles bak=
+ed in and that&#8217;s from the canon of work from Isaac Asimov on robot=
+ics. He coined the term robotics and he basically ensconced these three =
+laws of robotics, three fairly simple design principles but then build a=
+ whole canon of would around them, about fifty books, each permutations =
+examining these design principles from different aspects. You&#8217;re p=
+robably familiar with the three laws of robotics I&#8217;m sure.</p>
+
+<blockquote>
+  <p>A robot may not injure a human being or, through inaction, allow a =
+human being to come to harm.</p>
+  =
+
+  <p>A robot must obey any orders given to it by human beings, except wh=
+ere such orders would conflict with the First Law.</p>
+  =
+
+  <p>A robot must protect its own existence as long as such protection d=
+oes not conflict with the First or Second Law.</p>
+</blockquote>
+
+<p>This is, I think, the first example in fiction of design principles f=
+or a piece of software. In this case it would be a price of software to =
+run a positronic brain in a robot that&#8217;s designed to the three sim=
+ple design principles. But I think this might be the start of actually h=
+aving design principles for software. And since then we see design princ=
+iples for a lot of really good software.</p>
+
+<p>Tim Berners-Lee who, as you know, co-invented the web. He has a docum=
+ent on the W3C website where he keeps his own set of personal design pri=
+nciples at a URL. They are kind of sprawling, there are a lot of them th=
+ere, he adds to them, he adjusts them, he takes things away as time goes=
+ on but I think it&#8217;s a really good idea to have a personal set of =
+design principles somewhere.</p>
+
+<p>Actually, Bert Bos, co-inventor of CSS, he&#8217;s got great document=
+ on the W3C website that is kind of a meta design principles document. L=
+ike how to design building a format, whether it&#8217;s CSS or anything =
+else. It is well worth reading.</p>
+
+<p>So if you root around the W3C site you find a bunch of these design p=
+rinciples including TIm Berners-Lee&#8217;s personal ones and you see th=
+e watchwords he&#8217;s taken from schools of software engineering: dece=
+ntralisation, tolerance, simplicity, modularity. These are key watchword=
+s that he keeps in mind as they come up with formats.</p>
+
+<p>You&#8217;re all pretty familiar with the work of Tim Berners-Lee as =
+you use it everyday. He invented the web, co-invented the web with Rober=
+t Cailliau, and as well as inventing the web itself he also came up with=
+ the language that we use everyday on the web and that language is of co=
+urse HTML: HyperText Markup Language.</p>
+
+<h2>HTML</h2>
+
+<p>This is an early history of HTML, it started with version two point z=
+ero. There never was a HTML one. If anyone ever tells you they have been=
+ doing HTML since version one, they are bullshitting you. There was a do=
+cument called HTML Tags that contained a handful of tags that still exis=
+ts today but it wasn&#8217;t an official specification.</p>
+
+<p>This whole idea of using tags, angle brackets, &#8216;p&#8217; or &#8=
+216;h1&#8217; or what have you; that isn&#8217;t something than Tim Bern=
+ers-Lee came up with. He was basically taking an existing vocabulary fro=
+m SGML, the particular version of SGML that was in use at CERN at the ti=
+me. So even back then he wasn&#8217;t creating things from scratch; that=
+&#8217;s an important lesson that you can still see in the evolution of =
+HTML. Build on what&#8217;s come before rather than trying to build some=
+thing from scratch.</p>
+
+<p>So this HTML Tags document was the first version of HTML but wasn&#82=
+17;t an official version. The first official version was HTML 2.0 which =
+didn&#8217;t come from the W3C. HTML 2.0 was from the IETF, the Internet=
+ Engineering Task Force. They were responsible for putting out a lot of =
+standards before the W3C really started off. But from version three onwa=
+rds it was at the W3C, the World Wide Web Consortium, where later versio=
+ns of HTML were specced.</p>
+
+<p>There was some fairly rapid movement in the nineties. As you can see,=
+ the nineties were a pretty turbulent time for anyone building websites =
+back then. We had the browser wars, it was pretty messy. We had a lot of=
+ proprietary shit being thrown into browsers. They were trying to compet=
+e on having the best proprietary shit. It was kind of a messy time and i=
+t wasn&#8217;t clear at all at this time if HTML was even going to be ar=
+ound and if HTML was going to last as the format for the web.</p>
+
+<p>You can see it evolved fairly quickly, 3.2, 4.0, 4.01 from 1997 to 19=
+99; very rapid evolution. What happened with 4.01 is the W3C stepped bac=
+k, looked at it and said &#8220;Okay, this is good, we are done with HTM=
+L; HTML 4.01 is the final version of HTML, we don&#8217;t need a HTML wo=
+rking group anymore.&#8221;</p>
+
+<p>They didn&#8217;t stop working on the language but it was no longer H=
+TML they were interested in. Right after HTMl 4.01, they came up with XH=
+TML 1.0. It sounds completely different but actually XHTML 1.0 was the s=
+ame as HTML 4.01. I mean literally, the contents of the specification we=
+re the same, the vocabulary was the same, all the same elements, all the=
+ same attributes. The only difference, the only difference, was that in =
+XHTML 1.0 you would use XML syntax. So that meant all your attributes ha=
+d to be lowercase, all your elements had to be lowercase, all your attri=
+butes had to be quoted, you had to remember to use closing tags and you =
+had to self close tags like img and br.</p>
+
+<p>From the point of view of the contents of the spec, exactly the same.=
+ There really was no difference. In a sense it really was just coding st=
+yle, because to a browser if you served up HTML 4.01, HTML 3.2 or you se=
+rved up XHTML 1.0 it didn&#8217;t matter, it was all the same to the bro=
+wser; it would make the same DOM tree. But what was kind of nice about X=
+HTML 1.0 was because it had this kind of stricter syntax, it was a sort =
+of coding style that people could get behind.</p>
+
+<p>This time period of 2000, this was when the web standards project was=
+ picking up steam, and developers were really pissed off with all this p=
+roprietary crap that was being thrown into browsers; they were getting a=
+ngry and saying to browsers &#8220;Why don&#8217;t you just follow the d=
+amn specifications?&#8221; And CSS is really starting to take off in a b=
+ig way, and they kind of latched on to XHTML 1.0, they were like &#8220;=
+Okay this is going to be best practice&#8221;, even though as I said, th=
+ere&#8217;s really no difference between HTML 4.01 and XHTML 1.0. But ok=
+ay, professionals always use lowercase elements, always use lowercase at=
+tributes, always quote your attributes: it was a good body of practice, =
+so a lot of people got behind that syntax.</p>
+
+<p>I did for example! So for the last 10 years I&#8217;ve been using the=
+ XHTML 1.0 doctype, and one of the reasons is that it makes the validato=
+r a more powerful tool for me, right? So if I&#8217;m writing XHTML 1.0 =
+and I run that through the validator it&#8217;s going to tell me if I fo=
+rgot to quote an attribute, or if I forgot to include the closing tag, s=
+tuff like this. Whereas if I was writing in HTML 4.01 that stuff would b=
+e legal, it wouldn&#8217;t necessarily catch it.</p>
+
+<p>That&#8217;s the reason why I&#8217;ve been using XHTML 1.0. And I&#8=
+217;m guessing that a lot of people &#8230;hands up those who use XHTML =
+1.0. Okay. HTML 4.01? A few people. Any others, shout them out? HTML5, g=
+ood for you! Anything older, anybody use older doctypes? No?</p>
+
+<p>I&#8217;ve been using XHTML 1.0 for 10 years now because it makes val=
+idators a more useful tool. Is anybody using XHTML 1.1? Are you now? Kee=
+p those hands up. Are you serving your documents as XML? Some? Well the =
+ones you&#8217;re not are not XHTML 1.1.</p>
+
+<p>This is the big issue. After XHTML 1.0 came XHTML 1.1, a small point =
+increase, doesn&#8217;t sound like much, and again there&#8217;s nothing=
+ new in the spec from a vocabulary point of view, it&#8217;s all the sam=
+e elements, it&#8217;s all the same attributes. The only difference was =
+that now with XHTML 1.1 you must serve your documents as XML. With XHTML=
+ 1.0 you could serve them as HTML if you wanted, and that&#8217;s exactl=
+y what we do because you&#8217;d be kind of crazy to serve your document=
+s as XML.</p>
+
+<p>One of the reasons why it&#8217;d be crazy to serve your documents as=
+ XML is that Internet Explorer can&#8217;t handle it. Well it can now on=
+ version 9. It&#8217;s like &#8220;Aww, thatt&#8217;s so cute&#8221;, th=
+at it&#8217;s still even thinking about it. That boat has sailed! So the=
+ world&#8217;s leading browser at the time couldn&#8217;t even handle do=
+cuments sent as XML and this specification was mandating that you must s=
+end the documents as XML, it was kind of crazy.</p>
+
+<p>So XHTML 1.1 was just not that realistic, and the reason why you woul=
+d not want to send your documents as XML even to browsers that understan=
+d XML is the error handling model of XML. The syntax of XML, okay I&#821=
+7;ve got no problems with lowercase attributes, lowercase elements, alwa=
+ys quote your attributes, that&#8217;s fine, in fact I kind of like it, =
+but the error handling model of XML is this: When the parser comes acros=
+s an error, stop parsing. That&#8217;s in the specification. So when you=
+ serve up XHTML 1.1 as XML, and let&#8217;s say you open it up in Firefo=
+x and you have one uncoded ampersand, just one on the whole page, then w=
+hat you&#8217;ll see is the yellow screen of death. Firefox will say &#8=
+220;Nope, you can&#8217;t see this web page because there&#8217;s one er=
+ror on this page&#8221;. That is the correct behaviour according to the =
+XML specification, for Firefox to stop right there and not render anythi=
+ng else is actually correct according to XML. Not HTML, because HTML has=
+ never had an error handling model, but according to the rules of XML th=
+at is correct.</p>
+
+<p>So that&#8217;s another reason why you&#8217;d not want to serve your=
+ documents as XML. And then the next iteration was XHTML 2, and you&#821=
+7;ll notice there&#8217;s no date next to that because it never actually=
+ got finished.</p>
+
+<p>Now, XHTML 2, I want to be very clear on this, is actually a really, =
+really nice specification, a really good specification &#8230;from a the=
+oretical point of view. I mean the people building the spec were very, v=
+ery smart people. Actually the main guy leading the spec was Stephen Pem=
+berton, who is a resident of these parts, an incredibly smart guy, and i=
+t&#8217;s a fantastic specification and it would be a wonderful format i=
+f everyone agreed to use it but it&#8217;s just not that practical.</p>
+
+<p>For one thing, it still uses the XML error handling model, you&#8217;=
+re supposed to serve your documents as XML, forget about it: we&#8217;re=
+ not going to do that. And two: it was deliberately going to break backw=
+ards compatibility with existing versions of HTML. At one point they wer=
+e talking about deprecating the img element, which seems kind of crazy t=
+o people working on the web every day, but, you know, they had good theo=
+retical reasons for doing this, that the object element might be a bette=
+r thing to use.</p>
+
+<p>So XHTML 2, despite the fact that it was a great format in theory, ne=
+ver took off in practice, and it was never going to take off in practice=
+ because authors like you and me were never going to get behind somethin=
+g like that, that breaks backwards compatibility, and neither were brows=
+er makers. Browser makers are committed to maintaining backwards compati=
+bility.</p>
+
+<p>And there&#8217;s one simple reason why XHTML 1.1 is really not that =
+widely used as XML, and why XHTML 2 never took off, and it&#8217;s down =
+to a design principle, and that design principle is Postel&#8217;s Law. =
+You&#8217;ve got to:</p>
+
+<blockquote>
+  <p>Be conservative in what you send; be liberal in what you accept.</p=
+>
+</blockquote>
+
+<p>Now be liberal in what you accept, that&#8217;s what the web is built=
+ on. People making web browsers have to be liberal in what they accept b=
+ecause they are given some pretty crappy stuff to accept, right? A lot o=
+f documents on the web are not pretty, but that&#8217;s the way the web =
+is. The web has kind of evolved in a very messy way, but it&#8217;s a be=
+autiful mess. There&#8217;s a lot of badly-formed documents out there an=
+d it would be great if everyone was writing proper XML and everything wa=
+s well formed, but that&#8217;s not the reality. The reality is Postel&#=
+8217;s Law.</p>
+
+<p>So as professionals we try to be conservative in what we send, we try=
+ to use best practices, we try to make sure our documents are well-forme=
+d, but from a browser&#8217;s perspective, they must be liberal in what =
+they accept.</p>
+
+<p>And if you think about the error handling model of XML, when it&#8217=
+;s applied to XHTML 1.1 and XHTML 2, that error handling model is a drac=
+onian error handling model. It&#8217;s definitely not being liberal in w=
+hat it accepts, it&#8217;s quite the opposite to say when you encounter =
+a single error stop parsing; that&#8217;s the opposite of the Robustness=
+ Principle.</p>
+
+<h2>HTML5</h2>
+
+<p>So we get to HTML5, which didn&#8217;t come directly from the W3C. Wh=
+at happened was, there hadn&#8217;t been an HTML working group since the=
+ end of the twentieth century, some people at the W3C kind of think &#82=
+20;Maybe there&#8217;s still life in HTML, if we just extended it a bit =
+more. Instead of concentrating all our efforts on XHTML we could improve=
+ the forms in HTML, we could make HTML a bit more application-like, and =
+just evolve it a bit more.&#8221;</p>
+
+<p>So there was a workshop in 2004 of W3C members, and Ian Hickson, who =
+was working at Opera at the time, he put forward this proposal to extend=
+ HTML, to do some work on HTML. It paralleled XHTML 2, but to continue w=
+orking on HTML, to expand it a bit more. And they had a vote and the W3C=
+ voted &#8220;No&#8221;, that HTML was dead and XHTML 2 was the future. =
+So these browser makers, Opera, Apple, a few others said &#8220;That&#82=
+17;s fine, we&#8217;re just going to go over here and we&#8217;re going =
+to work on this stuff by ourselves, outside the W3C&#8221;. So they form=
+ed the Web Hypertext Applications Technology Working Group, WHATWG&#8212=
+;it&#8217;s a good thing they called themselves a working group rather t=
+han a task force.</p>
+
+<p>What they decided to do was, completely outside the W3C, continue wor=
+king on HTML and throwing in some new stuff, and because they&#8217;re b=
+rowser makers, not only are they coming up with this stuff, but they&#82=
+17;re also shipping it. They&#8217;re coming up with good ideas and putt=
+ing it into browsers.</p>
+
+<p>And things move pretty fast. They start getting stuff done. Meanwhile=
+ over at W3C with XHTML 2, nothing much is really happening. In terms of=
+ actual implementations, there really isn&#8217;t much is happening.</p>=
+
+
+<p>So then an interesting thing happens, which was in a blog post in 200=
+6, Tim Berners-Lee said &#8220;You know what? We were wrong. We were act=
+ually wrong to expect the whole web to turn to XML overnight, that was p=
+retty unrealistic of us, and yeah, we probably should re-charter the HTM=
+L working group&#8221;. So that&#8217;s exactly what happened. The W3C s=
+tarted up an HTML5 working group in 2007. And the first question they ha=
+d of course was &#8220;Well, do we start from scratch? Or do we take as =
+our basis all this work that&#8217;s been done since 2004 over at this o=
+ther group called WHATWG?&#8221; And that was a no-brainer, of course th=
+ey were going to take the existing work and they should build on that, s=
+o they had a vote and they agreed &#8220;Yeah, we&#8217;re going to buil=
+d on what the WHATWG are doing&#8221;. So now they need to work together=
+ with the WHATWG.</p>
+
+<p>Second question is how to make that smoother; who should be the edito=
+r at the W3C? Should we have the same editor that they have over at the =
+WHATWG, which is Ian Hickson who is these days working with Google. And =
+they had a vote and said &#8220;Yeah, actually it would make things bett=
+er if Ian Hickson was the editor of the HTML5 spec at the W3C as well as=
+ being the editor of the spec over at WHATWG.&#8221;</p>
+
+<p>So they voted on that. And that&#8217;s kind of the situation today. =
+So it is one format, but it lives in two places. You&#8217;ve got the sp=
+ecification listed on the WHATWG site and it&#8217;s also listed on the =
+W3C site.</p>
+
+<p>It&#8217;s a little bit confusing if you&#8217;re coming to it cold: =
+&#8220;Which one is the real spec?&#8221; Well, they are both the same &=
+#8230;kind of. Actually, the specifications will diverge in the future. =
+They have started to diverge slightly. The idea is that the W3C is worki=
+ng on nailing down a specific specification that will go to last call, a=
+nd that will become a working draft, and it will be set in stone.</p>
+
+<p>Whereas at the WHATWG they go for a constant iteration. So even if it=
+ is currently called HTML5, it&#8217;s actually not the greatest term fo=
+r what the WHATWG is working on. It&#8217;s better to think of this as j=
+ust plain HTML or web technologies, &#8216;cause that&#8217;s the idea t=
+here. But it&#8217;s definitely a confusing situation that there are the=
+se two groups working on what is basically the same specification. It ca=
+n be quite confusing.</p>
+
+<p>Then there is the processes behind the two groups, because they are q=
+uite different, philosophically speaking. The way that things work at th=
+e WHATWG is essentially a dictatorship. You&#8217;ve got Ian Hickson as =
+the editor. He will listen to all sides, everyone states their arguments=
+ and then he does what he thinks is the right thing to do.</p>
+
+<p>At the W3C it&#8217;s the opposite. It&#8217;s a democracy. Everyone =
+gets a say and everyone gets a vote. And it&#8217;s the vote that matter=
+s, the vote that decides. Now on the face of it, the WHATWG way of doing=
+ things sounds horrible. It sounds really bad. It&#8217;s like &#8220;Th=
+at&#8217;s not a way to run any kind of project!&#8221;</p>
+
+<p>And the W3C way sounds great. Sounds very egalitarian. In practice ho=
+wever, the WHATWG way works pretty darn well. And I think it works well =
+because of Ian Hickson. He is actually a really, really good editor. He =
+is almost robotic in his ability to listen to arguments dispassionately.=
+</p>
+
+<p>The W3C way, which is very fair in principle, actually can get bogged=
+ down quite quickly in process and procedure, and it takes a long time t=
+o get stuff done. So what works best in a way, I think, is to have a mix=
+ture of the two. So the fact that these two bodies are working on the sa=
+me spec, I think, they kind of complement each other quite well.</p>
+
+<p>One of the reasons why they can work together is because of the desig=
+n of HTML5. It&#8217;s because they have thought from the start what the=
+y are trying to achieve. So as well as there being the specification its=
+elf, that lives in a document on the W3C site&#8212;this is the specific=
+ation for HTML5 language&#8212;there is another document on the W3C site=
+, and that is HTML design principles. And one of the editors of this doc=
+ument is here in this room with us today, Anne Van Kesteren. So if you h=
+ave any questions about this document, you can ask Anne.</p>
+
+<p>It&#8217;s an excellent document, it&#8217;s really good. And essenti=
+ally what it is, is: You&#8217;ve got the W3C and the WHATWG trying to w=
+ork together. And it&#8217;s like the odd couple, right? How will they e=
+ver get on? Well, this document kind of enshrines what they are working =
+on, what they can both agree on.</p>
+
+<p>I want to talk through those things. Because if they can all agree on=
+ what&#8217;s in this document, then I think, HTML5 will be a great spec=
+ification, and they have agreed that this is what they&#8217;re working =
+towards. So you can see that the watchwords are compatibility, utility, =
+interoperability. So for all the differences between the WHATWG and the =
+W3C&#8212;and there are plenty of differences&#8212;they also have this =
+stuff in common. And that&#8217;s the most important thing. That they ha=
+ve common ground and that they have enshrined that common ground into a =
+designs principles document.</p>
+
+<h2>Avoid needless complexity</h2>
+
+<p>I&#8217;d like to show you some of the design principles that you can=
+ find in this document. Here is one, very simple: avoid needless complex=
+ity. Seems fairly straightforward. I&#8217;ll illustrate it with an exam=
+ple.</p>
+
+<p>Let&#8217;s suppose I&#8217;m writing an HTML 4.01 specification. I o=
+pen up my document and I type the doctype. Has anyone got that doctype m=
+emorised? Okay, no, I guess not. It&#8217;s possible&#8230; I mean, you&=
+#8217;re a geeky bunch. Somebody here might have memorised it. This is t=
+he html 4.01 doctype</p>
+
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C/DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"&gt;
+</code></pre>
+
+<p>I don&#8217;t keep that stuff memorised, because this is why we have =
+text snippets, that&#8217;s why we have google, why we have templates.</=
+p>
+
+<p>What about if I&#8217;m writing it for XHTML 1.0, which I have been w=
+riting for ten years now. Anyone got the doctype for that? It&#8217;s ki=
+nd of an equally long string:</p>
+
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+</code></pre>
+
+<p>They are basically the same. This document is XHTML 1. And that&#8217=
+;s essentially what it&#8217;s saying. So in HTML5, to omit needless com=
+plexity, the doctype is simply:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+</code></pre>
+
+<p>And that&#8217;s it. Now, even I can remember that one. I don&#8217;t=
+ need to keep a text snippet for that. I have to say when I first saw th=
+is doctype, that this was supposed the doctype for HTML, I was somewhat =
+taken aback: &#8220;Shouldn&#8217;t the number five be in there somewher=
+e, you know?&#8221; I thought: &#8220;What are they saying here? Are the=
+y saying this is it? This is the only version of HTML that&#8217;ll ever=
+ be, we&#8217;re going to get it right first time and there&#8217;ll nev=
+er be a need for another version of HTML?&#8221; That seemed so arrogant=
+. But that&#8217;s not what they&#8217;re saying at all. Instead what yo=
+u have to understand is why doctypes exist in the first place. It&#8217;=
+s not for browsers. Doctypes exist for validators. So the reason why I s=
+lap an XHTML 1.0 doctype on the top of my document is that when I feed i=
+t through a validator, the validator checks against that doctype.</p>
+
+<p>A browser doesn&#8217;t care. Let&#8217;s say I&#8217;m writing HTML =
+3.2. At top of my document I put the doctype for HTML 3.2. And then some=
+where in my document I use an element that was first introduced in HTML =
+4.01. What&#8217;s the browser going to do? Is it going to not render th=
+at element, because it was introduced in a version of HTML later than th=
+e doctype has specified? No, of course not! It&#8217;s gonna render the =
+element, because of Postel&#8217;s law, because of robustness. It&#8217;=
+s got to be liberal in what it accepts. So browsers are not checking aga=
+inst any type of format, validators do, validators care. This is the rea=
+son why doctypes exist.</p>
+
+<p>And because one of the design principles of HTML5, it&#8217;s going t=
+o be backwards compatible and future compatible, that any future version=
+s of HTML&#8212;and there will be an HTML6 and an HTML7, whatever&#8212;=
+but they need to be backwards compatible with the current version of HTM=
+L, which is HTML5. Hence having a version number in your doctype doesn&#=
+8217;t really make much sense, even to a validator.</p>
+
+<p>Now, I say the doctypes aren&#8217;t for browsers; that&#8217;s mostl=
+y true. There is one instance where it matters to browsers what doctype =
+you&#8217;re using, and you are probably all familiar with it. It&#8217;=
+s not the reason why doctypes exist, it&#8217;s a hack that uses doctype=
+s. And that&#8217;s when Microsoft were introducing CSS, getting ahead o=
+f the standard, they tried putting CSS into the browser, they had their =
+own box model&#8212;in some ways a more intuitive box model than the sta=
+ndard box model&#8212;and then the standards come out, and the standards=
+ are using a different one. What could they do? They want to support the=
+ standards, but they also have to maintain backwards compatibility with =
+the old way they were doing things. How can they tell if an author means=
+ I want to use standards or I want to use the old-fashion way?</p>
+
+<p>So the trick they came up with is a very clever hack. It was to use t=
+he presence of a doctype, of a valid doctype as the trigger for standard=
+s mode rather than quirks mode. And that is very clever. And that&#8217;=
+s generally what we do today, when we put a doctype on the document. We&=
+#8217;re saying, &#8220;I want to use the standards mode,&#8221; but tha=
+t&#8217;s not why doctypes were invented. That&#8217;s a hack that happe=
+ns to use doctypes.</p>
+
+<p>The six million dollar question is, &#8220;Wait a minute, if I go ahe=
+ad and slap doctype html on the top of the document, and I feed that to =
+Internet Explorer, is it going to use standards mode or is it going to u=
+se quirks mode?&#8221;</p>
+
+<p>It turns out, this is the minimum number of characters necessary to t=
+rigger standards mode in Internet Explorer. I think that illustrates the=
+ kind of fundamental approach to HTML5: that it&#8217;s not about the th=
+eoretical benefits. It&#8217;s not about, &#8220;Oh, wouldn&#8217;t it b=
+e nice if authors had a nice short doctype that was easy to memorise?&#8=
+221; Yeah, that would be nice, but if it doesn&#8217;t work in existing =
+browsers, then forget about it. So there&#8217;s this great balance betw=
+een something that&#8217;s theoretically a good idea&#8212;a nice short =
+doctype&#8212;and practically a good idea, because it still triggers sta=
+ndards mode. And the doctype is a good example.</p>
+
+<p>And there&#8217;s other examples that are omitting needless complexit=
+y, avoiding needless complexity in the spec. For example, in previous ve=
+rsions of HTML, in HTML 4.01, suppose I want to specify the character en=
+coding of my document. The ideal way is, you have the server send the ch=
+aracter encoding in the heading, but you can also specify it at the docu=
+ment level:</p>
+
+<pre><code>&lt;meta http-equiv=3D"Content-Type" content=3D"text/html; ch=
+arset=3Dutf-8"&gt;
+</code></pre>
+
+<p>Again, I wouldn&#8217;t memorise this. I&#8217;ve got better things t=
+o do with my brain cells, but this is how you specify it, that I want to=
+ be the document to be UTF-8. So this is how you do it in HTML 4.01. And=
+ in XHTML 1.0 you&#8217;ve got to do a bit more, because as well as the =
+meta element itself you also have to declare it in the xml opening tag.<=
+/p>
+
+<pre><code>&lt;?xml version=3D"1.0" encoding=3D"UTF-8" ?&gt;
+&lt;meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" /&gt;
+</code></pre>
+
+<p>In HTML5, it turns out that all you have to do is say:</p>
+
+<pre><code>&lt;meta charset=3D"utf-8"&gt;
+</code></pre>
+
+<p>Nice and short. And I can memorise that.</p>
+
+<p>Once again, it turns out this works. Not only works in very modern br=
+owsers: this works today in all browsers. Because it turns out that when=
+ we were feeding these meta elements to browsers, they were parsing them=
+ like this: &#8220;Meta blah blah blah blah blah charset utf-8&#8221;. T=
+hat&#8217;s essentially what a browser sees when it parses that string. =
+And it has to, because of Postel&#8217;s Law, right?</p>
+
+<p>I keep coming back to the Robustness Principle, but people get this w=
+rong so browsers think &#8220;Okay, I think somebody is trying to specif=
+y a character set &#8230;oh yeah, utf-8&#8221;. That&#8217;s just gettin=
+g codified into the spec. Now it&#8217;s okay to just leave out the blah=
+s and just write meta charset=3D&#8221;utf-8&#8221;.</p>
+
+<p>There are some more examples of omitting needless complexity, avoidin=
+g needless complexity. But the needless complexity can be avoided withou=
+t breaking in existing browsers. For example, in HTML5 if I&#8217;m link=
+ing off to a stylesheet by using a link element and I say rel=3D&#8221;s=
+tylesheet&#8221; and then I say type=3D&#8221;text/css&#8221;, well I&#8=
+217;m kind of repeating myself. And it turns out for a browser, I&#8217;=
+m repeating myself. A browser doesn&#8217;t need both things. A browser =
+is perfectly fine saying rel=3D&#8221;stylesheet&#8221; because it&#8217=
+;s going to guess that your serving up CSS. You don&#8217;t have to incl=
+ude the type attribute. You&#8217;ve already said it was a stylesheet; y=
+ou don&#8217;t have to say it again. You could if you want; if you want =
+to include the type attribute, go ahead.</p>
+
+<p>And likewise, if you&#8217;re using a script element and you say type=
+=3D&#8221;text/javascript&#8221;, the browser kinda already knows that. =
+What else would you be using on the web? If you want to use a different =
+scripting language on the web, go for it. I don&#8217;t think any browse=
+rs will support you.</p>
+
+<p>You can add a type attribute if you want. But you can leave it out an=
+d the browser is going to assume you&#8217;re using JavaScript. Avoiding=
+. Needless. Complexity.</p>
+
+<h2>Support existing content</h2>
+
+<p>Support existing content. This is really important because a lot of p=
+eople are thinking of HTML5 as new and shiny; that it&#8217;s all about =
+what&#8217;s coming in the future, going to make the web better in the f=
+uture. And it is, right? Obviously we have to think about the future in =
+making the web a better place, but they have to think about the past. An=
+d remember a lot of people on the working group the W3C, these are brows=
+er makers so they very much have to think about supporting existing cont=
+ent. This is the watchword of anyone who has ever had to build a browser=
+: you have to support existing content.</p>
+
+<p>Let me show you an example of how HTML5 supports existing content.</p=
+>
+
+<p>Here we have four different ways of writing the same thing. There&#82=
+17;s an img element and there&#8217;s a paragraph element with an attrib=
+ute on it. The only difference is the syntax. You serve any one of these=
+ four pieces of code, pieces of markup, to a browser and the browser wil=
+l serve it into the same DOM tree, no problem whatsoever. From a browser=
+&#8217;s perspective, there are no differences between these four pieces=
+ of markup. And so in HTML5 you can go ahead and use any syntax you want=
+.</p>
+
+<pre><code>&lt;img src=3D"foo" alt=3D"bar" /&gt; =
+
+&lt;p class=3D"foo"&gt;Hello world&lt;/p&gt;
+
+&lt;img src=3D"foo" alt=3D"bar"&gt;
+&lt;p class=3D"foo"&gt;Hello world
+
+&lt;IMG SRC=3D"foo" ALT=3D"bar"&gt;
+&lt;P CLASS=3D"foo"&gt;Hello world&lt;/P&gt;
+
+&lt;img src=3Dfoo alt=3Dbar&gt;
+&lt;p class=3Dfoo&gt;Hello world&lt;/p&gt;
+</code></pre>
+
+<p>Now to us looking at this, we kind of look at this and go &#8220;No, =
+no, no. One of those is right and three of those&#8212;something is fish=
+y.&#8221; No, you should be quoting your attributes! Come on! We all quo=
+te our attributes. Uppercase elements? Didn&#8217;t we leave that behind=
+ ten years ago?</p>
+
+<p>And so I kind of get a queasy feeling when I see that this is all now=
+ allowed in HTML5 because I have been writing XHTML 1.0 for ten years no=
+w and I have gotten pretty used to that coding style. But you have to un=
+derstand, from a browser&#8217;s perspective, this is all really the sam=
+e. It really doesn&#8217;t matter.</p>
+
+<p>Doesn&#8217;t make anyone else queazy? You look at this and think &#8=
+220;Ooh, this is sloppy, this is bad?&#8221; Is it just me? Am I the onl=
+y one?</p>
+
+<p>But they have to support existing content and existing content looks =
+like this. Right? This is the way browsers already work because of Poste=
+l&#8217;s Law.</p>
+
+<p>And some people said &#8220;This just will not do. We need some kind =
+of trigger within the language to say the author knows what they are doi=
+ng.&#8221; They want to use one particular syntax, like the XHTML syntax=
+, for example, rather than a different syntax. And I can see why that&#8=
+217;s what people want. But I disagree that it has to be in the language=
+ itself. Because what we are talking about here essentially is a coding =
+style or a writing style rather than being syntactically correct. So wha=
+t I think is needed for professionals like us is lint tools, because we =
+have lint tools for other technologies we use.</p>
+
+<p>For example, with JavaScript. JavaScript is another example of a kind=
+ of messy, sloppy language that is powerful because it is messy and slop=
+py and there are many different ways of writing it. In javascript you&#8=
+217;re supposed to put a semi-colon at the end of every statement but yo=
+u don&#8217;t have to, because javascript will perform semi-colon insert=
+ion &#8230;which does sound quite painful.</p>
+
+<p>So we have tools like JSlint: jslint.org from Douglas Crockford, wher=
+e it says right there on the page &#8220;JSlint will hurt your feelings.=
+&#8221; But it&#8217;s a really good tool because you can make perfectly=
+ good javascript and run it through JSlint and it will say &#8220;Okay, =
+this JavaScript is valid but your doing it wrong. This coding style: I d=
+on&#8217;t like it. I disagree with it. It&#8217;s not good.&#8221; That=
+&#8217;s actually really handy when your working in a team because you c=
+an all have one coding style you all agree on.</p>
+
+<p>I think that if your working in a team, even if your working alone, y=
+ou need to settle on one syntax. No one syntax is superior to another in=
+ terms of browsers parsing it, but I do think that as professionals, we =
+say &#8220;This is my coding style.&#8221; But I don&#8217;t think that =
+needs to be in the language. I think that lint tools helps all that. The=
+re are now lint tools. If you go to htmllint.com, you can run your HTML5=
+ documents through it and it will check for things like, have you quoted=
+ your attributes, are the elements lowercase, or you can click checkboxe=
+s to say what you want.</p>
+
+<p>So it&#8217;s not a return to sloppy mark up if you don&#8217;t want =
+it to be. And as I said, they have to allow this in HTML5 because this i=
+s what browsers allow. And it all comes back to Postel&#8217;s Law. We k=
+eep coming back to Postel&#8217;s Law.</p>
+
+<h2>Solve real problems</h2>
+
+<p>Another design principle in HTML5 is to solve real problems. It seems=
+ obvious and yet there are plenty of formats and specifications out ther=
+e that, in my opinion, are solving theoretical problems rather than real=
+ problems. This is all about solving problems people have today, solving=
+ the pain points.</p>
+
+<p>I&#8217;ll give you an example. Here&#8217;s one I think you might be=
+ able to relate to. Let&#8217;s say in HTML 4 or XHTML 1, I&#8217;ve got=
+ this piece on my page, a block of content, and I want the whole thing t=
+o be clickable, right? But it&#8217;s got a headline and a paragraph and=
+ maybe its got an image in there too. Now I want the whole thing to be c=
+lickable so I need three link elements. So I open up my headline, my h2 =
+for example, and then I&#8217;ve got my text and thats what I wrap in th=
+e a element. And then I open up the paragraph and then I open up another=
+ link, and then I wrap that and then I put the text in that&#8230;</p>
+
+<pre><code>&lt;h2&gt;&lt;a href=3D"/path/to/resource"&gt;Headline text&l=
+t;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=3D"/path/to/resource"&gt;Paragraph text.&lt;/a&gt;&l=
+t;/p&gt;
+</code></pre>
+
+<p>In HTML5, all I simply do is wrap the whole thing in an a element.</p=
+>
+
+<pre><code>&lt;a href=3D"/path/to/resource"&gt;
+&lt;h2&gt;Headline text&lt;/h2&gt;
+&lt;p&gt;Paragraph text.&lt;/p&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>Yes, it&#8217;s a load of block elements but yet I can wrap them in a=
+n a element. This is great. I know this is great because I have been in =
+this situation, where I&#8217;ve needed do this. And I for one welcome o=
+ur new HTML5 overlords.</p>
+
+<p>It&#8217;s solving a real world problem. I bet you have come across t=
+his problem before as well.</p>
+
+<p>Now here is the great thing about it. This isn&#8217;t something that=
+ browsers now have to go out and start supporting. This is something whi=
+ch exists in browsers already because people were doing this kind of stu=
+ff already, even though it wasn&#8217;t legal yet. So essentially all th=
+at HTML5 is saying is &#8220;What you have been doing for years? That&#8=
+217;s actually allowed now.&#8221;</p>
+
+<h2>Pave the cowpaths</h2>
+
+<p>This design principal is probably the most buzzwordy: pave the cowpat=
+hs. I don&#8217;t know if you have heard that in a business meeting, &#8=
+220;run it up the flag pole, pave the cowpaths.&#8221; But it is actuall=
+y a very good design principal because essentially what it is saying is,=
+ when you are deciding what to tackle&#8212;where are the pain points&#8=
+212;look at where people are already finding hacks to patch these proble=
+ms today. That is essentially where you should concentrate your efforts.=
+ Look at where people are already coming up with solutions.</p>
+
+<p>A good example of paving the cowpaths are the new semantic elements i=
+n HTML5. And there are not that many: it&#8217;s not infinitely extensib=
+le, which I think is a good thing. It&#8217;s basically a handful. But t=
+hey&#8217;re good. You&#8217;ve got header, footer, section, article &#8=
+230;and a lot of these will be familiar to you. I mean the names of thes=
+e will be familiar to you already even if you&#8217;re not using HTML5 b=
+ecause you will have been using class names such as class=3D&#8221;heade=
+r&#8221; or &#8220;heading&#8221; or &#8220;head&#8221; or class=3D&#822=
+1;footer&#8221; or &#8220;foot&#8221;. Or IDs, if your saying id=3D&#822=
+1;header&#8221;, id=3D&#8221;footer&#8221;. These are already fairly fam=
+iliar things.</p>
+
+<p>So, for example, today you might be writing a document like this.</p>=
+
+
+<pre><code>&lt;body&gt;
+&lt;div id=3D"header"&gt;...&lt;/div&gt;
+&lt;div id=3D"navigation"&gt;...&lt;/div&gt;
+&lt;div id=3D"main"&gt;...&lt;/div&gt;
+&lt;div id=3D"sidebar"&gt;...&lt;/div&gt;
+&lt;div id=3D"footer"&gt;...&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>You&#8217;ve got a div id=3D&#8221;header&#8221;. You&#8217;ve got a =
+div id=3D&#8221;navigation&#8221;. Stuff like this. In HTML5 you&#8217;l=
+l be able to swap out these elements. And when talking about these new e=
+lements, this is the way it is often presented: &#8220;Oh look, it&#8217=
+;s great: you can swap out these divs with ids for these new HTML5 eleme=
+nts.&#8221;</p>
+
+<pre><code>&lt;body&gt;
+&lt;header&gt;...&lt;/header&gt;
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;div id=3D"main"&gt;...&lt;/div&gt;
+&lt;aside&gt;...&lt;/aside&gt;
+&lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>And that&#8217;s true: you can. These elements work at the document l=
+evel like this and that&#8217;s good. But if that were the only reason t=
+hese elements were introduced, then that would be kind of a waste of eff=
+ort.</p>
+
+<p>While you can use these elements in the document level as a replaceme=
+nt for IDs, it&#8217;s much more useful, in my opinion, to think of them=
+ as a replacement for classes.</p>
+
+<p>While you can use these new elements this way, at the document level,=
+ as a replacement for IDs, it&#8217;s much more useful in my opinion to =
+think of them as and replacement for classes, because the real power com=
+es in that you can use these things multiple times per page, not once pe=
+r page. Yes, you&#8217;ve got a header for your document and you have a =
+footer for your document; you also have a header and a footer for each s=
+ection within your document. And each section might have another section=
+ within it and that could have a header and that could have a footer, ri=
+ght?</p>
+
+<p>It&#8217;s these four elements: section, article, aside and nav, that=
+ are the really powerful ones because they introduce a whole new content=
+ model that hasn&#8217;t existed in any previous version of HTML; this i=
+dea of sectioning content. Up &#8216;till now we&#8217;ve used divs to k=
+ind of group things together, but divs are just like any other element, =
+they don&#8217;t have any extra semantic meaning. While section, article=
+, aside and nav are essentially saying &#8220;This is like a document wi=
+thin a document.&#8221; Anything that&#8217;s inside one of these elemen=
+ts will have its own outline, its own heading, its own footer.</p>
+
+<p>The way to think about it is basically section, the most generic one,=
+ is thematically related content. And article is a specialised kind of s=
+ection. Aside is a specialised kind of section. Nav is a specialised kin=
+d of section.</p>
+
+<p>So, whereas today I might have markup that looks like this, where I&#=
+8217;m using classes to delineate the different parts of a page&#8212;us=
+ing divs, right?</p>
+
+<pre><code>&lt;div class=3D"item"&gt;
+&lt;h2&gt;...&lt;/h2&gt;
+&lt;div class=3D"meta"&gt;...&lt;/div&gt;
+&lt;div class=3D"content"&gt;
+...
+&lt;/div&gt;
+&lt;div class=3D"links"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>There might be the meta content about who wrote this piece of content=
+. We have some links at the bottom, stuff like that. With HTML5, I basic=
+ally can say that this is like a document in itself, by using sectioning=
+ content, by using something like section or article or aside, I can say=
+ &#8220;This kinda stands alone.&#8221; And I can use header and use foo=
+ter.</p>
+
+<pre><code>&lt;section class=3D"item"&gt;
+&lt;header&gt;&lt;h1&gt;...&lt;/h1&gt;&lt;/header&gt;
+&lt;footer class=3D"meta"&gt;...&lt;/footer&gt;
+&lt;div class=3D"content"&gt;
+...
+&lt;/div&gt;
+&lt;nav class=3D"links"&gt;...&lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+
+<p>Notice also that the footer doesn&#8217;t necessarily have to be at t=
+he bottom, right? The important thing about header, footer, aside, nav, =
+is the semantics. It&#8217;s nothing to do with positioning. We think of=
+ the word footer and we think &#8220;Oh, that comes at the bottom.&#8221=
+; We think of aside as a side bar. But if you look at the specification,=
+ it&#8217;s all about the content. So the content that you put in the fo=
+oter could be things like the byline, who wrote this, and that&#8217;s t=
+he element that you use. It doesn&#8217;t say &#8220;Must come at the bo=
+ttom of the document or the bottom of the section&#8221;.</p>
+
+<p>The really interesting thing here, though, is not that I&#8217;ve swa=
+pped out some divs with classes for some new elements, but the fact that=
+ I swapped out an H2 element for an H1.  Shock, horror! What if I alread=
+y have an H1 on the page?! The Google siren will go off and my SEO will =
+be terrible and the world will end.</p>
+
+<p>You can have multiple H1s in a document. This is not something new to=
+ HTML5. You have always been able to have multiple H1s in a document&#82=
+12;shock, horror. I&#8217;ve met working professionals on the web who ha=
+ve thought for years that it was in the specification that you could onl=
+y have one H1 in a document. There has been a lot of SEO snake oil peddl=
+ed on this subject. SEO has a lot of dogma attached to it. And by dogma,=
+ I mean belief without data. And the dogma has traditionally been like &=
+#8220;Oh, if you ever put more than one H1 in the page you will die.&#82=
+21;  In HTML5, every time you open a new piece of sectioning content, se=
+ction, article, aside, nav, whatever, you can begin with H1 again, rathe=
+r than having to stick to whatever level you were at; H2, H3, whatever i=
+t was.</p>
+
+<p>This is incredibly powerful. This could really revolutionise content =
+management. The fact that now, you can literally think about your chunks=
+ of content as standalone content that can be taken out of context. Now,=
+ depending on the context within it finds itself on the page, this H1 wo=
+uld have the role of being an H2 or H3, depending on where it finds itse=
+lf within the document. It can be a little weird to get your head around=
+ at first, but I actually think this is possibly the most powerful part =
+of the new semantic elements in HTML5; that they&#8217;re literally stan=
+dalone elements, and we get this whole new level of headings in there.</=
+p>
+
+<p>I could have a document with a section in it, that section could have=
+ a section within it, or an article, and sections in articles, articles =
+in sections, sections in sections, articles in articles. And each one co=
+uld have H1s to H6s all the way down so there&#8217;s like H-infinite at=
+ this point. But when you&#8217;re dealing with your content, or your co=
+ntent management system, they are standalone, properly standalone chunks=
+ of content now. And that&#8217;s very powerful.</p>
+
+<p>And this is not some wacky idea that the working group came up with, =
+or the W3C came up with recently. Here&#8217;s an email from Tim Berners=
+-Lee from 1991, an email to Dan Connolly, he&#8217;s explaining about th=
+is HTML thing, and he says &#8220;You know &#8230;you know what I&#8217;=
+d prefer, instead of H1, H2 and all that stuff, I&#8217;d like for it to=
+ be this nested section element, and a generic H element, so that we cou=
+ld just nest our levels within it.&#8221; Now we don&#8217;t have this g=
+eneric H element, we&#8217;re still using H1 and H2&#8212;that&#8217;s b=
+ecause we&#8217;re still supporting the existing content&#8212;but we&#8=
+217;re finally seeing this idea realised 20 years later.</p>
+
+<h2>Degrade gracefully</h2>
+
+<p>Here&#8217;s a principle that I&#8217;m sure that you&#8217;re all fa=
+miliar with already, which is degrading gracefully. We&#8217;ve all bein=
+g doing this for years anyway. With progressive enhancement we get grace=
+ful degradation for free.</p>
+
+<p>One of my favourite examples of this principal in action in HTML5 is =
+the way that forms have been enhanced in HTML5 using the type attribute.=
+ So this is a whole bunch of new values that you can give to type like n=
+umber, search, range, all that stuff.</p>
+
+<pre><code>input type=3D"number"
+input type=3D"search"
+input type=3D"range"
+input type=3D"email"
+input type=3D"date"
+input type=3D"url"
+</code></pre>
+
+<p>The great thing is what browsers do when they encounter this. Existin=
+g browsers, not future browsers, existing browsers that don&#8217;t unde=
+rstand this stuff, the way they degrade gracefully is whenever they see =
+a type value they don&#8217;t understand, they just treat it like text.<=
+/p>
+
+<p>You write input type=3D&#8221;foo&#8221;, input type=3D&#8221;bar&#82=
+21;, and every browser out there will say, &#8220;Eh, he probably meant =
+text.&#8221; So that means you can start using this stuff and be secure =
+in the knowledge the browsers that don&#8217;t understand it will simply=
+ treat it like input type=3D&#8221;text&#8221;&#8212;a great example of =
+browsers practicing graceful degradation.</p>
+
+<p>So this type equals=3D&#8221;number&#8221;, for example. Suppose you =
+have an input that requires a number. You could say the input type is nu=
+mber and then in a browser that understands that input type, you might g=
+et a nice control like this little spinner thing. Right? And then in a b=
+rowser that doesn&#8217;t understand it, you just get a text input, whic=
+h is what you would have used anyway. So why not just say, input type=3D=
+&#8221;number&#8221; and you get that spinner for free?</p>
+
+<p>You can have min and max and all that stuff in there as well, but it =
+degrades gracefully. That&#8217;s the key issue.</p>
+
+<p>Input type=3D&#8221;search&#8221;. You might as well start using it b=
+ecause, in a browser like Safari you get this nice Operating System leve=
+l search control and a little X you can click away the search term with.=
+ And in all other browsers you just get a text input, as if it were inpu=
+t type=3D&#8221;text&#8221;, which is what you would have used anyway. S=
+o why not just say input type=3D&#8221;search&#8221;? It doesn&#8217;t h=
+urt, right?</p>
+
+<p>New attributes have been added as well. You&#8217;ve got this placeho=
+lder attribute you can throw in. You know this pattern, right? You&#8217=
+;ve got some text that&#8217;s already inside the input. Not a label &#8=
+212; a placeholder and a label are two very different things. It&#8217;s=
+ an example value that&#8217;s sort of greyed out. You click in there an=
+d it goes away. You click out and type again, it&#8217;ll come back.</p>=
+
+
+<p>We can hack this stuff together with JavaScript today, but now with H=
+TML5 you just use a placeholder attribute.</p>
+
+<p>And what you can do as well, if you still want to do it with JavaScri=
+pt for browsers that don&#8217;t support this, is it&#8217;s pretty easy=
+ in JavaScript to test &#8212; does the browser understand the placehold=
+er attribute? If it does, just step back, get out the way, don&#8217;t d=
+o anything. If it doesn&#8217;t, then include your JavaScript to mimic t=
+his functionality.</p>
+
+<p>Now, I couldn&#8217;t talk about HTML5 without bringing up this subje=
+ct&#8212;HTML5 versus Flash. You may have heard about this. You may have=
+ read about this somewhere. And I really don&#8217;t get it. I&#8217;m r=
+eally puzzled by this whole battle that&#8217;s supposedly going on.</p>=
+
+
+<p>First of all, when people talk about HTML5 versus Flash, they&#8217;r=
+e not talking about HTML5 and they&#8217;re not talking about Flash. The=
+y are talking about a subset of HTML5 and a subset of Flash. Specificall=
+y, they&#8217;re talking about video. So whenever you hear, &#8220;HTML5=
+ versus Flash&#8221; they probably mean HTML5 video versus Flash video.<=
+/p>
+
+<p>And another thing, this framing of it as HTML5 versus Flash&#8212;lik=
+e you have to choose: which side are you on? That&#8217;s just not the c=
+ase. Because of the way that the spec has been designed, you can have yo=
+ur cake and eat it too.</p>
+
+<p>So this is the way that it works with the new video element &#8212; a=
+ really nice element, really simple, elegant design. You have an opening=
+ video tag, a closing video tag, and in between you put your fallback co=
+ntent. Fallback content, not accessibility content, fallback content. So=
+ this is for browsers that don&#8217;t understand the video element.</p>=
+
+
+<pre><code>&lt;video src=3D"movie.mp4"&gt;
+&lt;!-- fallback content --&gt;
+&lt;/video&gt;
+</code></pre>
+
+<p>So what would you put, for example, for your fallback content? Well, =
+you can put a Flash movie. You can have HTML5 video and Flash video. You=
+ don&#8217;t have to choose.</p>
+
+<pre><code>&lt;video src=3D"movie.mp4"&gt;
+&lt;object data=3D"movie.swf"&gt;
+&lt;!-- fallback content --&gt;
+&lt;/object&gt;
+&lt;/video&gt;
+</code></pre>
+
+<p>It&#8217;s not quite as simple as that, of course, because here I am =
+sending in H264, and some browsers will understand that. Other browsers =
+don&#8217;t understand that.</p>
+
+<p>Don&#8217;t get me started on the whole formats thing, because I&#821=
+7;ll get really upset. Not because of the technologies. I don&#8217;t ca=
+re about the technologies, but the fact that patents and lawyers and int=
+ellectual property and other enemies of the web are getting in the way o=
+f me building better websites.</p>
+
+<p>But actually what you have to do is &#8212; put your fallback in ther=
+e as well &#8212; you can have different formats. And you can specify th=
+ese different formats using the source element rather than the source at=
+tribute if you want.</p>
+
+<pre><code>&lt;video&gt;
+&lt;source src=3D"movie.mp4"&gt;
+&lt;source src=3D"movie.ogv"&gt;
+&lt;object data=3D"movie.swf"&gt;
+&lt;a href=3D"movie.mp4"&gt;download&lt;/a&gt;
+&lt;/object&gt;
+&lt;/video&gt;
+</code></pre>
+
+<p>Here I&#8217;ve kind of got four different levels going on. I got:</p=
+>
+
+<ol>
+<li>Okay, if the browser understands the video element and it understand=
+s H264, it gets that.</li>
+<li>If the browser understands the video element and it understands Ogg,=
+ then it gets the second one.</li>
+<li>If the browser doesn&#8217;t understand the video element, then I&#8=
+217;ll try to give it Flash.</li>
+<li>If the browser doesn&#8217;t support the video element or Flash, the=
+n I give it just a download link.</li>
+</ol>
+
+<p>It&#8217;s kind of like you&#8217;ve got Inception going on right her=
+e. You&#8217;ve got different levels that you can go down.</p>
+
+<p>I think it&#8217;s a good idea to hedge your bets and serve up your v=
+ideo both ways. If you&#8217;re only serving video using the video eleme=
+nt, you&#8217;re kind of shooting yourself in the foot, I think. But if =
+you&#8217;re only serving your video with Flash, you&#8217;re kind of do=
+ing an equal disservice. You should probably do it both ways.</p>
+
+<p>Why would you want to do this?  Well, suppose you&#8217;ve got some k=
+ind of, I don&#8217;t know, handheld device that doesn&#8217;t support F=
+lash and you want to make sure they get your content too, right?</p>
+
+<p>The reason why it&#8217;s such a problem that you have to have these =
+different formats and the reason why flash has been so successful with v=
+ideo and audio comes down to another design principle, and that&#8217;s =
+the principle of Metcalfe&#8217;s Law:</p>
+
+<blockquote>
+  <p>The value of a network is proportional to the square of the number =
+of connected users of the system.</p>
+</blockquote>
+
+<p>He was talking about telephony networks when he came up with this law=
+, but it applies to pretty much anything. The value of a network increas=
+es basically the more people are using the network.  Everybody uses Face=
+book because everybody uses Facebook. It&#8217;s not that it&#8217;s inh=
+erently valuable but the fact that everyone&#8217;s on it is what makes =
+it so valuable.</p>
+
+<p>A good example of Metcalfe&#8217;s Law would be whomever bought the f=
+irst fax machine. Why did they buy it? It was pretty useless. But as soo=
+n as other people started buying fax machines, then it starts to gain va=
+lue.</p>
+
+<p>So, when you&#8217;ve got competing formats and different ways of enc=
+oding things you&#8217;re not getting the benefit of Metcalfe&#8217;s La=
+w and I get upset that we have to encode our video in different ways and=
+ I can&#8217;t just encode it in one way and send it to the browser. Thi=
+s is why Flash has been very successful in the video / audio areas. It&#=
+8217;s that they can serve up one thing to the browser and have that sup=
+posedly work. Basically making use of Metcalfe&#8217;s Law.</p>
+
+<h2>Priority of constituencies</h2>
+
+<p>The final design principle I&#8217;ll leave with is my favourite, and=
+ there&#8217;s no code examples to show you for this one.  This is much =
+more philosophical and that&#8217;s the priority of constituencies.</p>
+
+<p>This one&#8217;s really about working together. This solves that prob=
+lem of when there&#8217;s an issue, when you&#8217;ve got a problem you&=
+#8217;ve got to tackle and you&#8217;ve got the W3C wants to do it one w=
+ay and the WHATWG wants to do it another way, and this person thinks it =
+should be done this way and this person thinks it should be done another=
+ way  &#8230;here&#8217;s a flag in the sand to say &#8220;here&#8217;s =
+how we&#8217;ll solve the problem:&#8221;</p>
+
+<blockquote>
+  <p>In case of conflict, consider users over authors over implementors =
+over specifiers over theoretical purity.</p>
+</blockquote>
+
+<p>Theoretical purity: that&#8217;s like building the best format we pos=
+sibly can do. Specifiers are the working groups, W3C, etc.  Implementors=
+ are browser makers. The authors; that&#8217;s us, right? Look how high =
+up the chain we are! We&#8217;re second only to users&#8212;which is the=
+ way it should be right? The users come first. And that means our voice =
+is very very important in this process.</p>
+
+<p>Hixie has stated often that, as features are being proposed and debat=
+ed for HTML5, if there were a browser manufacturer who said of a feature=
+, &#8220;we would never support that feature, never implement that featu=
+re in our browser,&#8221; then that feature&#8217;s coming out of the sp=
+ec. Because if you put that feature into the spec anyway then the spec w=
+ill be fiction, right? Because the implementors are refusing to implemen=
+t that.</p>
+
+<p>Because, according to the priority of constituencies, we are higher u=
+p the chain than the implementors, if we have a problem with something i=
+n the spec&#8212;if we think, &#8220;We disagree with this; we will neve=
+r implement what you&#8217;ve specified in our documents&#8221;, then eq=
+ually it should come out of the spec, because our voice should carry mor=
+e weight. I like that!  This basically makes us very powerful, right? An=
+d I think that&#8217;s a good thing.</p>
+
+<p>I think this is probably the most important design principle because =
+it acknowledges you have to have design principles when you&#8217;re bui=
+lding a format, when you&#8217;re building software. It&#8217;s just the=
+ way that the world works. It might seem obvious: users over authors ove=
+r implementors over specifiers, but if you think about other specificati=
+ons like XHTML2, it was the complete opposite way around.  Theoretical p=
+urity was the most important thing and the users&#8212;what with the dra=
+conian error handling&#8212;came very much at the end of that chain.  I&=
+#8217;m not saying that was wrong but I think that was a very different =
+philosophical approach.</p>
+
+<p>So I think that whatever you&#8217;re doing, whether it&#8217;s build=
+ing a format like HTML5 or whether it&#8217;s building a website, whethe=
+r it&#8217;s building a content management system, having design princip=
+les is really really useful.</p>
+
+<blockquote>
+  <p>Software, like all technologies, is inherently political. Code inev=
+itably reflects the choices, biases and desires of its creators.</p>
+</blockquote>
+
+<p>I&#8217;ll give you an example. The Drupal community got in touch wit=
+h Mark Boulton and Leisa Reichelt to redesign the Drupal interface. They=
+ set out to come up with design principles. They didn&#8217;t just sit d=
+own and scribble them onto a piece of paper, they took a long time to bo=
+il it down to these four design principles that they were going to opera=
+te with:</p>
+
+<blockquote>
+  <ol>
+  <li><p>Make the most frequent tasks easy and less frequent tasks achie=
+vable.</p></li>
+  <li><p>Design for the 80%.</p></li>
+  <li><p>Privilege the Content Creator.</p></li>
+  <li><p>Make the default settings smart.</p></li>
+  </ol>
+</blockquote>
+
+<p>And actually when I spoke to Mark about this it&#8217;s really those =
+two: &#8220;design for the 80%&#8221; and &#8220;privilege the content c=
+reator.&#8221; And that&#8217;s good, taking a stand and saying &#8220;W=
+e&#8217;re going to value the content creator more than any other people=
+ in this project.&#8221; That&#8217;s an important thing to remember abo=
+ut design principles because a lot of the time the idea of the design pr=
+inciple is that you&#8217;re not going to please everyone. The whole poi=
+nt is we don&#8217;t aim to please everyone, we&#8217;re deciding who&#8=
+217;s the most valuable. They decided the content creator was the most i=
+mportant thing.</p>
+
+<p>This other principle, design for the 80%, this is a really common des=
+ign principle.  It&#8217;s a common pattern in nature.  It&#8217;s calle=
+d the Pareto principle.</p>
+
+<p>Pareto was an Italian economist that noticed this ratio, the eighty/t=
+wenty ratio, that twenty percent of the population has eighty percent of=
+ the wealth. It&#8217;s mapped onto a power law distribution that shows =
+up everywhere in nature.  And it turns out that when you&#8217;re writin=
+g software or you&#8217;re building something, it&#8217;s kinda the same=
+, that you can achieve with twenty percent of the effort you can hit eig=
+hty percent of the use cases. The final twenty percent of the use cases =
+are going to probably require eighty percent more effort. So sometimes i=
+t&#8217;s a good design principle to say only design for that eighty per=
+cent, because we know you can do it with twenty percent of the effort.</=
+p>
+
+<p>Microformats, for example, very much use the Pareto principle in solv=
+ing some use cases and not going to worry about some of the edge cases. =
+They know they won&#8217;t please everyone; that&#8217;s not what they&#=
+8217;re aiming to do. They&#8217;ve got lot of design principles, it&#82=
+17;s really worth reading all of them but it&#8217;s captured in:</p>
+
+<blockquote>
+  <p>Design for humans first, machines second.</p>
+</blockquote>
+
+<p>Again, it might seem obvious to you and to me but there are examples =
+of other formats where it&#8217;s the other way around: where the ease o=
+f parsing for machines was more important than the ease of parsing to th=
+e users.</p>
+
+<p>So I think it&#8217;s really good to look at these design principles =
+other people got out there and whatever you&#8217;re doing, think about =
+what the design principles are and nail them to the wall. Basically have=
+ a URL where you publish this stuff, like the Mozilla foundation has don=
+e, right, these are the design principles that are behind Mozilla:</p>
+
+<blockquote>
+  <p>The effectiveness of the Internet as a public resource depends upon=
+ interoperability (protocols, data formats, content), innovation and dec=
+entralised participation worldwide.</p>
+  =
+
+  <p>Transparent community-based processes promote participation, accoun=
+tability, and trust.</p>
+</blockquote>
+
+<p>I think it&#8217;s a really good thing to do. And there&#8217;s a des=
+ign principle that it seems to me has driven a lot of really good projec=
+ts. It&#8217;s driven the web itself and I think it&#8217;s certainly a =
+philosophy that&#8217;s behind HTML5.  And that&#8217;s a design princip=
+le you&#8217;ve definitely heard of and that&#8217;s:</p>
+
+<blockquote>
+  <p>Rough consensus and running code.</p>
+</blockquote>
+
+<p>Right? It keeps cropping up over and over and for me, it kind of enca=
+psulates what the web is about and captures where HTML5 is heading.</p>
+
+<p>So this is probably one I would nail to the wall in my office and say=
+ this is the design principle of the web: rough consenus and running cod=
+e.</p>
+
+<p>Ok so I&#8217;m gonna leave it there. And if you have any comments ab=
+out any of this you can contact me on twitter @adactio. I sometimes blog=
+ about this stuff on adactio.com and I&#8217;m going to give a shameless=
+ plug that yes, I have a book out.</p>
+
+<p>Thank you very much for listening.</p>
+
+<h2>Questions</h2>
+
+<p>Oh, do we have time for questions?  Oh, cool.  I thought&#8212;I didn=
+&#8217;t realise I had time.  Who&#8217;s got questions?  I love questio=
+ns.  Anybody?  Don&#8217;t be shy.  We have microphones, so &#8230;oh, t=
+here, okay. The microphone is coming to you, sir.  </p>
+
+<p><strong>Audience member</strong>: If you&#8217;re using HTML 4.01, le=
+t&#8217;s say, are you allowed to use HTML5 elements in there?  Or is it=
+ does it make sense, will browsers actually support it?  Or should you r=
+eally use HTML5 if you want to use HTML5 elements?</p>
+
+<p><strong>Jeremy</strong>: I would recommend using the doctype HTML rat=
+her than a legacy doctype like HTML 4.01. It&#8217;s not because of the =
+browser support, because as I said, browsers will render whatever they c=
+an. I guess I need to define what I mean by &#8220;support&#8221; here.<=
+/p>
+
+<p>With these new semantic elements&#8212;you know, section, article&#82=
+12;you can just go ahead and use them in browsers and the browsers will =
+go ahead and render them and style them fine &#8230;except for one brows=
+er that you&#8217;re all familiar with, but a little bit of javascript w=
+ill help. A kick up the ass and Internet Explorer can understand them as=
+ well.</p>
+
+<p>But it&#8217;s not so much that these browsers understand what these =
+new elements are, it&#8217;s just that these browsers will let you write=
+ any element you want. You can write a &#8216;foo&#8217; element and a &=
+#8216;bar&#8217; element and you can still go ahead and style them. The =
+new version of Firefox will properly understand HTML5, will understand t=
+hese elements.</p>
+
+<p>So you can go ahead and use section or article in HTML 4, but then yo=
+ur doctype will be invalid. If you run it against a validator it will sa=
+y &#8220;I have no idea what a &#8216;section&#8217; is, an &#8216;artic=
+le&#8217; is&#8221;.  But the browser won&#8217;t complain, it will pars=
+e it just fine. So it depends what you want to do.</p>
+
+<p>So I would recommend changing the doctype as well, just so you get th=
+e nice green tick from the validator. You can use this stuff without cha=
+nging your doctype, but I would recommend changing the doctype. In fact,=
+ if at the minimum you change the doctype, then you can start messing ar=
+ound with this stuff as you feel comfortable.</p>
+
+<p>But here&#8217;s something else you can do if you&#8217;re still usin=
+g HTML 4.01 and you want to get to grips with the semantics of these new=
+ elements.  You don&#8217;t necessarily start having to use these new el=
+ements themselves, but you could take the names and use them as class na=
+mes. This is what I&#8217;m doing now with a lot of client work. In term=
+s of my personal work, I&#8217;m just going ahead and using section and =
+article, nav, aside, header, footer, but in client work I&#8217;m like, =
+&#8220;Okay, I better ease off a bit on this.&#8221;  I will still use d=
+ivs, but I&#8217;ll say <code>div class=3D"section"</code>, <code>div cl=
+ass=3D"header"</code>, <code>div class=3D"footer"</code>, so I&#8217;ll =
+reuse the vocabulary with class names.</p>
+
+<p>It&#8217;s kind of handy, because a lot of the time you&#8217;ll be h=
+anding off these documents to be turned over to some server side program=
+mer that has to build the actual app, and I need to document why I chose=
+ these class names, and by using the class names from HTML5, I have exis=
+ting documentation, which is the HTML 5 spec. I simply say &#8220;If you=
+ want to know what &#8216;section&#8217; means, or &#8216;article&#8217;=
+ means, here&#8217;s a URL that explains the semantics of it&#8221;. I&#=
+8217;m not using the element, I&#8217;m using the class names, but the s=
+emantics are the important thing.</p>
+
+<p>So that&#8217;s an idea, if you don&#8217;t want to dive into using t=
+hese new elements, maybe just use the class names instead.  </p>
+
+<p>Do we have another question?  Over here, we&#8217;ve got one. There&#=
+8217;s a microphone coming your way.  </p>
+
+<p><strong>Audience member</strong>: You touched on input types there. W=
+hen you use an input type that&#8217;s not recognised by the browser and=
+ you interrogate the input type, it reports type text.</p>
+
+<p><strong>Jeremy</strong>: Yes, that&#8217;s correct.  </p>
+
+<p><strong>Audience member</strong>: In CSS, when you style it with an a=
+ttribute selector, it styles with the original type that you specified. =
+ </p>
+
+<p><strong>Jeremy</strong>: Excellent.</p>
+
+<p><strong>Audience member</strong>: What&#8217;s going on?  </p>
+
+<p><strong>Jeremy</strong>: I guess there are different parsing rules fo=
+r CSS and HTML. I don&#8217;t know is the answer to your question. It&#8=
+217;s a good question. I don&#8217;t know, but I guess it&#8217;s differ=
+ent parsing models, the way that CSS would parse from the way HTML would=
+ parse.</p>
+
+<p>But the fact that you can query with javascript, does the browser thi=
+nk this is <code>input type=3D"number"</code>, <code>input type=3D"range=
+"</code>, is actually really really handy, because you can use the javas=
+cript fallback depending on whether it responds with its input type text=
+ or not. That&#8217;s actually pretty handy.</p>
+
+<p>But I don&#8217;t know why CSS does things differently than HTML. I&#=
+8217;m not a browser maker. Don&#8217;t we have browser makers in the ro=
+om somewhere? So that might be a good question to ask them, why it works=
+ that way. But it&#8217;s a good question.  </p>
+
+<p><strong>Anne Van Kesteren</strong>: I can answer it if you want.  </p=
+>
+
+<p><strong>Jeremy</strong>: I hear a voice from beyond. </p>
+
+<p><strong>Anne</strong>: The difference is that in javascript you use t=
+he IDL attribute, or the property, and you don&#8217;t actually query th=
+e actual attribute value, because you would usually getAttribute. You wo=
+uld actually get back, like, search instead of text.  </p>
+
+<p><strong>Jeremy</strong>: Right, so that&#8217;s a good point.  Actual=
+ly, I&#8217;m going to do a quick bit of live coding.  It&#8217;s going =
+to go horribly wrong.</p>
+
+<p>Ninety-nine times out of a hundred, there&#8217;s no difference betwe=
+en using getAttribute and using just the dot syntax, right?  <code>img.s=
+rc</code> &#8230;it makes no difference ninety-nine times out of a hundr=
+ed whether you say <code>img.src</code> in javascript or whether you say=
+ <code>img.getAttribute('src')</code>. It&#8217;s going to be the same t=
+hing ninety-nine times out of a hundred.  With the input types we can us=
+e the fact that in some cases it&#8217;s not quite the same.  So let&#82=
+17;s say we create a new input element&#8230;</p>
+
+<p><strong>Audience member</strong>: It&#8217;s not appearing on the scr=
+een, by the way.  </p>
+
+<p><strong>Jeremy</strong>: Oh, shoot. Well, sorry about that. Looks lik=
+e keynote &#8230;. Let me do&#8230; sorry. Sorry. Okay, thank you. Thank=
+ you for pointing that out.</p>
+
+<p>So let&#8217;s say we create a new input type. Let&#8217;s see if I g=
+et this wrong. And now I say test.setAttribute, and I&#8217;m not saying=
+ set the test.type attribute, I&#8217;m saying set the test attribute to=
+ be whatever it is we&#8217;re testing, but let&#8217;s say the input ty=
+pe was range. And then we can query if test.type is equal to text, right=
+?  Then we know, time for some javascript fallback.</p>
+
+<p>This code is probably horrible, I can&#8217;t believe I&#8217;m tryin=
+g to do JavaScript with PPK looking at the screen.</p>
+
+<p>But you get the idea. Here&#8217;s one of the few times that there&#8=
+217;s a slight difference between getAttribute and the dot syntax. It&#8=
+217;s important.</p>
+
+<p>So that&#8217;s a good point, but if you were to query in javascript =
+getAttribute, you would get the correct report, the same as with CSS, wh=
+ereas what you&#8217;re querying is probably .type =E2=80=93- you&#8217;=
+re going to get &#8216;text&#8217;. I think that would explain that reas=
+onably well. Let me just do something&#8230;</p>
+
+<p>So, any other questions? I hope that helped. Who&#8217;s got the micr=
+ophone? I&#8217;m somewhat blind up here. You&#8217;ve got the microphon=
+e coming your way &#8230;and there we go.</p>
+
+<p><strong>Audience member</strong>: Hello</p>
+
+<p><strong>Jeremy</strong>: Hello</p>
+
+<p><strong>Audience member</strong>: When you want to start using HTML5 =
+for your website, will it improve your position in the search engines?</=
+p>
+
+<p><strong>Jeremy</strong>: I&#8217;ll tell you what improves your posit=
+ion in search engines, write good content! It&#8217;s crazy but it&#8217=
+;ll work!</p>
+
+<p><strong>Audience member</strong>: That&#8217;s the first place, but&#=
+8230;</p>
+
+<p><strong>Jeremy</strong>: Obviously, and you know what? Everything aft=
+er that is secondary &#8230;it&#8217;s not secondary, it&#8217;s tertiar=
+y. It&#8217;s less than tertiary. The most important thing is you&#8217;=
+ve got good content. Structure it well, obviously. The fact that you&#82=
+17;re using headings at all in a document is good and the fact you&#8217=
+;re using semantic markup is good but most important is good content. No=
+w the fine details&#8212;whether this element or that element gets ranke=
+d more by Google&#8212;it changes every week anyway and I know earlier I=
+ was pointing out every section or article can start with H1&#8212;&#822=
+0;Oh my God, what will Google do?&#8221; I will point out that Ian Hicks=
+on does actually work at Google so I wouldn&#8217;t worry too much about=
+ it, frankly. </p>
+
+<p>Look, here&#8217;s my approach to SEO, if you&#8217;re thinking in te=
+rms of SEO (Search Engine Optimisation) you&#8217;re doing it wrong. You=
+ want to be thinking in terms of people optimisation because Google prac=
+tices people optimisation. So, when someone enters a search term in Goog=
+le, Google is now thinking &#8220;what is the best document, what&#8217;=
+s the best resource I can give to this person who&#8217;s trying to find=
+ a result for this search?&#8221; and so it thinks in terms of what peop=
+le want and when it&#8217;s analysing a document it&#8217;s thinking abo=
+ut &#8220;what do people want out of this document?&#8221;. So when you&=
+#8217;re creating your documents instead of thinking about what does Goo=
+gle want&#8212;because Google is thinking about what people want&#8212;w=
+hy don&#8217;t you just cut out the middle man and think &#8220;what do =
+people want?&#8221; and if you do that, you&#8217;ll get good &#8220;SEO=
+&#8221; anyway because Google is also practising this people optimisatio=
+n, so cut out the middle man. Don&#8217;t think about Google, think abou=
+t your content, think about your users. Think about using the best seman=
+tics available and by a happy coincidence, you will get good SEO from th=
+at.</p>
+
+<p>As for the fine details, of which element is better than the other el=
+ement, it doesn&#8217;t matter nearly as much as having relevant, well w=
+ritten, well structured content. Oh, what&#8217;s that excellent, excell=
+ent phrase you have in Dutch: miereneuker, right? Miereneuker: that&#821=
+7;s what a lot of SEO is about.</p>
+
+<p>I got to use that, that was awesome.</p>
+
+<p>One more question, Who&#8217;s got a hands up? I can&#8217;t see a th=
+ing, so &#8230;run microphone, run!</p>
+
+<p><strong>Audience member</strong>: Hi, you mentioned that you don&#821=
+7;t use HTML5 on your own websites for customers, but you&#8217;ve been =
+talking about using it today, for about an hour now.</p>
+
+<p><strong>Jeremy</strong>: Yep.</p>
+
+<p><strong>Audience member</strong>: Why is that?</p>
+
+<p><strong>Jeremy</strong>: Well I&#8217;d use the doctype. Obviously, n=
+o problem using a doctype. I was talking specifically about the new sema=
+ntic elements: section, article, nav, aside; I&#8217;d stick to using di=
+v <code>class=3D"section"</code>, <code>div class=3D"article"</code>. It=
+ depends on the client, but there&#8217;s a very very very small use cas=
+e where they might not get the styles and that is, like i said, you can =
+style these elements in every browser but to style them in Internet Expl=
+orer you have to use a little bit of JavaScript, right? You have to say&=
+#8230; so for some bizarre reason you have to tell Internet Explorer tha=
+t an element exists by saying <code>document.createElement('section')</c=
+ode>. Now you can style them in Internet Explorer. It doesn&#8217;t make=
+ any sense, but that&#8217;s the way it works. And Remy sharp has writte=
+n a nice little piece of code that encapsulates all of this, and it&#821=
+7;s on Google Code so you can just point at it and jobs a good &#8216;un=
+.</p>
+
+<p>So, there&#8217;s a very very very small possibility of your audience=
+ using Internet Explorer (less than 9) and having JavaScript switched of=
+f in which case they then won&#8217;t get the styles that you apply to a=
+ny of these new elements. So, for that very small use case, I&#8217;m a =
+little bit more cautious about using the new semantic elements but I abs=
+olutely use HTML5 in my client sites because what I&#8217;ll do is, mayb=
+e I won&#8217;t use section, article, nav and aside , I&#8217;ll use <co=
+de>div class=3D"section"</code>, <code>div class=3D"article"</code> and =
+so on, but I will start using the new input types, I&#8217;ll use <code>=
+input type=3D"search"</code> because&#8212;why not? I will start using t=
+he placeholder attribute&#8212;why not? I will start using ARIA roles. R=
+ight? You can use ARIA roles in any version of HTML but in HTML5, it&#82=
+17;s valid! Right? The role attribute is valid. So you can go ahead and =
+start using ARIA roles in your document. Frankly, for that reason alone,=
+ it&#8217;s worth switching over to using the HTML5 doctype in my opinio=
+n. </p>
+
+<p>So, you weren&#8217;t quite correct saying I&#8217;m not using HTML5 =
+on client sites, I am using HTML5 on client sites, I&#8217;m not necessa=
+rily using the new structural elements and that&#8217;s because there&#8=
+217;s that potential for a small portion of the audience to not get the =
+styles for those new elements, if I&#8217;m using them as styling points=
+; I don&#8217;t necessarily have to use them as styling points.</p>
+
+<p>I think I&#8217;m out of time &#8230;okay, I&#8217;m out of time. Tha=
+nk you.</p>
+
+<h2>Licence</h2>
+
+<p>This presentation is licenced under a <a href=3D"http://creativecommo=
+ns.org/licenses/by/3.0/" rel=3D"license">Creative Commons attribution li=
+cence</a>. You are free to:</p>
+
+<dl>
+<dt>Share</dt><dd>Copy, distribute and transmit this presentation.</dd>
+<dt>Remix</dt><dd>Adapt the presentation.</dd>
+</dl>
+
+<p>Under the following conditions:</p>
+
+<dl>
+<dt>Attribution</dt><dd>You must attribute the presentation to Jeremy Ke=
+ith.</dd>
+</dl>
+
+
+<p class=3D"meta">
+October 18th, 2010
+</p>
+
+
+<h2>Illustrations</h2>
+
+<p>Thanks to the magic of <a href=3D"http://adactio.com/journal/1274/">m=
+achine tags</a>, you can illustrate this article by tagging a picture on=
+ <a href=3D"http://flickr.com/">Flickr</a> with: <input type=3D"text" va=
+lue=3D"adactio:post=3D1704" onfocus=3D"this.select();" onclick=3D"this.s=
+elect();" readonly=3D"readonly" /></p></div>
+
+<div role=3D"complementary">
+
+<h2>More information</h2>
+
+<!-- Begin the extra content -->
+
+<div class=3D"box">
+
+<h3>About this site</h3>
+
+<address class=3D"vcard">
+<a href=3D"http://adactio.com/" class=3D"url" rel=3D"me">Adactio</a> is =
+the online home of <a href=3D"mailto:&#106;&#101;&#114;&#101;&#109;&#121=
+;&#64;&#97;&#100;&#97;&#99;&#116;&#105;&#111;&#46;&#99;&#111;&#109;" cla=
+ss=3D"email fn">Jeremy Keith</a>, a <span class=3D"role">web developer</=
+span> and <span class=3D"title">author</span> living and working in <spa=
+n class=3D"adr"><span class=3D"locality">Brighton</span>, <span class=3D=
+"country-name">England</span></span>.
+</address>
+</div>
+
+<div class=3D"box">
+
+<h3>Customise</h3>
+
+<form method=3D"get" action=3D"/articles/1704/" id=3D"skinselection">
+<p>
+<label for=3D"skin">Choose a theme&hellip;</label><br />
+<select name=3D"skin" id=3D"skin">
+<option value=3D"default" selected=3D"selected">default</option>
+<option value=3D"tatemodern">tatemodern</option>
+<option value=3D"seaside">seaside</option>
+<option value=3D"zeldman">zeldman</option>
+<option value=3D"adactizilla">adactizilla</option>
+<option value=3D"sci-fi">sci-fi</option>
+<option value=3D"renaissance">renaissance</option>
+<option value=3D"hirnlego">hirnlego</option>
+</select>
+<input type=3D"submit" value=3D"Go!" id=3D"submitskin" />
+<a href=3D"/about/site/" title=3D"what is this?">?</a>
+</p>
+</form>
+<p>This is the plain vanilla look.</p>
+
+</div>
+<div class=3D"box">
+
+<h3>Search</h3>
+
+<form action=3D"/articles/search" method=3D"get" role=3D"search">
+<p><label for=3D"query">Search articles:</label><br /><input accesskey=3D=
+"4" type=3D"search" name=3D"query" id=3D"query" value=3D"" class=3D"sear=
+chbox" />
+<input type=3D"submit" value=3D"Go!" /></p>
+</form>
+</div>
+<div class=3D"box">
+
+<h3>Subscribe</h3>
+
+<p>You can subscribe to the <a href=3D"/articles/rss"><abbr title=3D"Rea=
+lly Simple Syndication">RSS</abbr> feed of articles</a>.</p>
+
+</div>
+<div class=3D"box">
+
+<h3>Slides</h3>
+
+<p>Download <abbr title=3D"Portable Document Format">PDF</abbr> versions=
+ of the slides I've used to accompany presentations. Beware: they won't =
+wont make much sense outside the context of the talks.</p>
+
+<ul>
+<li><a href=3D"/extras/slides/designofhtml5.pdf" type=3D"application/pdf=
+">The Design of HTML5</a></li>
+<li><a href=3D"/extras/slides/futureshocktreatment.pdf" type=3D"applicat=
+ion/pdf">Future Shock Treatment</a></li>
+<li><a href=3D"/extras/slides/huffduffer.pdf" type=3D"application/pdf">H=
+uffduffer</a></li>
+<li><a href=3D"/extras/slides/TheSystemOfTheWorld.pdf" type=3D"applicati=
+on/pdf">The System Of The World</a></li>
+<li><a href=3D"/extras/slides/portability.pdf" type=3D"application/pdf">=
+Creating Portable Social Networks with Microformats</a></li>
+<li><a href=3D"/extras/slides/bulletproof.pdf" type=3D"application/pdf">=
+Bulletproof Ajax</a></li>
+<li><a href=3D"/extras/slides/hypertext.pdf" type=3D"application/pdf">Hy=
+pertext</a></li>
+<li><a href=3D"/extras/slides/soul.pdf" type=3D"application/pdf">Soul</a=
+></li>
+<li><a href=3D"/extras/slides/nanotech.pdf" type=3D"application/pdf">Mic=
+roformats: The nanotechnology of the semantic web</a></li>
+<li><a href=3D"/extras/slides/ajax.pdf" type=3D"application/pdf">Ajax</a=
+></li>
+<li><a href=3D"/extras/slides/beauty.pdf" type=3D"application/pdf">The B=
+eauty in Standards &amp; Accessibility</a></li>
+<li><a href=3D"/extras/slides/ajaxkungfu.pdf" type=3D"application/pdf">A=
+jax Kung Fu</a></li>
+</ul>
+
+</div>
+<div class=3D"box">
+
+<h3>Elsewhere</h3>
+
+<ul>
+<li>Web Standardistas &mdash; <a href=3D"http://www.webstandardistas.com=
+/2009/12/a-dozen-questions-for-mr-keith.php">A Dozen Questions for Mr. K=
+eith</a></li>
+<li>An Event Apart &mdash; <a href=3D"http://aneventapart.com/news/2007/=
+07/better_know_a_speaker_jeremy_keith.php">Better Know A Speaker: Jeremy=
+ Keith</a></li>
+<li>Digital Web Magazine &mdash; <a href=3D"http://www.digital-web.com/a=
+rticles/jeremy_keith/">Jeremy Keith</a></li>
+<li>Web Standards Group &mdash; <a href=3D"http://webstandardsgroup.org/=
+features/jeremy-keith.cfm">Ten questions for Jeremy Keith</a></li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- The large print giveth and the small print taketh away -->
+
+<div role=3D"contentinfo">
+<footer>
+<p>&copy; 1998 - 2011 <a href=3D"mailto:&#106;&#101;&#114;&#101;&#109;&#=
+121;&#64;&#97;&#100;&#97;&#99;&#116;&#105;&#111;&#46;&#99;&#111;&#109;" =
+title=3D"jeremy&#064;adactio.com">Jeremy Keith</a>.</p>
+<p><a href=3D"http://validator.w3.org/check/referer" title=3D"I came, I =
+saw, I validated">Veni, vidi, validatio</a>. <a href=3D"http://jigsaw.w3=
+.org/css-validator/check/referer" title=3D"CSS too">Et tu, CSS?</a>.</p>=
+
+<p><a accesskey=3D"0" href=3D"/about/accessibility/" title=3D"access key=
+: 0">Accessibility statement</a></p>
+</footer>
+</div>
+
+<script src=3D"/mint/?js"></script>
+<script src=3D"/includes/javascript/global.js"></script>
+
+</body>
+</html>
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline; filename=favicon.ico
+Content-Type: image/x-icon; name=favicon.ico
+Content-Location: http://adactio.com/favicon.ico
+Content-Transfer-Encoding: Base64
+
+AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAQAEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAA////AFtquQBFR0kAsLXUAJSUkABlb2sAICgjADc7
+gwDZ3NwAe4TRAE9DrgCwr6wAl5rDAMPH8wBQV4AAfX2YADJGZAAqMEEAxMK/ABUU
+DABhYp0AnJnfAHmAfADX3PgAWFpeAH1q1QDv8fEAOTgvAEpZpgBqesQAgYa7ALa1
+6gCko50AQ0hxAKSpvwBeYocAhouHAM/T0ABqa7AAV2V4ABcdGgAsN1AAQFSCAIqF
+nQBWVrAALC8uAFdqpgBoZ14ATliXAJOV0QDm6egATElWADhAOwDJ1PIArq7gAFli
+aQCgpMsAl522AKag2gC7weoAsLzhAHB4zwCKjbYASFJPAHaCvgA/Q2cAX2iuAE9S
+XAA/RXsAYnS/ADhHcQDLy+wAfYDHACYuNwCjqaYALzU5ALG2tAApKB4A0tH2AE5Q
+eQAdHRIADg4JAPb29QASFxUAJSkuAD5QegBYbq4AXGJeABsiJwBudL8Ai5GLACo1
+SADDw+kAMTYwAKiurgDT19YANDs2AE1PgQDAxcUATVWeAPv7+gDd4eAAmJTbAHd/
+zQCentoAP05zADs8NgAtLzYAoqa5AB0gGgCOlJMAvcLAAKy02QBcYaEAFhsgALK2
+4gCwudkANkNgAFpfWQCmrbsAz9TyAL6+7gCxs+gAKi4pAEtUqADIyfMAoKHeADxJ
+bgDCxu4AGiEeAJifwwBvesQALzQsALCw5ACWl9QAQVN8AFxrrAAmLSsAn6elAERV
+gAAPEQwAJCkiADlGbQAfIiYAFBoUABYbFwC+v+kANT05ADo/OABnabEA8vHvAJ2f
+3gClpqYAXWq2AP39/QCQlpEAMjMtALS05wClod0AKzRQAK2wrACDiocANzs4AFBX
+fQAxODIA0dD0ANXY1wCyu+IAOT46AGBjnwCFjIkAGyAbANfa+AAiKCMAz9PSAMLG
+7AD+/v4A8PLyAPv8+wAuNC0AMDUwAP7//wD9/v4A/f79AN3g4AAwNCwAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUwWdUo0qdqQ/g2xRFE4wE7Gx
+ZQxKEUcnO3E6HCGXsbEBAbG5KCsdLWc8dZm3AQEBAQGxb4yJCAsaFqh4uAEBAQGx
+mzhXmmSWnzewIyYBAQEBsa9qRj59WnogT3lttwEBAbdYiB4KAmgOfq0YRHABAQGy
+rFYvcjGEgYddNhmcAQEBp5FcgDQiQXRQLD0DoQEBAbIpc48PH4aTDTkEayUBAQGz
+NVSgQ5iee6ZIEI5NAQEBsQaSWUVJaX8yJC6pMwEBAbFfB4ISYhWqQqNhorEBAQGx
+G0CuikxVkHy1pQkBAQEBAbFglIWVtG66Xou3AQEBAQG2sWYXd1tLq2O3sQEBAQAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAA=
+
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline
+Content-Type: image/gif
+Content-Location: http://adactio.com/skins/default/images/logo.gif
+Content-Transfer-Encoding: Base64
+
+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
+QAgxSgNxxUCI4kBoOARALiVgxAGbq0EIAAA7
+
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline
+Content-Type: image/jpeg
+Content-Location: http://adactio.com/skins/default/images/clock.jpg
+Content-Transfer-Encoding: Base64
+
+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
+jz1S4qarqXrqb+ZVjuaLNVqiRZmiwOup
+
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline; filename=global.css
+Content-Type: text/css; charset=utf-8; name=global.css
+Content-Location: http://adactio.com/skins/default/global.css
+Content-Transfer-Encoding: 8bit
+
+/* @group Elements */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-size: 75%;
+	line-height: 1.6666;
+	font-family: Helvetica,Arial,sans-serif;
+	background-color: #fff;
+	color: #333;
+	margin: 0 5%;
+	max-width: 120em;
+}
+body * {
+	font-size: 1em;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+abbr {
+	border: 0;
+}
+a, a * {
+	text-decoration: underline;
+}
+a:link,
+a:visited {
+	color: #c63;
+}
+a.here {
+	color: #930;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #f96;
+}
+p {
+	padding: 1em 0 0.6666em;
+}
+li li {
+	margin-left: 1em;
+}
+img {
+	vertical-align: text-bottom;
+	border: 0;
+}
+blockquote {
+	font-family: Georgia,"Times New Roman",serif;
+	font-size: 1.2em;
+	padding: 0.0694em 2em;
+}
+blockquote * {
+	font-style: italic;
+}
+blockquote * em {
+	font-weight: bold;
+}
+blockquote * strong {
+	font-style: normal;
+}
+hr {
+	border: 0;
+	border-bottom: 0.08333em dotted #ccc;
+}
+h1,h2,h3,h4,h5 {
+	line-height: 1;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 2em;
+	padding-top: 0.3333em;
+	padding-bottom: 0.3333em;
+	color: #666;
+}
+h2 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.5em;
+	padding-top: 0.7778em;
+	padding-bottom: 0.4444em;
+	color: #555;
+}
+h3 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.3333em;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	color: #444;
+}
+h4 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1.1667em;
+	padding-top: 1em;
+	padding-bottom: 0.8571em;
+}
+h5 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+h1 a, h1 a *,
+h2 a, h2 a *,
+h3 a, h3 a *,
+h4 a, h4 a * {
+	text-decoration: none;
+	font-weight: bold
+}
+textarea,input,select {
+	font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+	font-size: 1em;
+}
+code {
+	font-size: 1.2em;
+	font-family: "Courier New",monospace;
+}
+
+/* @end Elements */
+
+/* @group Classes */
+
+.box {
+	font-family : Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.8333em;
+	line-height: 1.5;
+	padding: .5em 1em;
+	margin-bottom: .8em;
+	border: 0.1em dashed #ccc;
+	background-color: #eee;
+	color: #333;
+}
+.box h3 {
+	color: #666;
+	padding-top: 1.1333em;
+	padding-bottom: 0.5333em;
+}
+.box ul li {
+	margin-left: 1em;
+	list-style-type: square;
+}
+
+.meta {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	text-align: right;
+	font-size: 0.8333em;
+	line-height: 1;
+	padding: 0 0 1em;
+}
+
+.spotless {
+	 background: #ff8;
+}
+.gleaming {
+	 background: #ff9;
+}
+.shiny {
+	 background: #ffa;
+}
+.bright {
+	 background: #ffb;
+}
+.faded {
+	 background: #ffc;
+}
+.dull {
+	 background: #ffd;
+}
+.dirty {
+	 background: #ffe;
+}
+
+/* @end Classes */
+
+/* @group Structure */
+
+#logo {
+	height: 53px;
+	background: url(/skins/default/images/logo.gif) no-repeat top right;
+	text-align: right;
+}
+
+#logo a {
+	display: block;
+	float: right;
+	width: 240px;
+	height: 53px;
+	border: none;
+}
+#logo span {
+	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+[role="presentation"] {
+	padding: 0.5em;
+}
+[role="navigation"] {
+	background-color: #fff;
+	color: #666;
+	font-weight: bold;
+	padding: 0.5em;
+}
+[role="navigation"] a {
+	font-weight: bold;
+	text-decoration: none;
+}
+[role="navigation"] ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+[role="navigation"] ul li {
+	list-style: none;
+	float: left;
+	padding: 0 1.2em 0 0;
+}
+[role="main"] {
+	font-family: "Lucida Grande",Verdana,Helvetica,Arial,sans-serif;
+	padding: 0.5em;
+	padding-right: 1em;
+	border-top: 0.08333em dotted #ccc;
+}
+[role="main"] * {
+	max-width: 60em;
+}
+[role="main"] .meta {
+	max-width: none;
+}
+[role="main"] p {
+	overflow: hidden;
+}
+[role="main"] img,
+[role="main"] object {
+	max-width: 99%;
+}
+[role="main"] img {
+	border: 1px solid #000;
+}
+
+[role="main"] ul li {
+	list-style-type: circle;
+	list-style-position: outside;
+}
+[role="main"] table th {
+	font-weight: bold;
+}
+[role="main"] table thead th {
+	text-align: left;
+}
+[role="main"] table tbody th {
+	text-align: right;
+}
+
+[role="main"] textarea {
+	width: 95%;
+}
+
+[role="complementary"] {
+	background-color: #fff;
+	color: #333;
+}
+
+[role="contentinfo"] {
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	font-size: 0.8333em;
+	padding: 0.5em;
+	background-color: #fff;
+	color: #666;
+}
+
+/* @end Stucture */
+
+@media only screen and (min-width: 40em) {
+
+#logo {
+	border-bottom: 0.08333em dotted #ccc;
+}
+[role="presentation"] {
+	border-left: 0.08333em dotted #ccc;
+}
+
+[role="presentation"] div {
+	width: 500px;
+	height: 100px;
+}
+.journal {
+	background: url(/skins/default/images/bandstand.jpg) no-repeat;
+}
+.links {
+	background: url(/skins/default/images/light.jpg) no-repeat;
+}
+.about {
+	background: url(/skins/default/images/jeremy.jpg) no-repeat;
+}
+.contact {
+	background: url(/skins/default/images/flowers.jpg) no-repeat;
+}
+.articles {
+	background: url(/skins/default/images/clock.jpg) no-repeat;
+}
+.extras {
+	background: url(/skins/default/images/bandstand.jpg) no-repeat;
+}
+
+[role="navigation"] {
+	border-left: 0.08333em dotted #ccc;
+}
+
+#home #logo,
+#home [role="navigation"] {
+	border: none;
+}
+
+}
+
+@media screen and (min-width: 50em) {
+
+[role="main"] {
+	width: 65%;
+	float: left;
+	border-right: 0.08333em dotted #ccc;
+}
+[role="complementary"] {
+	float: right;
+	width: 30%;
+}
+[role="complementary"] h2 {
+	display: none;
+}
+[role="contentinfo"] {
+	clear: both;
+	padding-top: 4em;
+}
+
+/* @group Home */
+
+#home {
+	height: 90%;
+	margin: 0;
+	padding-top: 7%;
+	max-width: 100%;
+	background: url(/skins/default/images/splashbackground.jpg) repeat-y;
+}
+#home #logo {
+	margin: 0 25%;
+	border: none;
+}
+#home [role="navigation"] {
+	position: static;
+	float: none;
+	margin: 0 25%;
+	border: 0.08333em solid #666;
+	border-bottom: 0;
+	padding-top: 1em;
+	color: #333;
+}
+#home [role="main"] {
+	background: #fff url(/skins/default/images/me.jpg) no-repeat bottom left;
+	color: #333;
+	position: static;
+	float: none;
+	margin: 0 25%;
+	border: 0.08333em solid #666;
+	border-top-style: dotted;
+	padding-left: 170px;
+	min-height: 150px;
+	width: auto;
+}
+#home [role="main"] h2 {
+	position: relative;
+	left: -160px;
+	top: .8333em;
+	padding: 0;
+	width: 150px;
+	text-align: right;
+}
+#home [role="main"] p {
+	padding: 0;
+}
+
+/* @end Home */
+
+}
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline; filename=print.css
+Content-Type: text/css; charset=utf-8; name=print.css
+Content-Location: http://adactio.com/includes/css/print.css
+Content-Transfer-Encoding: 8bit
+
+body {
+	background: white;
+	color: black;
+	font-size: 12pt;
+	margin: 0 5%;
+}
+[role="navigation"],
+[role="presentation"],
+[role="complementary"],
+[role="contentinfo"] {
+	display: none;
+}
+[role="main"] {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+a, a * {
+	color:#930;
+	text-decoration: none;
+	font-weight: bold;
+}
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline; filename=default.js
+Content-Type: text/javascript; charset=utf-8; name=default.js
+Content-Location: http://adactio.com/mint/?js
+Content-Transfer-Encoding: 8bit
+
+var Mint = new Object();
+Mint.save = function() 
+{
+	var now		= new Date();
+	var debug	= false; // this is set by php 
+	if (window.location.hash == '#Mint:Debug') { debug = true; };
+	var path	= 'http://adactio.com/mint/?record&key=35516570324463593032516a3634786b67485571594634393231';
+	path = path.replace(/^https?:/, window.location.protocol);
+	
+	// Loop through the different plug-ins to assemble the query string
+	for (var developer in this) 
+	{
+		for (var plugin in this[developer]) 
+		{
+			if (this[developer][plugin] && this[developer][plugin].onsave) 
+			{
+				path += this[developer][plugin].onsave();
+			};
+		};
+	};
+	// Slap the current time on there to prevent caching on subsequent page views in a few browsers
+	path += '&'+now.getTime();
+	
+	// Redirect to the debug page
+	if (debug) { window.open(path+'&debug&errors', 'MintLiveDebug'+now.getTime()); return; };
+	
+	/*@cc_on
+	// IE PC appears to occasionally cache the image
+	document.write('<script defer type="mint/record" src="' + path + '"></script>');
+	return;
+	@*/
+	
+	var img = new Image();
+	img.src = path+'&serve_img';
+};
+if (!Mint.SI) { Mint.SI = new Object(); }
+Mint.SI.Referrer = 
+{
+	onsave	: function() 
+	{
+		var encoded = 0;
+		if (typeof Mint_SI_DocumentTitle == 'undefined') { Mint_SI_DocumentTitle = document.title; }
+		else { encoded = 1; };
+		var referer		= (window.decodeURI)?window.decodeURI(document.referrer):document.referrer;
+		var resource	= (window.decodeURI)?window.decodeURI(document.URL):document.URL;
+		return '&referer=' + escape(referer) + '&resource=' + escape(resource) + '&resource_title=' + escape(Mint_SI_DocumentTitle) + '&resource_title_encoded=' + encoded;
+	}
+};
+if (!Mint.SI) { Mint.SI = new Object(); }
+Mint.SI.UserAgent007 = 
+{
+	flashVersion		: 0,
+	resolution			: '0x0',
+	detectFlashVersion	: function () 
+	{
+		var m =16;
+		var ua = navigator.userAgent.toLowerCase();
+		if (navigator.plugins && navigator.plugins.length) 
+		{
+			var p = navigator.plugins['Shockwave Flash'];
+			if (typeof p == 'object') 
+			{
+				for (var i=m;i>=3;i--) 
+				{
+					if (p.description && p.description.indexOf(' ' + i + '.') != -1) { this.flashVersion = i; break; }
+				}
+			}
+		}
+		else if (ua.indexOf("msie") != -1 && ua.indexOf("win")!=-1 && parseInt(navigator.appVersion) >= 4 && ua.indexOf("16bit")==-1) 
+		{
+			var vb = '<scr' + 'ipt language="VBScript"\> \nOn Error Resume Next \nDim obFlash \nFor i = ' + m + ' To 3 Step -1 \n   Set obFlash = CreateObject("ShockwaveFlash.ShockwaveFlash." & i) \n   If IsObject(obFlash) Then \n      Mint.SI.UserAgent007.flashVersion = i \n      Exit For \n   End If \nNext \n<'+'/scr' + 'ipt\> \n';
+			document.write(vb);
+		}
+		else if (ua.indexOf("webtv/2.5") != -1) this.flashVersion = 3;
+		else if (ua.indexOf("webtv") != -1) this.flashVersion = 2;
+		return this.flashVersion;
+	},
+	onsave				: function() 
+	{
+		this.resolution = screen.width+'x'+screen.height;
+		return '&resolution=' + this.resolution + '&flash_version=' + this.flashVersion;
+	}
+};
+Mint.SI.UserAgent007.detectFlashVersion();
+Mint.save();
+------------rlp9s9DncCrFAafBU1ZEjp
+Content-Disposition: inline; filename=global.js
+Content-Type: application/javascript; charset=utf-8; name=global.js
+Content-Location: http://adactio.com/includes/javascript/global.js
+Content-Transfer-Encoding: Base64
+
+aWYgKHdpbmRvdy50b3AgIT09IHdpbmRvdy5zZWxmKSB3aW5kb3cudG9wLmxvY2F0
+aW9uLnJlcGxhY2Uod2luZG93LnNlbGYubG9jYXRpb24uaHJlZik7CgovKgoKVGhp
+cyBpcyBhIHZlcnkgaGFuZHkgZnVuY3Rpb24gd3JpdHRlbiBieSBTaW1vbiBXaWxs
+aXNvbjoKaHR0cDovL3NpbW9uLmluY3V0aW8uY29tL2FyY2hpdmUvMjAwNC8wNS8y
+Ni9hZGRMb2FkRXZlbnQKCkl0IGFsbG93cyB5b3UgdG8gcXVldWUgdXAgYSB3aG9s
+ZSBzZXJpZXMgb2YgZXZlbnRzIHRvIGJlIHRyaWdnZXJlZCB3aGVuIHRoZSBkb2N1
+bWVudCBsb2Fkcy4KCklmIHlvdSBzaW1wbHkgdXNlIHdpbmRvdy5vbmxvYWQgPSBm
+dW5jLCB0aGVuIHlvdSBydW4gdGhlIHJpc2sgb2Ygb3ZlcndyaXRpbmcgZXhpc3Rp
+bmcgZnVuY3Rpb25zIHRoYXQgYXJlIHN1cHBvc2VkIHRvIHJ1biB3aGVuIHRoZSBv
+bmxvYWQgZXZlbnQgaXMgdHJpZ2dlcmVkLgoKKi8KCmZ1bmN0aW9uIGFkZExvYWRF
+dmVudChmdW5jKSB7Cgl2YXIgb2xkb25sb2FkID0gd2luZG93Lm9ubG9hZDsKCWlm
+ICh0eXBlb2Ygd2luZG93Lm9ubG9hZCAhPSAnZnVuY3Rpb24nKSB7CgkJd2luZG93
+Lm9ubG9hZCA9IGZ1bmM7Cgl9IGVsc2UgewoJCXdpbmRvdy5vbmxvYWQgPSBmdW5j
+dGlvbigpIHsKCQkJaWYgKG9sZG9ubG9hZCkgewoJCQkJb2xkb25sb2FkKCk7CgkJ
+CX0KCQkJZnVuYygpOwoJCX0KCX0KfQoKCi8qCgppbnNlcnRBZnRlciBpcyBzb21l
+dGhpbmcgdGhhdCBzaG91bGQgcmVhbGx5IGJlIHBhcnQgb2YgdGhlIERPTS4KSXQg
+d29ya3MganVzdCBsaWtlIGluc2VydEJlZm9yZToKdGhlIGZpcnN0IGFyZ3VtZW50
+IGlzIHRoZSBuZXcgZWxlbWVudCB5b3UndmUgY3JlYXRlZCwKdGhlIHNlY29uZCBh
+cmd1bWVudCBpcyB3aGVyZSB5b3Ugd2FudCBpdCB0byBnby4KCiovCgpmdW5jdGlv
+biBpbnNlcnRBZnRlcihuZXdlbGVtZW50LGV4aXN0aW5nZWxlbWVudCkgewoJdmFy
+IHBhcmVudGVsZW1lbnQgPSBleGlzdGluZ2VsZW1lbnQucGFyZW50Tm9kZTsKCWlm
+IChwYXJlbnRlbGVtZW50Lmxhc3RDaGlsZCA9PSBleGlzdGluZ2VsZW1lbnQpIHsK
+CQlyZXR1cm4gcGFyZW50ZWxlbWVudC5hcHBlbmRDaGlsZChuZXdlbGVtZW50KTsK
+CX0gZWxzZSB7CgkJcmV0dXJuIHBhcmVudGVsZW1lbnQuaW5zZXJ0QmVmb3JlKG5l
+d2VsZW1lbnQsZXhpc3RpbmdlbGVtZW50Lm5leHRTaWJsaW5nKTsKCgl9Cn0KCi8q
+Z2xvYmFsIEFjdGl2ZVhPYmplY3QsIFhNTEh0dHBSZXF1ZXN0LCBkb2N1bWVudCwg
+d2luZG93ICovCgphZGRMb2FkRXZlbnQoZG9BamF4KTsKCmZ1bmN0aW9uIGRvQWph
+eCgpIHsKCQoJdmFyIHByZXBhcmVMaW5rcyA9IGZ1bmN0aW9uKGNvbnRhaW5lcklk
+LHNlcnZpY2UpIHsKCgkJaWYgKCFkb2N1bWVudC5nZXRFbGVtZW50QnlJZCkgeyBy
+ZXR1cm47IH0KCQlpZiAoIWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGNvbnRhaW5l
+cklkKSkgeyByZXR1cm47IH0KCgkJdmFyIGxua3MgPSBkb2N1bWVudC5nZXRFbGVt
+ZW50QnlJZChjb250YWluZXJJZCkuZ2V0RWxlbWVudHNCeVRhZ05hbWUoImEiKTsK
+CgkJdmFyIHhociA9IG5ldyBBamF4KCk7CgkJeGhyLnVybCA9IHNlcnZpY2U7CgoJ
+CWZvciAodmFyIGk9MDsgaTxsbmtzLmxlbmd0aDsgaSsrKSB7CgoJCQl2YXIgdGhl
+bGluayA9IGxua3NbaV07CgoJCQlpZiAodGhlbGluay5nZXRBdHRyaWJ1dGUoImhy
+ZWYiKS5pbmRleE9mKCI/IikgPiAtMSApIHsKCgkJCQl0aGVsaW5rLmFqYXhIYW5k
+bGVyID0geGhyOwoKCQkJCXRoZWxpbmsub25jbGljayA9IGZ1bmN0aW9uKCkgewoK
+CQkJCQl2YXIgcXVlcnkgPSB0aGlzLmdldEF0dHJpYnV0ZSgiaHJlZiIpLnNwbGl0
+KCI/IilbMV0uc3BsaXQoIiMiKTsKCgkJCQkJdGhpcy5hamF4SGFuZGxlci5kYXRh
+ID0gcXVlcnlbMF07CgkJCQkJdGhpcy5hamF4SGFuZGxlci5jYW52YXMgPSBkb2N1
+bWVudC5nZXRFbGVtZW50QnlJZChxdWVyeVsxXSk7CgkJCQkJdGhpcy5hamF4SGFu
+ZGxlci5sb2FkaW5nID0gZnVuY3Rpb24oKSB7CgkJCQkJCWRpc3BsYXlMb2FkaW5n
+KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKHF1ZXJ5WzFdKSk7CgkJCQkJfTsKCQkJ
+CQl0aGlzLmFqYXhIYW5kbGVyLmNhbGxiYWNrID0gZnVuY3Rpb24oKSB7CgkJCQkJ
+CWRvY3VtZW50LmhpZ2hsaWdodEVsZW1lbnQoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5
+SWQocXVlcnlbMV0pKTsKCQkJCQkJZG9BamF4KCk7CgkJCQkJfTsKCgkJCQkJcmV0
+dXJuICghdGhpcy5hamF4SGFuZGxlci5zdGFydCgpKTsKCgkJCQl9OwoJCQl9CgoJ
+CQl0aGVsaW5rID0gbnVsbDsJLy8gQ2xlYW4gdXAgZm9yIElFCgoJCX0KCX07CgoJ
+cHJlcGFyZUxpbmtzKCJ0ZWNobm9yYXRpLXRhZ3MiLCIvaW5jbHVkZXMvc2Vydmlj
+ZXMvdGVjaG5vcmF0aS90YWcucGhwIik7CglwcmVwYXJlTGlua3MoInRlY2hub3Jh
+dGktdGFncy1uYXYiLCIvaW5jbHVkZXMvc2VydmljZXMvdGVjaG5vcmF0aS90YWcu
+cGhwIik7CglwcmVwYXJlTGlua3MoInRlY2hub3JhdGktY29zbW9zIiwiL2luY2x1
+ZGVzL3NlcnZpY2VzL3RlY2hub3JhdGkvY29zbW9zLnBocCIpOwoJcHJlcGFyZUxp
+bmtzKCJ0ZWNobm9yYXRpLWNvc21vcy1uYXYiLCIvaW5jbHVkZXMvc2VydmljZXMv
+dGVjaG5vcmF0aS9jb3Ntb3MucGhwIik7CglwcmVwYXJlTGlua3MoImRlbGljaW91
+cyIsIi9pbmNsdWRlcy9zZXJ2aWNlcy9kZWxpY2lvdXMvc2VhcmNoLnBocCIpOwoJ
+cHJlcGFyZUxpbmtzKCJtYWdub2xpYSIsIi9pbmNsdWRlcy9zZXJ2aWNlcy9tYWdu
+b2xpYS9zZWFyY2gucGhwIik7CglwcmVwYXJlTGlua3MoImZsaWNrciIsIi9pbmNs
+dWRlcy9zZXJ2aWNlcy9mbGlja3Ivc2VhcmNoLnBocCIpOwoKfQoKZnVuY3Rpb24g
+QWpheCgpIHsKCgl2YXIgdXJsLGNhbnZhcyxkYXRhLGxvYWRpbmcsY2FsbGJhY2ss
+cmVxdWVzdDsKCgl0aGlzLnN0YXJ0ID0gZnVuY3Rpb24oKSB7CgoJCXVybAkJCT0g
+dGhpcy51cmw7CgkJY2FudmFzCQk9IHRoaXMuY2FudmFzOwoJCWRhdGEJCT0gdGhp
+cy5kYXRhOwoJCWxvYWRpbmcJCT0gdGhpcy5sb2FkaW5nOwoJCWNhbGxiYWNrCT0g
+dGhpcy5jYWxsYmFjazsKCQlyZXF1ZXN0CQk9IGdldEhUVFBPYmplY3QoKTsKCgkJ
+aWYgKCFyZXF1ZXN0IHx8ICF1cmwpIHsKCQkJcmV0dXJuIGZhbHNlOwoJCX0gZWxz
+ZSB7CgkJCWluaXRpYXRlUmVxdWVzdCgpOwoJCQlyZXR1cm4gdHJ1ZTsKCQl9Cgl9
+OwoKCXZhciBnZXRIVFRQT2JqZWN0ID0gZnVuY3Rpb24oKSB7CgkJdmFyIHhtbGh0
+dHAgPSBmYWxzZTsKCQlpZiAod2luZG93LlhNTEh0dHBSZXF1ZXN0KSB7CgkJCXht
+bGh0dHAgPSBuZXcgWE1MSHR0cFJlcXVlc3QoKTsKCQl9IGVsc2UgaWYod2luZG93
+LkFjdGl2ZVhPYmplY3QpIHsKCQkJdHJ5IHsKCQkJCXhtbGh0dHAgPSBuZXcgQWN0
+aXZlWE9iamVjdCgiTXN4bWwyLlhNTEhUVFAiKTsKCQkJfSBjYXRjaCAoZSkgewoJ
+CQkJdHJ5IHsKCQkJCQl4bWxodHRwID0gbmV3IEFjdGl2ZVhPYmplY3QoIk1pY3Jv
+c29mdC5YTUxIVFRQIik7CgkJCQl9IGNhdGNoIChlKSB7CgkJCQkJeG1saHR0cCA9
+IGZhbHNlOwoJCQkJfQoJCQl9CgkJfQoJCXJldHVybiB4bWxodHRwOwoJfTsKCgl2
+YXIgaW5pdGlhdGVSZXF1ZXN0ID0gZnVuY3Rpb24oKSB7CgkJaWYgKGxvYWRpbmcp
+IHsKCQkJbG9hZGluZygpOwoJCX0KCQlsb2FkRGF0YSgpOwoJfTsKCgl2YXIgbG9h
+ZERhdGEgPSBmdW5jdGlvbigpIHsKCQlyZXF1ZXN0Lm9ucmVhZHlzdGF0ZWNoYW5n
+ZSA9IGNvbXBsZXRlUmVxdWVzdDsKCQlpZiAoZGF0YSkgewoJCQlyZXF1ZXN0Lm9w
+ZW4oIlBPU1QiLCB1cmwsIHRydWUpOwoJCQlyZXF1ZXN0LnNldFJlcXVlc3RIZWFk
+ZXIoIkNvbnRlbnQtVHlwZSIsImFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5j
+b2RlZCIpOwoJCQlyZXF1ZXN0LnNlbmQoZGF0YSk7CgkJfSBlbHNlIHsKCQkJcmVx
+dWVzdC5vcGVuKCJHRVQiLCB1cmwsIHRydWUpOwoJCQlyZXF1ZXN0LnNlbmQobnVs
+bCk7CgkJfQoJfTsKCgl2YXIgY29tcGxldGVSZXF1ZXN0ID0gZnVuY3Rpb24oKSB7
+CgkJaWYgKHJlcXVlc3QucmVhZHlTdGF0ZSA9PSA0KSB7CgkJCWlmIChyZXF1ZXN0
+LnN0YXR1cyA9PSAyMDAgfHwgcmVxdWVzdC5zdGF0dXMgPT0gMzA0KSB7CgkJCQlp
+ZiAoY2FudmFzKSB7CgkJCQkJY2FudmFzLmlubmVySFRNTCA9IHJlcXVlc3QucmVz
+cG9uc2VUZXh0OwoJCQkJfQoJCQl9IGVsc2UgewoJCQkJaWYgKGNhbnZhcykgewoJ
+CQkJCWNhbnZhcy5pbm5lckhUTUwgPSByZXF1ZXN0LnN0YXR1c1RleHQ7CgkJCQl9
+CgkJCX0KCQkJaWYgKGNhbGxiYWNrKSB7CgkJCQljYWxsYmFjaygpOwoJCQl9CgkJ
+fQoJfTsKCn0KCmZ1bmN0aW9uIGRpc3BsYXlMb2FkaW5nKGVsZW1lbnQpIHsKCWRv
+Y3VtZW50LmVtcHR5RWxlbWVudChlbGVtZW50KTsKCXZhciBjb250ZW50ID0gZG9j
+dW1lbnQuY3JlYXRlRWxlbWVudCgiaW1nIik7Cgljb250ZW50LnNldEF0dHJpYnV0
+ZSgic3JjIiwiL2ltYWdlcy9wcm9ncmVzc2Jhci5naWYiKTsKCWNvbnRlbnQuc2V0
+QXR0cmlidXRlKCJhbHQiLCJMb2FkaW5nLi4uIik7CgllbGVtZW50LmFwcGVuZENo
+aWxkKGNvbnRlbnQpOwp9Cgpkb2N1bWVudC5lbXB0eUVsZW1lbnQgPSBmdW5jdGlv
+bihlbGVtZW50KSB7Cgl3aGlsZSAoZWxlbWVudC5oYXNDaGlsZE5vZGVzKCkpIHsK
+CQllbGVtZW50LnJlbW92ZUNoaWxkKGVsZW1lbnQubGFzdENoaWxkKTsKCX0KfTsK
+CmRvY3VtZW50LmhpZ2hsaWdodEVsZW1lbnQgPSBmdW5jdGlvbihlbGVtZW50KSB7
+Cgl2YXIgc3RlcHMgPSBbInNwb3RsZXNzIiwiZ2xlYW1pbmciLCJzaGlueSIsImJy
+aWdodCIsImZhZGVkIiwiZHVsbCIsImRpcnR5IiwiZG9uZSJdOwoJdmFyIG9yaWdp
+bmFsQ2xhc3MgPSBlbGVtZW50LmNsYXNzTmFtZTsKCXZhciBjeWNsZSA9IDA7Cgl2
+YXIgZmFkZSA9IGZ1bmN0aW9uKCkgewoJCWlmIChlbGVtZW50LmZhZGluZykgewoJ
+CQljbGVhclRpbWVvdXQoZWxlbWVudC5mYWRpbmcpOwoJCX0KCQlpZiAoc3RlcHNb
+Y3ljbGVdKSB7CgkJCWVsZW1lbnQuY2xhc3NOYW1lID0gb3JpZ2luYWxDbGFzcysi
+ICIrc3RlcHNbY3ljbGVdOwoJCQljeWNsZSsrOwoJCQl2YXIgcmVwZWF0ID0gZnVu
+Y3Rpb24oKSB7CgkJCQlmYWRlKCk7CgkJCX07CgkJCWVsZW1lbnQuZmFkaW5nID0g
+c2V0VGltZW91dChyZXBlYXQsMTAwKTsKCQl9IGVsc2UgewoJCQllbGVtZW50LmNs
+YXNzTmFtZSA9IG9yaWdpbmFsQ2xhc3M7CgkJfQkKCX07CglmYWRlKCk7Cn07Cgph
+ZGRMb2FkRXZlbnQoc3VibWl0U2tpbik7CgpmdW5jdGlvbiBzdWJtaXRTa2luKCkg
+ewoKCWlmICghZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQpIHsKCQlyZXR1cm47Cgl9
+CglpZiAoIWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdza2luJykpIHsKCQlyZXR1
+cm47Cgl9CglpZiAoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3N1Ym1pdHNraW4n
+KSkgewoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdza2luJykucGFyZW50Tm9k
+ZS5yZW1vdmVDaGlsZChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnc3VibWl0c2tp
+bicpKTsKCX0KCglkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnc2tpbicpLm9uY2hh
+bmdlID0gZnVuY3Rpb24oKSB7CgoJCWRvY3VtZW50LmZvcm1zWydza2luc2VsZWN0
+aW9uJ10uc3VibWl0KCk7CgoJfTsKCn0=
+
+------------rlp9s9DncCrFAafBU1ZEjp--
