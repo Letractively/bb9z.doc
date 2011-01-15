@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=gb2312;charset=gbk">
+	<TITLE>计算机编程：一门艺术</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.0  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Lazy_Linux">
+	<META NAME="CREATED" CONTENT="20070315;16440000">
+	<META NAME="CHANGEDBY" CONTENT="Lazy_Linux">
+	<META NAME="CHANGED" CONTENT="20070315;16560000">
+	<STYLE>
+	<!--
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 0; orphans: 0 }
+		P.western { font-family: "AR PL ZenKai Uni", "宋体", serif; font-size: 12pt; so-language: en-US }
+		P.cjk { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; font-size: 12pt; so-language: zh-CN }
+		P.ctl { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; font-size: 12pt; so-language:  }
+		H1 { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 0; orphans: 0 }
+		H1.western { font-family: "AR PL ZenKai Uni", "宋体", serif; so-language: en-US }
+		H1.cjk { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; font-size: 24pt; so-language: zh-CN; font-style: normal; font-weight: bold }
+		H1.ctl { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; font-size: 24pt; so-language: ; font-weight: bold }
+		BLOCKQUOTE { direction: ltr; color: #000000; text-align: left; widows: 0; orphans: 0 }
+		BLOCKQUOTE.western { font-family: "AR PL ZenKai Uni", "宋体", serif; font-size: 12pt; so-language: en-US }
+		BLOCKQUOTE.cjk { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; font-size: 12pt; so-language: zh-CN }
+		BLOCKQUOTE.ctl { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; font-size: 12pt; so-language:  }
+		PRE { direction: ltr; color: #000000; text-align: left; widows: 0; orphans: 0 }
+		PRE.western { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; so-language: en-US }
+		PRE.cjk { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; so-language: zh-CN }
+		PRE.ctl { font-family: "AR PL ShanHeiSun Uni", "Times New Roman"; so-language:  }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="zh-CN" TEXT="#000000" DIR="LTR">
+<H1 CLASS="cjk"><div align="center"><FONT SIZE=6><B>计算机编程：一门艺术</B></FONT></div></H1>
+<P CLASS="cjk" ALIGN=CENTER STYLE="margin-right: 1.69cm"><div align="right"><FONT SIZE=2 STYLE="font-size: 10pt">西安邮电学院&nbsp;
+王聪</FONT></div></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><B><FONT SIZE=2 STYLE="font-size: 10pt">摘要</FONT></B><FONT SIZE=2>
+</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2>Knuth</FONT></SPAN></FONT><FONT SIZE=2>在他的<FONT COLOR="#000000">多卷书</FONT>《计算机编程艺术》中向我们展示了计算机编程的技巧和艺术性，并在其图灵奖演说中论述了计算机编程和艺术的关系。这篇文章受</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2>Knuth</FONT></SPAN></FONT><FONT SIZE=2>著作的启发，进一步阐述为什么计算机编程应该是一门艺术并通过代码展示艺术的<SPAN LANG="zh-CN"><FONT FACE="宋体, SimSun"><FONT COLOR="#000000">主要表现形式</FONT></FONT></SPAN>。</FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><B><FONT SIZE=2 STYLE="font-size: 10pt">关键词</FONT></B><FONT SIZE=2>
+计算机编程，艺术</FONT></P>
+<P CLASS="cjk" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="cjk"><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><B><FONT SIZE=2 STYLE="font-size: 10pt">Abstract</FONT></B>
+<FONT SIZE=2>Knuth <FONT COLOR="#000000">illustrate<FONT FACE="宋体, SimSun">d</FONT>
+</FONT>the tricks and the art of computer programming in his volumes
+named <I>The Art of Computer Programming</I></FONT></SPAN></FONT><FONT SIZE=2><SPAN LANG="zh-CN"><FONT FACE="宋体, SimSun">，</FONT></SPAN></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2><FONT FACE="宋体, SimSun">a</FONT>nd
+also <FONT COLOR="#000000">explained</FONT> the relation<FONT FACE="宋体, SimSun">ship</FONT>
+between computer programming and the art later in his Turing Award
+lecture. <FONT COLOR="#000000"><FONT FACE="宋体, SimSun">I</FONT>nspired
+by Knuth's works, <FONT FACE="宋体, SimSun">t</FONT>his paper
+elaborates why computer programming should be an art furture more,
+and by some pieces of code, shows the forms in which the art lives.</FONT></FONT></SPAN></FONT></P>
+<P CLASS="cjk"><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><B>Keywords</B>
+<FONT SIZE=2>computer programming, art</FONT></SPAN></FONT></P>
+<P CLASS="cjk"><BR><BR>
+</P>
+<OL>
+	<LI><P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>引言</B></FONT></FONT></P>
+</OL>
+<P CLASS="cjk">   
+<FONT SIZE=2 STYLE="font-size: 10pt">谈及&ldquo;艺术&rdquo;，人们自然会联想到&ldquo;美&rdquo;，&ldquo;技艺&rdquo;</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">,&ldquo;</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">灵感&rdquo;等词，但很少会把它和&ldquo;计算机编程&rdquo;，这听起来似乎无趣的词联系在一起。而</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Donald
+Knuth</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">，多卷书《计算机编程的艺术》的作者，通过他的著作，成功地展现了计算机编程的艺术性。随后他又在图灵奖演说</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B><FONT COLOR="#000000">[1]</FONT></B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">中对计算机编程的艺术做了科学地论述和诠释。他不是第一个这么做的人，但无疑他是最成功的一个。</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Guido
+van Rossum</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">，</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Python</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">的设计者，如是说：
+</FONT>
+</P>
+<BLOCKQUOTE CLASS="cjk"><FONT COLOR="#000000">&ldquo;<FONT SIZE=2 STYLE="font-size: 10pt">我同意</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">Knuth</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">对&lsquo;艺术&rsquo;一词的定义（或使用）。对于我来说，它和创造性联系十分紧密，而这对于我的工作非常重要。
+如果（计算机编程）其中没有艺术，它将没有任何乐趣，而我也不会在</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">30</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">年之后仍然从事它。&rdquo;
+</FONT></FONT>
+</BLOCKQUOTE>
+<P CLASS="cjk"><FONT SIZE=2 STYLE="font-size: 10pt">编写优美的程序需要灵感和高超的技巧，就像诗人写诗，画家作画，建筑师构筑，充满了乐趣，挑战和美。优雅的程序会像诗歌一样耐人寻味，像名画那样大开眼界，像教堂一样堂皇华丽。所以，计算机编程也同样是一门艺术，程序员就是创造这种艺术的艺术家。
+</FONT>
+</P>
+<OL START=2>
+	<LI><P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>编程之美</B></FONT></FONT></P>
+</OL>
+<P CLASS="cjk">   
+<FONT SIZE=2 STYLE="font-size: 10pt">什么样的程序才是美的程序？这个问题似乎没有唯一的答案。一个很酷的</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">demo</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">或一个很炫的视频游戏都能让我们赞叹不已。</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Doom</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">和</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Half
+Life</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">可以说把</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">3D</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">技术推向了极至，这种程序总能给人一种视觉上的美，就像画家手中的美丽油画，只是程序员们的画布在电脑屏幕上，画笔是键盘。</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Linux</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">也是一种美，一种开放的美，从</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Unix</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">那里继承来的优雅的设计，强大的可移植性，丰富的工具，
+这让它看起来像优秀建筑师们设计的一座富丽堂皇的教堂。这些美是显而易见的。还有一种美，隐藏在程序背后，流动于源代码之中。什么又是美的代码呢？可能它们一看上去就很美。这里有一个惊人的宏定义的</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">C</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">代码集合</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[2]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">：允许程序建立常量，使它们看上去像是屏幕上的图形！程序的自描述能力大大加强！</FONT></P>
+<PRE CLASS="cjk" STYLE="margin-left: 1cm; margin-right: 1cm"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="it-IT">#define X )*2+1</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="it-IT">#define _ )*2</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="it-IT">#define s ((((((((((((((((0 </SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">static unsigned short stopwatch[] =</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">{</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ _ _ _ X X X X X _ _ _ X X _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ _ X X X X X X X X X _ X X X ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ X X X _ _ _ _ _ X X X _ X X ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ X X _ _ _ _ _ _ _ _ _ X X _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ X X _ _ _ _ _ _ _ _ _ X X _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s X X _ _ _ _ _ _ _ _ _ _ _ X X _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s X X _ _ _ _ _ _ _ _ _ _ _ X X _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s X X _ X X X X X _ _ _ _ _ X X _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s X X _ _ _ _ _ X _ _ _ _ _ X X _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s X X _ _ _ _ _ X _ _ _ _ _ X X _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ X X _ _ _ _ X _ _ _ _ X X _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ X X _ _ _ _ X _ _ _ _ X X _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ X X X _ _ _ _ _ X X X _ _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ _ X X X X X X X X X _ _ _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ _ _ _ X X X X X _ _ _ _ _ _ ,</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">s _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">};</SPAN></FONT></PRE><P CLASS="cjk">
+<FONT SIZE=2 STYLE="font-size: 10pt">这种只能在新闻组或混乱</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">C</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">代码竞赛中才能见到的代码虽然没有多少实际用处，但它的确
+能让我们感受到代码&mdash;&mdash;一堆有规则的符号&mdash;&mdash;也能创造出视觉上的美。也可能是程序使用的技巧&mdash;&mdash;算法很美，
+就像汉诺塔程序，快速排序程序，自然而然地使用递归让它们看起来很紧凑，易读，这当然也是一种美，是只有程序员才能体会到的美。还有一种美，深藏在代码之后，是程序的设计思想之美，一种需要领悟的美。</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Unix</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">带给我们的不仅是它的强大功能，还有它那深邃的设计哲学</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[3]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">：
+</FONT>
+</P>
+<BLOCKQUOTE CLASS="cjk">&ldquo;<FONT SIZE=2 STYLE="font-size: 10pt">小巧就是美。&rdquo;（</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Small
+is beautiful.</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">）</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><BR>&ldquo;</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">让每个程序都擅长做一件事。&rdquo;（</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Make
+each program do one thing well.</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">）</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><BR>&ldquo;</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">一切都是文件。&rdquo;（</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Everything
+is a file.</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">）</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><BR>&ldquo;</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">沉默是金。&rdquo;（</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="">Silence
+is golden.</SPAN></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">）</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG=""><BR>&ldquo;</SPAN></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">让操作系统内核小而轻巧。&rdquo;（</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="">Make
+operating system kernels small and lightweight.</SPAN></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">）
+</FONT>
+</BLOCKQUOTE>
+<P CLASS="cjk"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">这些思想在</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG=""><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">Unix</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">设计中不失为黄金法则。这种美将穿越时空，千古流传，让</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG=""><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">Unix</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">不仅仅是一个优秀的操作系统，而成为一门计算机领域的哲学。</FONT></FONT></P>
+<P CLASS="cjk">    <FONT SIZE=2 STYLE="font-size: 10pt">人们都喜欢美的东西，程序员们更是珍视美的程序，我们把那些创造美好程序的人尊称为&ldquo;黑客&rdquo;。
+</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Paul
+Graham</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">认为黑客和画家很相似</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[4]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">：
+</FONT>
+</P>
+<BLOCKQUOTE CLASS="cjk"><FONT COLOR="#000000">&ldquo;<FONT SIZE=2 STYLE="font-size: 10pt">黑客和画家的共同之处是，他们都是创造者。和作曲家，建筑师，作家一样，黑客和画家尝试去做的也是创造好的东西。他们本身并不做研究，但是如果在创造好东西的过程中发现了一些新的技术，那就更好了。
+&rdquo;</FONT></FONT></BLOCKQUOTE>
+<P CLASS="cjk"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">既然优秀的画家是艺术家，那么聪明的程序员&mdash;&mdash;黑客&mdash;&mdash;也是艺术家。这也就不难理解为什么很多</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">Unix</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">内核黑客都留着艺术家式的络腮胡了。
+</FONT></FONT>
+</P>
+<OL START=3>
+	<LI><P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>编程之巧</B></FONT></FONT></P>
+</OL>
+<P CLASS="cjk">   
+<FONT SIZE=2 STYLE="font-size: 10pt">灵巧的程序像含蓄的诗歌，需要仔细领悟，用心去体会，茅塞顿开后方能回味无穷。真乃&ldquo;会当临绝顶，一览众山小&rdquo;！同样是求</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">pi</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">，但是只有简单的四行</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">C</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">代码却能打印出</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">pi</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">的前</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">800</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">位的程序定会让我们大开眼界</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[5]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">：
+</FONT>
+</P>
+<PRE CLASS="cjk" STYLE="margin-left: 1cm; margin-right: 1cm"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="pt-BR">int a=10000,b,c=2800,d,e,f[2801],g;</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">main(){</SPAN></FONT>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">for(;b-c;)f[b++]=a/5;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="pt-BR">for(;d=0,g=c*2;c-=14,printf(&quot;%.4d&quot;,e+d/a),e=d%a)</SPAN></FONT></FONT></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">for(b=c;d+=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);</SPAN></FONT></FONT></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">}</FONT></FONT></SPAN></SPAN></PRE><P CLASS="cjk">
+<FONT SIZE=2 STYLE="font-size: 10pt">黑客们不会墨守陈规，他们不断地创新，寻找更巧的方法来解决同样的问题。曾经流行编写这样一种程序，它能够打印它自己的全部代码。程序员们努力寻找最短的这种程序。
+这虽然没多大实际用处，但是充满了挑战性，黑客们把这当作乐趣。看看下面的程序</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG=""><B>[6]</B></SPAN></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">是多么怪异。
+</FONT>
+</P>
+<PRE CLASS="cjk" STYLE="margin-left: 1cm; margin-right: 1cm"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="">char *f=&quot;char *f= %c%s%c;main(){printf(f,34,f,34,10);} %c&quot;;</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">main(){printf(f,34,f,34,10);}</SPAN></FONT></PRE><P CLASS="cjk">
+<FONT COLOR="#000000">   
+<FONT SIZE=2 STYLE="font-size: 10pt">计算机编程吸引人的很大一部分在于它需要高超的技巧，也正是这些技巧才使我们看到了美，从中得到了乐趣。而且，我发现，当限制增加时，技巧将会更高，乐趣也会随之增加。来写这样一段程序，让它在屏幕上打印</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">1~1000</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">之间的整数。这对于一个新手来说也非常简单，一个</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">for
+</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">循环就可以搞定。好，我们加一个限制，不许使用任何循环。这时你得动一番脑筋了，不过你还是会想到用递归可以完成。不错，我们再加一个限制，也不许用递归。这可能把你难住了，你可能会认为不可能有这样的程序，那看看下面的程序：
+</FONT></FONT>
+</P>
+<PRE CLASS="cjk" STYLE="margin-left: 1cm; margin-right: 1cm"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">#include &lt;stdio.h&gt;</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">#define A(x) x;x;x;x;x;x;x;x;x;x;</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">int main (void)</SPAN></FONT>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="pt-BR">{</SPAN></FONT>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="pt-BR"><FONT SIZE=2 STYLE="font-size: 10pt">int n = 1;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="pt-BR"><FONT SIZE=2 STYLE="font-size: 10pt">A(A(A(printf (&quot;%d &quot;, n++))));</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">return 0;</SPAN></FONT></FONT></SPAN>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">}</SPAN></FONT></PRE><P CLASS="cjk">
+<FONT SIZE=2 STYLE="font-size: 10pt">既没有用循环，也没有用递归，而是使用了宏！我们常常惊讶于世界各地著名的</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Warez</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">组织推出的</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">64K</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">的</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">3D</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">动画，那么小的程序，却往往有难以想象的效果。它们把</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">64K</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">的限制和汇编的威力运用到了极限，
+这种技术让人叹为观止。</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">64K</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">似乎并没有限制住其艺术性，反而起了促进作用。并且，当你对系统有足够的了解时，乐趣将会更多。因为你可以使用技巧和系统开玩笑了，欺骗它，作弄它，甚至攻击它。看下面的程序：
+</FONT>
+</P>
+<PRE CLASS="cjk" STYLE="margin-left: 1cm; margin-right: 1cm"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="fr-FR">int main() {</SPAN></FONT>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="fr-FR"><FONT SIZE=2 STYLE="font-size: 10pt">int x;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="fr-FR"><FONT SIZE=2 STYLE="font-size: 10pt">x = 0;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="fr-FR"><FONT SIZE=2 STYLE="font-size: 10pt">x = 1;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="fr-FR"><FONT SIZE=2 STYLE="font-size: 10pt">printf(&quot;%d\n&quot;,x);</FONT></FONT></SPAN></SPAN>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">}</SPAN></FONT></PRE><P CLASS="cjk">
+<FONT SIZE=2 STYLE="font-size: 10pt">想一想，如何才能让程序跳过&ldquo;</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">x=1;&rdquo;</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">这一句而在屏幕上打印</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">0</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">？如果你对</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">IA-32</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">体系上堆栈原理了解的话，
+你可能会给出类似下面的程序</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[7]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">：
+</FONT>
+</P>
+<PRE CLASS="cjk" STYLE="margin-left: 1cm; margin-right: 1cm"><FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">void function(int a, int b, int c) {</SPAN></FONT>
+<FONT COLOR="#000000">   <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">char buffer1[5];</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">   <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">char buffer2[10];</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">   <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">int *ret;</FONT></FONT></SPAN></SPAN>
+
+<FONT COLOR="#000000">   <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">ret = buffer1 + 12;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">   <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">(*ret) += 8;</FONT></FONT></SPAN></SPAN>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">}</SPAN></FONT>
+
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">int main() {</SPAN></FONT>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">int x;</FONT></FONT></SPAN></SPAN>
+
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">x = 0;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">function(1,2,3);</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">x = 1;</FONT></FONT></SPAN></SPAN>
+<FONT COLOR="#000000">  <SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">printf(&quot;%d\n&quot;,x);</FONT></FONT></SPAN></SPAN>
+<FONT SIZE=2 STYLE="font-size: 10pt"><SPAN LANG="en-US">}</SPAN></FONT></PRE><P CLASS="cjk">
+<FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">它利用了调用函数时堆栈的变化，改变函数的返回地址，跳过了&ldquo;</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">x=1;&rdquo;</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">这一句而直接执行下面的</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">printf</FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">！
+它成功的欺骗了系统！如果把返回地址改成你预先放置的一段代码的首地址，那么你将会劫持系统，让它运行你的那段代码。如果那段代码足够巧，你将能获得系统的完全控制权！这也是缓冲区溢出的基本原理。我想，这种技巧将会让你兴奋不已，丝毫不亚于陶醉在自己诗里的诗人。我们已经看到：巧妙产生美，并与之形成艺术的雏形。</FONT></FONT></P>
+<OL START=4>
+	<LI><P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>编程之乐</B></FONT></FONT></P>
+</OL>
+<P CLASS="cjk"><FONT COLOR="#000000">   
+<FONT SIZE=2 STYLE="font-size: 10pt">计算机给人的乐趣在于，如果你有什么好的想法，你可以马上实验去得到结果。当然，你可能不会立刻得到正确答案，而必须坐下来，盯着电脑屏幕，苦思冥想求解问题的有效方法，通过不断的尝试去验证你的结果。可以通过找到正确的方法，使问题突然消失，也可以换一个角度，突然灵光闪现：原来是这样！</FONT></FONT></P>
+<P CLASS="cjk">   
+<FONT SIZE=2 STYLE="font-size: 10pt">编程是对创造力的训练，好的程序员不会循规蹈矩，不会使用平庸的方法去解决问题，而是根据自己的见解去寻找更简单的方法，因为他们能看到隐藏在问题背后的实质。然后他们会写出全新而漂亮的程序去验证他们的方法。&ldquo;不过还是很难说清楚，闭门苦思冥想地要找到解决某个问题的漂亮答案，为什么竟有会有如此巨大的魅力。但是，你要是曾经有过找到更好方法的经历，你就会明白，这简直是无以伦比的感觉。&rdquo;</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[8]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">这种感觉能让我们快乐得像一个孩子，乐不知疲。</FONT></P>
+<P CLASS="cjk">   
+<FONT SIZE=2 STYLE="font-size: 10pt">这种&ldquo;无以伦比&rdquo;的感觉，流动在程序员体内，让程序员们为之痴迷，疯狂。而痴迷的程序员从他艺术性的创造中得到了难以言传的乐趣，并让为之上瘾。
+</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Linux</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">之父这样</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[8]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">谈及他所体会的编程的乐趣：
+</FONT>
+</P>
+<BLOCKQUOTE CLASS="cjk"><FONT COLOR="#000000">   
+&ldquo;<FONT SIZE=2 STYLE="font-size: 10pt">编程给人带来最初的兴奋很好解释：那就是通过编程你可以支配一台计算机，你叫计算机做什么，它就做什么，永远准确无误，而且毫无怨言。这本身就很有意思。</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000"><BR><BR>
+   </FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">它比下棋之类的游戏更有乐趣得多，因为它可以由你自己来制定游戏规则。而你制定什么样的规则，也就会导出与此规则相符合的结果。</FONT></FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000"><BR><BR>
+   </FONT></FONT></SPAN></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">在电脑世界中，你就是创世者，你对所发生的一切拥有最终的控制。如果你功力深厚，你可以是上帝&mdash;&mdash;在一个较小的层面上。
+&rdquo;</FONT></FONT></BLOCKQUOTE>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm"><FONT SIZE=2 STYLE="font-size: 10pt">无疑，乐在其中，外行人永远体会不到，毕竟&ldquo;子非鱼安知鱼之乐&rdquo;。无穷无尽的乐趣让程序员们模糊地体会到了作为艺术家的快乐，并且开始享受他们的工作。
+</FONT>
+</P>
+<OL START=5>
+	<LI><P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>结论</B></FONT></FONT></P>
+</OL>
+<P CLASS="cjk">    <FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Rob
+Pike</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">曾经悲观地叹息到：&ldquo;那种艺术消失了。&rdquo;</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[9]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">但是，我想当他看到诸如《汇编语言的艺术》
+和《</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Unix</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">编程艺术》之类的书时，他也会高兴。这种艺术并没有消失，而且还会流传下去。我们不应该因&ldquo;为艺术而艺术&rdquo;而感到不好意思。正如</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt">Knuth</FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">所言</FONT><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><B>[1]</B></FONT></SPAN></FONT><FONT SIZE=2 STYLE="font-size: 10pt">：
+</FONT>
+</P>
+<BLOCKQUOTE CLASS="cjk"><FONT COLOR="#000000">&ldquo;<FONT SIZE=2 STYLE="font-size: 10pt">我们已经看到，计算机编程是一门艺术，因为它把积累的知识应用于世界，因为它需要技巧和灵巧，尤其是因为它创造出了美的目标。模糊地意识到自己是一个艺术家的程序员将会享受他所做的工作，而且将会把它做得更好。&rdquo;
+</FONT></FONT>
+</BLOCKQUOTE>
+<P CLASS="cjk" STYLE="text-indent: 0.74cm"><FONT SIZE=2 STYLE="font-size: 10pt">或许，我们应该为了&ldquo;艺术&rdquo;的圣杯，举起我们的双刃剑打斗一番。但是，比起剑来，我更喜欢犁头，我本人。
+</FONT>
+</P>
+<OL START=6>
+	<LI><P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>致谢</B></FONT></FONT></P>
+</OL>
+<P CLASS="cjk" STYLE="text-indent: 0.79cm; font-weight: medium"><FONT FACE="宋体, SimSun"><FONT SIZE=2>特别感谢王亚刚老师，他能不厌其烦地阅读此文并给我提出宝贵的意见，没有他的指点我不可能完成这篇论文。</FONT></FONT></P>
+<P CLASS="cjk"><BR><BR>
+</P>
+<P CLASS="cjk"><FONT FACE="宋体, SimSun"><FONT SIZE=4><B>参考文献</B></FONT></FONT></P>
+<P CLASS="cjk"><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">[1]Donald
+E. Knuth, <I>Programming As An Art</I>, ACM Turing Award lecture,
+1974.<BR>[2]Peter van der Liden, <I>Expert C Programming</I>,
+Prentice Hall, 1994.<BR>[3]Mike Gancarz, <I>Linux and the Unix
+Philosophy</I>, Digital Press, 2003.<BR>[4]Paul Graham, <I>Hackers
+and Painters</I>, O'Reilly, 2004.<BR>[5]International Obfuscated C
+Code Contest, http://www.ioccc.org.<BR>[6]Eric S. Raymond, <I>Jargon
+File</I>, http://catb.org/jargon/html/index.html.<BR>[7]Aleph One,
+<I>Smashing The Stack For Fun And Profit</I>,
+http://insecure.org/stf/smashstack.html.<BR>[8]Linus Torvalds and
+David Diamond, <I>Just for fun</I>, Harper Business, 2001.<BR>[9]Rob
+Pike,</FONT></FONT></SPAN></SPAN></FONT><SPAN LANG="zh-CN"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000">　</FONT></FONT></SPAN><FONT FACE="AR PL ZenKai Uni, 宋体, serif"><SPAN LANG="en-US"><SPAN LANG="en-US"><FONT SIZE=2 STYLE="font-size: 10pt"><FONT COLOR="#000000"><I>Systems
+Software Research Is Irrelevant</I>,
+http://herpolhode.com/rob/utah2000.pdf, 2000.</FONT></FONT></SPAN></SPAN></FONT></P>
+</BODY>
+</HTML>
+
+<!-- This document saved from http://wangcong.org/articles/art.html -->
